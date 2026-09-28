@@ -2,6 +2,7 @@
 const SB = (() => {
     const WORD_LISTS = {
         intermediate2021: { name: 'Intermediate 2021', file: 'words_intermediate_2021.json', hasAudio: false },
+        junior2019: { name: '2019 Junior', file: 'words_junior_2019.json', hasAudio: false },
         original: { name: 'Original List', file: 'words.json', hasAudio: true }
     };
     const DEFAULT_LIST = 'intermediate2021';
@@ -155,12 +156,14 @@ const SB = (() => {
     function playWord(w, slow = false) {
         const rate = getSettings().voiceRate * (slow ? 0.6 : 1);
         if (currentAudio) currentAudio.pause();
-        if (!getList().hasAudio) {
+        // A word's "audio" is either a full "group_N/file" path (usable from any list) or a file name in its own group folder.
+        const ownPath = w.audio && w.audio.includes('/');
+        if (!getList().hasAudio && !ownPath) {
             speak(w.word, rate);
             return;
         }
         const file = w.audio || w.word.replace(/\s+/g, '_').toLowerCase();
-        const path = `audio/group_${w.group}/${file}.mp3`;
+        const path = ownPath ? `audio/${file}.mp3` : `audio/group_${w.group}/${file}.mp3`;
         currentAudio = new Audio(path);
         currentAudio.playbackRate = Math.max(0.5, rate);
         currentAudio.play().catch(() => speak(w.word, rate));
