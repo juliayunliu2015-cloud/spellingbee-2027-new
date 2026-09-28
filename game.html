@@ -3,882 +3,438 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spelling Bee 2027</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background: linear-gradient(135deg, #f5f0ff 0%, #ede9f6 50%, #f5f0ff 100%);
-            font-family: 'Poppins', sans-serif;
-            color: #5b21a8;
-            min-height: 100vh;
-            padding: 10px;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        /* Header */
-        .header {
-            background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCr7AYPvVeqUPBshUWTIWJ2iXIQ-8K8woQJVGZzn3gXZOsD91x8eOwU5k1T9eDH0b8uekjykG9rQWN9kNidIOCSsd7p06J8IQ-11QKISWUKktStRsvX6OMpfJvCsTRYpo0Od6Lo3PzYt_R-4ub7Qf8h2gF39R8zVmMyA__pbMkAN2-H2q9T7SHEMfm5ULKJ1bkUS8YXaE2PlMU-5ep8QL2i4x-7ScztKYKjlG8ZguBjXW60PcBOj9SX88vAxsPyEuuZpbcOYlkE3Uc');
-            /* background-size: cover; */
-            background-position: left 25%;
-            padding: 20px;
-            border-radius: 8px;
-            text-align: center;
-            margin-bottom: 15px;
-            border: 3px solid rgba(168, 85, 247, 0.3);
-        }
-
-        .header h1 {
-            color: white;
-            font-size: 1.8rem;
-            font-weight: 800;
-            margin: 0;
-            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6), 0 0 4px rgba(0, 0, 0, 0.9);
-        }
-
-        .header p {
-            color: white;
-            font-size: 0.95rem;
-            font-weight: 600;
-            margin: 8px 0 0 0;
-            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6), 0 0 4px rgba(0, 0, 0, 0.9);
-        }
-
-        /* Tabs */
-        .tabs {
-            display: flex;
-            gap: 8px;
-            background-color: rgba(233, 213, 255, 0.6);
-            border-radius: 8px;
-            padding: 8px;
-            border: 2px solid rgba(168, 85, 247, 0.3);
-            margin-bottom: 10px;
-        }
-
-        .tab-button {
-            flex: 1;
-            padding: 10px 16px;
-            background-color: white;
-            border: 1px solid rgba(168, 85, 247, 0.2);
-            border-radius: 4px;
-            font-weight: 900;
-            font-size: 15px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .tab-button:hover {
-            transform: translateY(-2px);
-        }
-
-        .tab-button.active {
-            background: linear-gradient(135deg, #a855f7 0%, #d946ef 100%);
-            color: white;
-            border: 1px solid #a855f7;
-        }
-
-        /* Tab Content */
-        .tab-content {
-            display: none;
-        }
-
-        .tab-content.active {
-            display: block;
-        }
-
-        h2 {
-            color: #6b21a8;
-            font-weight: 700;
-            margin-bottom: 12px;
-            font-size: 1.6rem;
-        }
-
-        h3 {
-            color: #6b21a8;
-            font-weight: 700;
-            margin: 8px 0 6px 0;
-            font-size: 1.1rem;
-        }
-
-        h4 {
-            color: #6b21a8;
-            font-weight: 700;
-            margin-bottom: 8px;
-        }
-
-        /* Form Elements */
-        label {
-            display: block;
-            margin-bottom: 6px;
-            font-weight: 600;
-            color: #5b21a8;
-            font-size: 0.95rem;
-        }
-
-        select, input[type="text"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 2px solid rgba(168, 85, 247, 0.3);
-            border-radius: 6px;
-            font-size: 15px;
-            background-color: white;
-            color: #5b21a8;
-            font-family: 'Poppins', sans-serif;
-            transition: all 0.3s ease;
-        }
-
-        select:focus, input[type="text"]:focus {
-            border-color: #a855f7;
-            outline: none;
-        }
-
-        /* Progress */
-        .stats {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 8px;
-            margin-bottom: 10px;
-        }
-
-        .stat-box {
-            background-color: white;
-            padding: 10px;
-            border-radius: 6px;
-            border: 2px solid rgba(168, 85, 247, 0.2);
-            text-align: center;
-        }
-
-        .stat-label {
-            font-size: 0.8rem;
-            margin-bottom: 3px;
-        }
-
-        .stat-value {
-            font-size: 1.5rem;
-            font-weight: 900;
-            color: #a855f7;
-        }
-
-        .progress-bar {
-            width: 100%;
-            height: 8px;
-            background-color: rgba(168, 85, 247, 0.1);
-            border-radius: 5px;
-            overflow: hidden;
-            margin-bottom: 10px;
-        }
-
-        .progress-fill {
-            height: 100%;
-            background: linear-gradient(90deg, #a855f7 0%, #d946ef 50%, #fbbf24 100%);
-            width: 0%;
-            transition: width 0.3s ease;
-            border-radius: 5px;
-        }
-
-        /* Exam Section */
-        .exam-container {
-            background-color: white;
-            padding: 15px;
-            border-radius: 6px;
-            border: 2px solid rgba(168, 85, 247, 0.2);
-            margin-bottom: 10px;
-        }
-
-        .exam-grid {
-            display: grid;
-            grid-template-columns: 1fr 1.5fr;
-            gap: 10px;
-            align-items: start;
-        }
-
-        .exam-left {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-        }
-
-        .exam-right {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-        }
-
-        .exam-right label {
-            margin-bottom: 0;
-        }
-
-        .exam-right input {
-            margin-bottom: 0;
-        }
-
-        .audio-button {
-            background: linear-gradient(135deg, #a855f7 0%, #d946ef 100%);
-            color: white;
-            border: none;
-            padding: 12px 20px;
-            border-radius: 6px;
-            font-weight: 900;
-            font-size: 14px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            margin-bottom: 10px;
-            width: 100%;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .audio-button:hover {
-            transform: translateY(-2px);
-        }
-
-        button {
-            background: linear-gradient(135deg, #a855f7 0%, #d946ef 100%);
-            color: white;
-            border: 1px solid #6d28d9;
-            border-radius: 6px;
-            padding: 11px 25px;
-            font-weight: 900;
-            font-size: 14px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-            letter-spacing: 0.5px;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        button:hover {
-            transform: translateY(-2px);
-        }
-
-        button:disabled {
-            opacity: 0.6;
-            cursor: not-allowed;
-        }
-
-        /* Messages */
-        .message {
-            padding: 12px;
-            border-radius: 6px;
-            margin-bottom: 10px;
-            border: 2px solid;
-            font-size: 0.95rem;
-        }
-
-        .success {
-            background-color: rgba(34, 197, 94, 0.1);
-            border-color: #22c55e;
-            color: #15803d;
-        }
-
-        .error {
-            background-color: rgba(239, 68, 68, 0.1);
-            border-color: #ef4444;
-            color: #dc2626;
-        }
-
-        .info {
-            background-color: rgba(59, 130, 246, 0.1);
-            border-color: #3b82f6;
-            color: #1e40af;
-        }
-
-        /* Study List */
-        .study-item {
-            background-color: white;
-            padding: 12px;
-            border-radius: 6px;
-            border: 2px solid rgba(168, 85, 247, 0.2);
-            margin-bottom: 10px;
-        }
-
-        .study-definition {
-            color: #5b21a8;
-            font-size: 0.9rem;
-            margin-bottom: 8px;
-            font-weight: 500;
-        }
-
-        .divider {
-            border: none;
-            border-top: 1px solid rgba(168, 85, 247, 0.2);
-            margin: 30px 0;
-        }
-
-        /* Form Input Row */
-        .form-row {
-            display: grid;
-            grid-template-columns: 1fr auto;
-            gap: 10px;
-            align-items: flex-end;
-        }
-
-        .form-row input {
-            margin-bottom: 0;
-        }
-
-        .form-row button {
-            margin: 0;
-        }
-
-        /* Fireworks */
-        .fireworks-container {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 9999;
-            background: rgba(0, 0, 0, 0.1);
-        }
-
-        .fireworks-container.active {
-            display: block;
-        }
-
-        .firework {
-            position: absolute;
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            pointer-events: none;
-            animation: burst 1s ease-out forwards;
-        }
-
-        @keyframes burst {
-            to {
-                transform: translate(var(--tx), var(--ty));
-                opacity: 0;
-            }
-        }
-
-        .celebration-message {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 4rem;
-            font-weight: 900;
-            text-align: center;
-            z-index: 10000;
-            animation: bounce 0.8s ease-in-out;
-            pointer-events: none;
-        }
-
-        @keyframes bounce {
-            0% {
-                transform: translate(-50%, -50%) scale(0);
-            }
-            50% {
-                transform: translate(-50%, -50%) scale(1.2);
-            }
-            100% {
-                transform: translate(-50%, -50%) scale(1);
-            }
-        }
-
-        /* Responsive */
-        @media (max-width: 600px) {
-            .header h1 {
-                font-size: 1.6rem;
-            }
-
-            .header p {
-                font-size: 0.9rem;
-            }
-
-            .stats {
-                grid-template-columns: 1fr;
-            }
-
-            h2 {
-                font-size: 1.3rem;
-                margin-bottom: 10px;
-            }
-        }
-    </style>
+    <title>Spelling Bee 2027 – Daily Exam</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=M+PLUS+Rounded+1c:wght@500;700;800&family=Nunito:wght@400;600;700;800&display=swap">
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js"></script>
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
-        <div class="header">
-            <h1>GO FOR THE GOLD, VIVIAN! ✨</h1>
-            <p>"Every word you master today is a step closer to the 2027 Trophy! 🏆✨"</p>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            <svg width="36" height="36" viewBox="0 0 36 36" aria-hidden="true"><ellipse cx="12" cy="10" rx="7" ry="5" fill="#EDE6FA" stroke="#6B4FA0" stroke-width="1.5"/><ellipse cx="24" cy="10" rx="7" ry="5" fill="#EDE6FA" stroke="#6B4FA0" stroke-width="1.5"/><ellipse cx="18" cy="21" rx="11" ry="10" fill="#F6C453" stroke="#2A1F3D" stroke-width="2"/><path d="M10 18h16M9 24h18" stroke="#2A1F3D" stroke-width="3" stroke-linecap="round"/></svg>
+            <span>Spelling Bee <span class="brand-year">2027</span></span>
+        </a>
+        <nav class="main-nav" aria-label="Main">
+            <a href="index.html" data-nav="home">Home</a>
+            <a href="game.html" data-nav="exam">Daily Exam</a>
+            <a href="game.html?view=study" data-nav="study">Study</a>
+        </nav>
+        <div class="header-tools">
+            <label for="word-list">Word list</label>
+            <select id="word-list" class="select"></select>
+            <div class="user-chip"><span class="avatar-initial" aria-hidden="true">V</span><span>Vivian</span></div>
         </div>
+    </header>
 
-        <!-- Word List -->
-        <label for="word-list">Word List:</label>
-        <select id="word-list" onchange="changeWordList()"></select>
-
-        <!-- Tabs -->
-        <div class="tabs">
-            <button class="tab-button active" onclick="switchTab('exam')">🎯 Daily Exam</button>
-            <button class="tab-button" onclick="switchTab('learn')">📖 Alphabetical Learn</button>
-        </div>
-
-        <!-- TAB 1: DAILY EXAM -->
-        <div id="exam" class="tab-content active">
-            <h2>Daily Challenge</h2>
-            
-            <label for="exam-group">Select Exam Group or Practice Mode:</label>
-            <select id="exam-group" onchange="handleExamModeChange()">
-                <option value="all">All Words</option>
-                <option value="incorrect">❌ Incorrect Words Only</option>
-            </select>
-
-            <div id="group-options" style="display: none;">
-                <label for="group-number">Select Group (1-<span class="group-count">12</span>):</label>
-                <select id="group-number" onchange="handleExamModeChange()">
-                    <option value="">-- Select --</option>
-                </select>
+    <!-- ===================== DAILY EXAM ===================== -->
+    <main id="main" class="page" hidden data-view="exam">
+        <div class="exam-head">
+            <div class="exam-head-left">
+                <h1>Daily Exam</h1>
+                <div class="mode-row">
+                    <label for="mode-select">Practice:</label>
+                    <select id="mode-select" class="select"></select>
+                </div>
             </div>
-
-            <div id="exam-container"></div>
+            <div class="exam-progress">
+                <div class="exam-progress-labels"><span id="word-count">Word 1 of 33</span><span id="today-count" style="color: var(--primary-ink)">0 correct today</span></div>
+                <div class="bar" role="progressbar" id="goal-bar" aria-label="Daily goal" aria-valuemin="0" aria-valuemax="33" aria-valuenow="0"><div class="bar-fill" id="goal-fill" style="width: 0%"></div></div>
+            </div>
         </div>
 
-        <!-- TAB 2: ALPHABETICAL LEARN -->
-        <div id="learn" class="tab-content">
-            <h2>📖 Alphabetical Study Groups</h2>
-            
-            <label for="learn-group">Select Learning Group (1-<span class="group-count">12</span>):</label>
-            <select id="learn-group" onchange="loadLearningGroup()">
-                <option value="">-- Select --</option>
-            </select>
+        <div id="exam-area"></div>
+    </main>
 
-            <div id="learn-container"></div>
+    <!-- ===================== STUDY ===================== -->
+    <main id="main-study" class="page" hidden data-view="study">
+        <div class="study-grid">
+            <nav class="group-nav" aria-labelledby="groups-h">
+                <h2 id="groups-h">Groups</h2>
+                <div id="group-list" style="display: contents"></div>
+            </nav>
+
+            <section class="study-main" aria-labelledby="group-h">
+                <div class="study-head">
+                    <div style="display: flex; flex-direction: column; gap: 4px">
+                        <h1 id="group-h" tabindex="-1">Group 1</h1>
+                        <p class="muted" id="group-range"></p>
+                    </div>
+                    <a class="btn btn-primary" id="quiz-group" href="game.html?group=1">Quiz this group</a>
+                </div>
+                <div class="chips" role="group" aria-label="Filter words" id="filter-chips"></div>
+                <div class="word-cards" id="word-cards" aria-live="polite"></div>
+            </section>
+
+            <aside class="settings-col" aria-label="Reading settings and tips">
+                <section class="card settings" aria-labelledby="settings-h">
+                    <h2 id="settings-h">Reading settings</h2>
+                    <div>
+                        <span class="setting-label" id="size-l">Text size</span>
+                        <div class="size-group" role="group" aria-labelledby="size-l">
+                            <button type="button" class="size-btn" data-size="small" style="font-size: 0.875rem" aria-label="Small text">A</button>
+                            <button type="button" class="size-btn" data-size="medium" style="font-size: 1.0625rem" aria-label="Medium text">A</button>
+                            <button type="button" class="size-btn" data-size="large" style="font-size: 1.3125rem" aria-label="Large text">A</button>
+                        </div>
+                    </div>
+                    <button type="button" class="switch" role="switch" data-setting="easyRead" aria-checked="false">Easy-read font<span class="switch-track" aria-hidden="true"><span class="switch-thumb"></span></span></button>
+                    <button type="button" class="switch" role="switch" data-setting="reduceMotion" aria-checked="false">Reduce motion<span class="switch-track" aria-hidden="true"><span class="switch-thumb"></span></span></button>
+                    <button type="button" class="switch" role="switch" data-setting="highContrast" aria-checked="false">High contrast<span class="switch-track" aria-hidden="true"><span class="switch-thumb"></span></span></button>
+                    <div>
+                        <label class="setting-label" for="voice-speed">Voice speed: <span id="voice-speed-value">0.8×</span></label>
+                        <input class="range" id="voice-speed" type="range" min="0.5" max="1.2" step="0.1" value="0.8">
+                    </div>
+                </section>
+                <section class="tip" aria-label="Tip from Professor Lexi">
+                    <p class="tip-title">Lexi’s tip</p>
+                    <p id="tip-text">Say each syllable out loud as you spell.</p>
+                </section>
+            </aside>
         </div>
-    </div>
+    </main>
 
-    <div id="fireworks-container" class="fireworks-container"></div>
-    <div id="celebration-message" class="celebration-message"></div>
+    <nav class="bottom-nav" aria-label="Main">
+        <a href="index.html" data-nav="home"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>Home</a>
+        <a href="game.html" data-nav="exam"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/></svg>Exam</a>
+        <a href="game.html?view=study" data-nav="study"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 21V5M9 7h6"/></svg>Study</a>
+    </nav>
 
     <script>
-        // State Management
-        const state = {
-            words: null,
-            currentTab: 'exam',
-            currentExamMode: 'all',
-            currentGroup: null,
-            currentWord: null,
-            wordQueue: [],
-            attempts: 0,
-            lastResult: null,
-            scores: {}, // date: { correct: n, total: n }
-            incorrectWordsCount: {}, // { word: mistakeCount, ... }
-            randomPool: null, // Random 33-word pool from kingdom selection
-            selectedKingdom: null
-        };
+        const params = new URLSearchParams(location.search);
+        const VIEW = params.get('view') === 'study' ? 'study' : 'exam';
 
-        // Initialize
-        document.addEventListener('DOMContentLoaded', () => {
-            // Check for kingdom parameter from onboarding
-            const urlParams = new URLSearchParams(window.location.search);
-            const kingdomId = urlParams.get('kingdom');
-            if (kingdomId) {
-                state.selectedKingdom = parseInt(kingdomId);
-                state.currentExamMode = 'kingdom';
+        const ICON_SPEAKER = '<svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg>';
+        const ICON_SPEAKER_SM = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/></svg>';
+        const ICON_CHECK = '<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M7.5 12.5l3 3 6-6"/></svg>';
+        const ICON_CROSS = '<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9 9l6 6M15 9l-6 6"/></svg>';
+        const ICON_STAR = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg>';
+
+        let WORDS = [];
+        let GOAL = 33;
+        let GROUPS = [];
+        let progress = SB.getProgress();
+
+        SB.initHeader(VIEW);
+        document.querySelectorAll('main[data-view]').forEach(m => {
+            m.hidden = m.dataset.view !== VIEW;
+        });
+        // Keep the skip link pointing at the visible view.
+        if (VIEW === 'study') {
+            document.getElementById('main').removeAttribute('id');
+            document.getElementById('main-study').id = 'main';
+            document.title = 'Spelling Bee 2027 – Study';
+        }
+
+        SB.loadWords().then(data => {
+            WORDS = data.words;
+            GOAL = data.goal;
+            for (let g = 1; g <= data.totalGroups; g++) {
+                const list = WORDS.filter(w => w.group === g);
+                if (list.length) GROUPS.push({ n: g, words: list, range: `${list[0].word} to ${list[list.length - 1].word}` });
             }
-            
-            loadState();
-            loadWords();
+            if (VIEW === 'exam') initExam();
+            else initStudy();
+        }).catch(() => {
+            const target = VIEW === 'exam' ? document.getElementById('exam-area') : document.getElementById('word-cards');
+            target.innerHTML = '<div class="feedback feedback-bad" role="alert"><div>The word list could not be loaded. Open this app from a web server (for example GitHub Pages), not by double-clicking the file.</div></div>';
         });
 
-        function loadState() {
-            const saved = localStorage.getItem('spellingBeeState');
-            if (saved) {
-                const data = JSON.parse(saved);
-                state.scores = data.scores || {};
-                state.incorrectWordsCount = data.incorrectWordsCount || {};
-            }
-        }
+        // ===================== DAILY EXAM =====================
+        const exam = { pool: [], index: 0, result: null, typed: '', sessionCorrect: 0, label: '' };
 
-        function saveState() {
-            localStorage.setItem('spellingBeeState', JSON.stringify({
-                scores: state.scores,
-                incorrectWordsCount: state.incorrectWordsCount
-            }));
-        }
+        function initExam() {
+            const kingdom = parseInt(params.get('kingdom'), 10);
+            const group = parseInt(params.get('group'), 10);
+            const mode = params.get('mode');
+            const quest = SB.QUESTS.find(q => q.id === kingdom);
 
-        // Available word lists. Lists without recorded audio use text-to-speech.
-        const WORD_LISTS = {
-            intermediate2021: { name: 'Intermediate 2021 (SBOC)', file: 'words_intermediate_2021.json', hasAudio: false },
-            original: { name: 'Original List', file: 'words.json', hasAudio: true }
-        };
-        const DEFAULT_WORD_LIST = 'intermediate2021';
-
-        function getWordListKey() {
-            let key = null;
-            try { key = localStorage.getItem('spellingBeeWordList'); } catch (e) {}
-            return WORD_LISTS[key] ? key : DEFAULT_WORD_LIST;
-        }
-
-        function changeWordList() {
-            try { localStorage.setItem('spellingBeeWordList', document.getElementById('word-list').value); } catch (e) {}
-            location.reload();
-        }
-
-        async function loadWords() {
-            const listKey = getWordListKey();
-            const listSelect = document.getElementById('word-list');
-            Object.entries(WORD_LISTS).forEach(([key, list]) => {
-                const option = document.createElement('option');
-                option.value = key;
-                option.textContent = list.name;
-                option.selected = key === listKey;
-                listSelect.appendChild(option);
+            const select = document.getElementById('mode-select');
+            const options = [{ value: 'all', text: 'All words' }, { value: 'missed', text: 'Missed words' }];
+            if (quest) options.unshift({ value: 'kingdom', text: `Quest: ${quest.name}` });
+            GROUPS.forEach(g => options.push({ value: `group-${g.n}`, text: `Group ${g.n} (${g.range})` }));
+            let current = 'all';
+            if (quest) current = 'kingdom';
+            else if (mode === 'missed') current = 'missed';
+            else if (GROUPS.some(g => g.n === group)) current = `group-${group}`;
+            select.innerHTML = options.map(o => `<option value="${o.value}"${o.value === current ? ' selected' : ''}>${SB.esc(o.text)}</option>`).join('');
+            select.addEventListener('change', () => {
+                const v = select.value;
+                if (v === 'kingdom') location.href = `game.html?kingdom=${kingdom}`;
+                else if (v === 'missed') location.href = 'game.html?mode=missed';
+                else if (v.startsWith('group-')) location.href = `game.html?group=${v.slice(6)}`;
+                else location.href = 'game.html';
             });
 
-            try {
-                const response = await fetch(WORD_LISTS[listKey].file);
-                state.words = await response.json();
-                
-                // Add group property to each word
-                state.words.groups.forEach(group => {
-                    group.words.forEach(word => {
-                        word.group = group.group;
-                    });
-                });
-                
-                initializeUI();
-            } catch (error) {
-                console.error('Error loading words:', error);
-                document.getElementById('exam-container').innerHTML = '<div class="message error">Error: Could not load ' + WORD_LISTS[listKey].file + '. Make sure it\'s in the same directory as game.html</div>';
-            }
+            if (current === 'kingdom') exam.pool = SB.shuffle(WORDS).slice(0, 33);
+            else if (current === 'missed') exam.pool = SB.shuffle(WORDS.filter(w => progress.incorrectWordsCount[w.word]));
+            else if (current.startsWith('group-')) exam.pool = SB.shuffle(GROUPS.find(g => g.n === group).words);
+            else exam.pool = SB.shuffle(WORDS);
+
+            renderExam();
         }
 
-        function initializeUI() {
-            document.querySelectorAll('.group-count').forEach(el => el.textContent = state.words.total_groups);
-
-            // Populate group selects
-            const groupSelects = document.querySelectorAll('#group-number, #learn-group');
-            groupSelects.forEach(select => {
-                for (let i = 1; i <= state.words.total_groups; i++) {
-                    const option = document.createElement('option');
-                    option.value = i;
-                    option.textContent = `Group ${i}`;
-                    select.appendChild(option);
-                }
-            });
-
-            // If coming from kingdom selection, load directly
-            if (state.selectedKingdom) {
-                loadExamMode();
-            } else {
-                // Set default exam mode
-                handleExamModeChange();
-            }
+        function updateGoal() {
+            const score = SB.todayScore(progress);
+            document.getElementById('today-count').textContent = `${score.correct} correct today`;
+            const bar = document.getElementById('goal-bar');
+            bar.setAttribute('aria-valuemax', GOAL);
+            bar.setAttribute('aria-valuenow', Math.min(score.correct, GOAL));
+            bar.setAttribute('aria-valuetext', `${score.correct} of ${GOAL} words correct today`);
+            document.getElementById('goal-fill').style.width = `${Math.min(100, score.correct / GOAL * 100)}%`;
+            const total = exam.pool.length;
+            document.getElementById('word-count').textContent = total ? `Word ${Math.min(exam.index + 1, total)} of ${total}` : 'No words';
         }
 
-        function switchTab(tab) {
-            state.currentTab = tab;
-            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
-            document.querySelectorAll('.tab-button').forEach(el => el.classList.remove('active'));
-            document.getElementById(tab).classList.add('active');
-            document.querySelector(`[onclick="switchTab('${tab}')"]`).classList.add('active');
-        }
+        function renderExam(focusTarget) {
+            updateGoal();
+            const area = document.getElementById('exam-area');
 
-        function handleExamModeChange() {
-            const modeSelect = document.getElementById('exam-group');
-            const groupOptions = document.getElementById('group-options');
-            const mode = modeSelect.value;
-
-            state.currentExamMode = mode;
-
-            if (mode === 'all' || mode === 'incorrect') {
-                groupOptions.style.display = 'none';
-                loadExamMode();
-            } else {
-                groupOptions.style.display = 'block';
-                const groupNum = document.getElementById('group-number').value;
-                if (groupNum) {
-                    loadExamMode(parseInt(groupNum));
-                }
-            }
-        }
-
-        function loadExamMode(groupNum = null) {
-            const container = document.getElementById('exam-container');
-
-            if (!state.words) {
-                container.innerHTML = '<div class="message error">Words not loaded</div>';
+            if (!exam.pool.length) {
+                area.innerHTML = `
+                    <div class="card spell-panel">
+                        <h2>No words here yet</h2>
+                        <p>${params.get('mode') === 'missed' ? 'You have no missed words in this list. Great job! Try all words or pick a group.' : 'This list has no words.'}</p>
+                        <div class="hero-actions"><a class="btn btn-primary" href="game.html">Practise all words</a><a class="btn btn-outline" href="game.html?view=study">Study a group</a></div>
+                    </div>`;
                 return;
             }
 
-            let pool = [];
-
-            if (state.currentExamMode === 'kingdom') {
-                // Generate random 33-word pool from all words
-                const allWords = state.words.groups.flatMap(g => g.words);
-                state.randomPool = getRandomWords(allWords, 33);
-                pool = state.randomPool;
-            } else if (state.currentExamMode === 'all') {
-                pool = state.words.groups.flatMap(g => g.words);
-            } else if (state.currentExamMode === 'incorrect') {
-                pool = state.words.groups.flatMap(g => g.words).filter(w => state.incorrectWordsCount.hasOwnProperty(w.word));
-            }
-
-            if (pool.length === 0) {
-                container.innerHTML = '<div class="message info">No words found in this mode.</div>';
+            if (exam.index >= exam.pool.length) {
+                area.innerHTML = `
+                    <div class="card spell-panel">
+                        <h2 id="done-h" tabindex="-1">Session complete!</h2>
+                        <p style="font-size: 1.125rem">You spelled ${exam.sessionCorrect} of ${exam.pool.length} words correctly. Professor Lexi is proud of you!</p>
+                        <div class="hero-actions"><button type="button" class="btn btn-primary" id="restart-btn">Practise again</button><a class="btn btn-outline" href="index.html">Back to home</a></div>
+                    </div>`;
+                document.getElementById('restart-btn').addEventListener('click', () => location.reload());
+                document.getElementById('done-h').focus();
                 return;
             }
 
-            // Shuffle and set word queue
-            state.wordQueue = pool.map((_, i) => i).sort(() => Math.random() - 0.5);
-            loadNextExamWord(pool);
-            renderExam(pool);
-        }
+            const w = exam.pool[exam.index];
+            const answered = exam.result === 'correct' || exam.result === 'wrong';
+            const score = SB.todayScore(progress);
 
-        function getRandomWords(allWords, count) {
-            // Shuffle and pick random words
-            const shuffled = [...allWords].sort(() => Math.random() - 0.5);
-            return shuffled.slice(0, count);
-        }
-
-        function loadNextExamWord(pool) {
-            if (state.wordQueue.length > 0) {
-                const idx = state.wordQueue.shift();
-                state.currentWord = pool[idx];
-                state.attempts = 0;
-                state.lastResult = null;
-            } else {
-                state.currentWord = null;
+            let feedback = '';
+            if (exam.result === 'correct') {
+                feedback = `
+                    <div class="feedback feedback-good">
+                        ${ICON_CHECK}
+                        <div style="flex-grow: 1"><p class="feedback-title">Correct! Wonderful!</p><p class="feedback-body">${SB.esc(w.word)} is spelled ${SB.esc(w.word.toUpperCase().split('').join('-'))}.</p></div>
+                        <button type="button" class="next-btn" id="next-btn">Next word</button>
+                    </div>`;
+            } else if (exam.result === 'wrong') {
+                feedback = `
+                    <div class="feedback feedback-bad">
+                        ${ICON_CROSS}
+                        <div style="flex-grow: 1"><p class="feedback-title">Not quite — you’ll get it next time.</p><p class="feedback-body">You typed “${SB.esc(exam.typed)}”. The spelling is <strong>${SB.esc(w.word.toUpperCase().split('').join('-'))}</strong>.</p></div>
+                        <button type="button" class="next-btn" id="next-btn">Next word</button>
+                    </div>`;
+            } else if (exam.result === 'empty') {
+                feedback = `<div class="feedback feedback-info"><div>Type the word first, then press Check.</div></div>`;
             }
-        }
-
-        function renderExam(pool) {
-            const container = document.getElementById('exam-container');
-            const today = new Date().toISOString().split('T')[0];
-            const todayScore = state.scores[today] || { correct: 0, total: 0 };
-
-            // Trigger fireworks on perfect score
-            if (todayScore.correct === 33 && state.lastResult && state.lastResult.is_correct) {
-                triggerFireworks();
+            if (exam.result === 'correct' && score.correct === GOAL) {
+                feedback += `<div class="celebrate" style="margin-top: 12px">You reached today’s goal of ${GOAL} words! Amazing job, Vivian!</div>`;
             }
 
-            if (!state.currentWord) {
-                container.innerHTML = `
-                    <div class="message info">No more words in this session. Great effort! 🎉</div>
-                    <button onclick="location.reload()">Restart</button>
-                `;
-                return;
-            }
+            const clues = [];
+            if (w.pos) clues.push(`<dt>Part of speech</dt><dd>${SB.esc(w.pos)}</dd>`);
+            clues.push(`<dt>Definition</dt><dd>${SB.esc(w.def || 'No definition available.')}</dd>`);
 
-            const word = state.currentWord.word;
-            // Use group property from word if available (for random pools), otherwise calculate from pool index
-            const groupNum = state.currentWord.group || (Math.floor(pool.indexOf(state.currentWord) / 33) + 1);
-            const audioPath = `audio/group_${groupNum}/${word.replace(/\s+/g, '_').toLowerCase()}.mp3`;
-
-            let html = `
-                <div class="stats">
-                    <div class="stat-box">
-                        <div class="stat-label">Daily Progress</div>
-                        <div class="stat-value">${todayScore.correct}/33</div>
-                    </div>
-                    <div class="stat-box">
-                        <div class="stat-label">Words Left</div>
-                        <div class="stat-value">${state.wordQueue.length}</div>
-                    </div>
-                </div>
-
-                <div class="progress-bar">
-                    <div class="progress-fill" style="width: ${Math.min(todayScore.correct / 33 * 100, 100)}%"></div>
-                </div>
-            `;
-
-            if (state.lastResult) {
-                const res = state.lastResult;
-                if (res.is_correct) {
-                    html += `<div class="message success">✅ Correct! Ready for the next word?</div>`;
-                } else {
-                    html += `
-                        <div class="message error">
-                            ❌ Incorrect - Correct Spelling: <strong>${res.word}</strong><br>
-                            Meaning: ${res.definition}
+            area.innerHTML = `
+                <div class="exam-grid">
+                    <section class="listen-panel" aria-label="Listen">
+                        <div class="lexi-row">
+                            <img class="lexi-avatar" src="images/lexi-avatar.png" alt="" width="120" height="120">
+                            <p class="bubble">Listen carefully, then spell it. You can hear it as many times as you like!</p>
                         </div>
-                    `;
-                }
-            }
-
-            html += `
-                <div class="exam-container">
-                    <div class="exam-grid">
-                        <div class="exam-left">
-                            <button class="audio-button" onclick="playAudio('${audioPath}', '${word}')">🔊 Listen</button>
-            `;
-
-            if (state.lastResult && !state.lastResult.is_correct) {
-                html += `<button onclick="nextWord()" style="width: 100%;">Next Word</button>`;
-            }
-
-            html += `
+                        <button type="button" class="listen-btn" id="listen-btn">${ICON_SPEAKER}Listen to the word</button>
+                        <div class="two-up">
+                            <button type="button" class="btn-soft" id="slow-btn">Say it slower</button>
+                            <button type="button" class="btn-soft" id="sentence-btn"${w.example ? '' : ' disabled'}>Hear a sentence</button>
                         </div>
-                        <div class="exam-right">
-                            <label for="spell-input">Type the word:</label>
-                            <div class="form-row">
-                                <input type="text" id="spell-input" placeholder="Type your answer..." autocomplete="off">
-                                <button onclick="checkSpelling()">Check</button>
+                    </section>
+
+                    <section class="card spell-panel" aria-label="Spell the word">
+                        <dl class="clues">${clues.join('')}</dl>
+                        <form class="spell-form" id="spell-form" novalidate>
+                            <label for="answer">Type the word you hear</label>
+                            <div class="spell-row">
+                                <input class="spell-input" id="answer" type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" aria-describedby="answer-tip"${answered ? ' disabled' : ''} value="${answered ? SB.esc(exam.typed) : ''}">
+                                <button type="submit" class="check-btn"${answered ? ' disabled' : ''}>Check</button>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            `;
+                            <p id="answer-tip" class="muted" style="font-size: 0.9375rem">Press Enter to check. Capital letters don’t matter.</p>
+                        </form>
+                        <div aria-live="polite" id="feedback">${feedback}</div>
+                    </section>
+                </div>`;
 
-            container.innerHTML = html;
+            document.getElementById('listen-btn').addEventListener('click', () => SB.playWord(w));
+            document.getElementById('slow-btn').addEventListener('click', () => SB.playWord(w, true));
+            document.getElementById('sentence-btn').addEventListener('click', () => SB.speak(w.example, SB.getSettings().voiceRate));
+            document.getElementById('spell-form').addEventListener('submit', e => {
+                e.preventDefault();
+                checkAnswer(w);
+            });
+            const next = document.getElementById('next-btn');
+            if (next) next.addEventListener('click', nextWord);
 
-            // Focus on input and clear it
-            const inputField = document.getElementById('spell-input');
-            if (inputField) {
-                inputField.value = '';
-                setTimeout(() => inputField.focus(), 100);
-            }
+            if (focusTarget === 'next' && next) next.focus();
+            else if (focusTarget === 'answer') document.getElementById('answer').focus();
         }
 
-        function playAudio(path, word) {
-            if (!WORD_LISTS[getWordListKey()].hasAudio) {
-                speakWord(word);
+        function checkAnswer(w) {
+            const typed = document.getElementById('answer').value.trim();
+            if (!typed) {
+                exam.result = 'empty';
+                renderExam('answer');
                 return;
             }
-            const audio = new Audio(path);
-            audio.playbackRate = 0.8;
-            audio.play().catch(() => speakWord(word));
-        }
-
-        function speakWord(word) {
-            if (!('speechSynthesis' in window)) {
-                alert('Text-to-speech is not supported in this browser.');
-                return;
-            }
-            window.speechSynthesis.cancel();
-            const utterance = new SpeechSynthesisUtterance(word);
-            utterance.lang = 'en-CA';
-            utterance.rate = 0.8;
-            window.speechSynthesis.speak(utterance);
-        }
-
-        function triggerFireworks() {
-            const container = document.getElementById('fireworks-container');
-            const message = document.getElementById('celebration-message');
-            
-            container.classList.add('active');
-            message.innerHTML = '🎉 Perfect Score! 🎉<br>Amazing Job! 🏆';
-            message.style.display = 'block';
-            
-            const colors = ['#FF6B6B', '#4ECDC4', '#45B7D1', '#FFA07A', '#98D8C8', '#F7DC6F', '#BB8FCE'];
-            
-            for (let i = 0; i < 150; i++) {
-                setTimeout(() => {
-                    const firework = document.createElement('div');
-                    firework.classList.add('firework');
-                    const color = colors[Math.floor(Math.random() * colors.length)];
-                    firework.style.backgroundColor = color;
-                    
-                    const x = Math.random() * window.innerWidth;
-                    const y = Math.random() * window.innerHeight;
-                    firework.style.left = x + 'px';
-                    firework.style.top = y + 'px';
-                    
-                    const angle = (Math.random() * Math.PI * 2);
-                    const distance = 100 + Math.random() * 200;
-                    const tx = Math.cos(angle) * distance;
-                    const ty = Math.sin(angle) * distance;
-                    
-                    firework.style.setProperty('--tx', tx + 'px');
-                    firework.style.setProperty('--ty', ty + 'px');
-                    
-                    container.appendChild(firework);
-                    
-                    setTimeout(() => firework.remove(), 1000);
-                }, i * 30);
-            }
-            
-            setTimeout(() => {
-                container.classList.remove('active');
-                message.style.display = 'none';
-            }, 5000);
-        }
-
-        function checkSpelling() {
-            const input = document.getElementById('spell-input').value.trim().toLowerCase();
-            const correct = input === state.currentWord.word.trim().toLowerCase();
-
-            const today = new Date().toISOString().split('T')[0];
-            if (!state.scores[today]) {
-                state.scores[today] = { correct: 0, total: 0 };
-            }
-
-            state.attempts++;
-
-            if (correct) {
-                state.scores[today].correct++;
-                state.scores[today].total++;
-                // Auto-advance to next word on correct answer
-                const pool = state.words.groups.flatMap(g => g.words);
-                loadNextExamWord(pool);
-                state.lastResult = {
-                    is_correct: true,
-                    was_just_correct: true
-                };
+            const today = SB.todayKey();
+            if (!progress.scores[today]) progress.scores[today] = { correct: 0, total: 0 };
+            progress.scores[today].total++;
+            exam.typed = typed;
+            if (typed.toLowerCase() === w.word.toLowerCase()) {
+                exam.result = 'correct';
+                exam.sessionCorrect++;
+                progress.scores[today].correct++;
+                progress.correctWords[w.word] = (progress.correctWords[w.word] || 0) + 1;
             } else {
-                state.scores[today].total++;
-                // Track incorrect word and increment count
-                const word = state.currentWord.word;
-                if (state.incorrectWordsCount.hasOwnProperty(word)) {
-                    state.incorrectWordsCount[word]++;
-                } else {
-                    state.incorrectWordsCount[word] = 1;
-                }
-                state.lastResult = {
-                    is_correct: false,
-                    word: state.currentWord.word,
-                    definition: state.currentWord.definition
-                };
+                exam.result = 'wrong';
+                progress.incorrectWordsCount[w.word] = (progress.incorrectWordsCount[w.word] || 0) + 1;
             }
-
-            saveState();
-            renderExam(state.words.groups.flatMap(g => g.words));
+            SB.saveProgress(progress);
+            renderExam('next');
         }
 
         function nextWord() {
-            const pool = state.words.groups.flatMap(g => g.words);
-            loadNextExamWord(pool);
-            renderExam(pool);
+            exam.index++;
+            exam.result = null;
+            exam.typed = '';
+            renderExam('answer');
         }
 
-        function loadLearningGroup() {
-            const groupNum = parseInt(document.getElementById('learn-group').value);
-            if (!groupNum) {
-                document.getElementById('learn-container').innerHTML = '';
-                return;
+        // ===================== STUDY =====================
+        const study = { group: 1, filter: 'all' };
+
+        function initStudy() {
+            const g = parseInt(params.get('group'), 10);
+            study.group = GROUPS.some(x => x.n === g) ? g : GROUPS[0].n;
+            document.getElementById('groups-h').textContent = `${GROUPS.length} groups`;
+            initSettings();
+            renderStudy();
+        }
+
+        function renderStudy(focusHeading) {
+            const group = GROUPS.find(g => g.n === study.group);
+            const missed = group.words.filter(w => progress.incorrectWordsCount[w.word]);
+            const starred = group.words.filter(w => progress.starred[w.word]);
+
+            document.getElementById('group-list').innerHTML = GROUPS.map(g => `
+                <button type="button" class="group-btn" data-group="${g.n}"${g.n === study.group ? ' aria-current="true"' : ''}>
+                    <strong>Group ${g.n}</strong><span>${SB.esc(g.range)}</span>
+                </button>`).join('');
+            document.querySelectorAll('.group-btn').forEach(b => b.addEventListener('click', () => {
+                study.group = parseInt(b.dataset.group, 10);
+                study.filter = 'all';
+                history.replaceState(null, '', `game.html?view=study&group=${study.group}`);
+                renderStudy(true);
+            }));
+
+            document.getElementById('group-h').textContent = `Group ${group.n}`;
+            document.getElementById('group-range').textContent = `${group.range} · ${group.words.length} words`;
+            document.getElementById('quiz-group').href = `game.html?group=${group.n}`;
+
+            const chips = [
+                { key: 'all', label: `All ${group.words.length}` },
+                { key: 'review', label: `To review ${missed.length}` },
+                { key: 'starred', label: `Starred ${starred.length}` }
+            ];
+            document.getElementById('filter-chips').innerHTML = chips.map(c =>
+                `<button type="button" class="chip" data-filter="${c.key}" aria-pressed="${c.key === study.filter}">${c.label}</button>`).join('');
+            document.querySelectorAll('.chip').forEach(b => b.addEventListener('click', () => {
+                study.filter = b.dataset.filter;
+                renderStudy();
+                document.querySelector(`.chip[data-filter="${study.filter}"]`).focus();
+            }));
+
+            const shown = study.filter === 'review' ? missed : study.filter === 'starred' ? starred : group.words;
+            const cards = document.getElementById('word-cards');
+            if (!shown.length) {
+                cards.innerHTML = `<p class="empty-note">${study.filter === 'review' ? 'No missed words in this group yet.' : 'No starred words yet. Tap the star on a word to save it here.'}</p>`;
+            } else {
+                cards.innerHTML = shown.map(w => {
+                    const i = WORDS.indexOf(w);
+                    const isStarred = !!progress.starred[w.word];
+                    const meta = [];
+                    if (w.pron) meta.push(`<span class="pron">${SB.esc(w.pron)}</span>`);
+                    if (w.pos) meta.push(`<span class="pos-tag">${SB.esc(w.pos)}</span>`);
+                    return `
+                        <article class="word-card">
+                            <div class="word-card-top">
+                                <h3>${SB.esc(w.word)}</h3>
+                                <button type="button" class="star-btn" data-star="${i}" aria-pressed="${isStarred}" aria-label="Star ${SB.esc(w.word)}">${ICON_STAR}</button>
+                            </div>
+                            ${meta.length ? `<div class="meta-row">${meta.join('')}</div>` : ''}
+                            ${w.alt ? `<p class="muted" style="font-size: 0.875rem">Also spelled: ${SB.esc(w.alt)}</p>` : ''}
+                            <p class="word-def">${SB.esc(w.def || 'No definition available.')}</p>
+                            ${w.example ? `<p class="word-example">${SB.esc(w.example)}</p>` : ''}
+                            <button type="button" class="small-listen" data-listen="${i}" aria-label="Listen to ${SB.esc(w.word)}">${ICON_SPEAKER_SM}Listen</button>
+                        </article>`;
+                }).join('');
             }
+            cards.querySelectorAll('[data-listen]').forEach(b => b.addEventListener('click', () => SB.playWord(WORDS[b.dataset.listen])));
+            cards.querySelectorAll('[data-star]').forEach(b => b.addEventListener('click', () => {
+                const w = WORDS[b.dataset.star];
+                if (progress.starred[w.word]) delete progress.starred[w.word];
+                else progress.starred[w.word] = true;
+                SB.saveProgress(progress);
+                const on = !!progress.starred[w.word];
+                b.setAttribute('aria-pressed', on);
+                document.querySelector('.chip[data-filter="starred"]').textContent = `Starred ${group.words.filter(x => progress.starred[x.word]).length}`;
+                if (study.filter === 'starred' && !on) {
+                    renderStudy();
+                    document.querySelector('.chip[data-filter="starred"]').focus();
+                }
+            }));
 
-            const group = state.words.groups.find(g => g.group === groupNum);
-            if (!group) return;
+            const tipWord = group.words.find(w => w.pron);
+            document.getElementById('tip-text').textContent = tipWord
+                ? `Say each syllable out loud as you spell. Try it: ${tipWord.word} sounds like ${tipWord.pron}.`
+                : 'Say each syllable out loud as you spell, then write the word from memory.';
 
-            let html = '';
-            group.words.forEach((word, idx) => {
-                const audioPath = `audio/group_${groupNum}/${word.word.replace(/\s+/g, '_').toLowerCase()}.mp3`;
-                html += `
-                    <div class="study-item">
-                        <h4>${word.word}</h4>
-                        <div class="study-definition"><strong>Meaning:</strong> ${word.definition}</div>
-                        <button class="audio-button" onclick="playAudio('${audioPath}', '${word.word}')">🔊 Listen</button>
-                    </div>
-                `;
+            if (focusHeading) document.getElementById('group-h').focus();
+        }
+
+        function initSettings() {
+            const s = SB.getSettings();
+            const sync = () => {
+                document.querySelectorAll('.size-btn').forEach(b => b.setAttribute('aria-pressed', b.dataset.size === s.textSize));
+                document.querySelectorAll('.switch').forEach(b => b.setAttribute('aria-checked', !!s[b.dataset.setting]));
+                document.getElementById('voice-speed').value = s.voiceRate;
+                document.getElementById('voice-speed-value').textContent = `${s.voiceRate.toFixed(1)}×`;
+            };
+            document.querySelectorAll('.size-btn').forEach(b => b.addEventListener('click', () => {
+                s.textSize = b.dataset.size;
+                SB.saveSettings(s);
+                sync();
+            }));
+            document.querySelectorAll('.switch').forEach(b => b.addEventListener('click', () => {
+                s[b.dataset.setting] = !s[b.dataset.setting];
+                SB.saveSettings(s);
+                sync();
+            }));
+            const speed = document.getElementById('voice-speed');
+            speed.addEventListener('input', () => {
+                s.voiceRate = parseFloat(speed.value);
+                SB.saveSettings(s);
+                sync();
             });
-
-            document.getElementById('learn-container').innerHTML = html;
+            speed.addEventListener('change', () => SB.speak('This is my reading speed.', s.voiceRate));
+            sync();
         }
     </script>
 </body>

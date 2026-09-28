@@ -3,544 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kingdom of Words - Onboarding</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
-    <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        
-        body {
-            font-family: 'Poppins', sans-serif;
-            background: #ede8fa;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 10px;
-        }
-
-        .container {
-            max-width: 900px;
-            width: 100%;
-            background: white;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
-            display: flex;
-            flex-direction: column;
-            max-height: 95vh;
-        }
-
-        /* HERO BANNER */
-        .header-section {
-            background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCr7AYPvVeqUPBshUWTIWJ2iXIQ-8K8woQJVGZzn3gXZOsD91x8eOwU5k1T9eDH0b8uekjykG9rQWN9kNidIOCSsd7p06J8IQ-11QKISWUKktStRsvX6OMpfJvCsTRYpo0Od6Lo3PzYt_R-4ub7Qf8h2gF39R8zVmMyA__pbMkAN2-H2q9T7SHEMfm5ULKJ1bkUS8YXaE2PlMU-5ep8QL2i4x-7ScztKYKjlG8ZguBjXW60PcBOj9SX88vAxsPyEuuZpbcOYlkE3Uc');
-            /* background-size: cover; */
-            background-position: left 20%;
-            padding: 28px 20px;
-            text-align: center;
-            position: relative;
-            min-height: 140px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .header-section::after {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-
-        .header-section h1 {
-            color: white;
-            font-size: 1.8rem;
-            font-weight: 900;
-            margin: 0;
-            text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
-            position: relative;
-            z-index: 2;
-            letter-spacing: 0.5px;
-        }
-
-        .header-subtitle {
-            color: #fff9e6;
-            font-size: 0.95rem;
-            font-weight: 600;
-            margin: 8px 0 0 0;
-            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-            position: relative;
-            z-index: 2;
-        }
-
-        .header-tagline {
-            display: none;
-        }
-
-        /* MAIN CONTENT */
-        .main-content {
-            background: #ede8fa;
-            padding: 22px 20px 28px;
-            flex: 1;
-            overflow-y: auto;
-        }
-
-        /* WELCOME SECTION */
-        .welcome-block {
-            text-align: center;
-            margin-bottom: 18px;
-        }
-
-        .welcome-name {
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: #7c3aed;
-            margin-bottom: 4px;
-        }
-
-        .welcome-sub {
-            font-size: 0.95rem;
-            color: #6d28d9;
-            line-height: 1.4;
-        }
-
-        /* PROFESSOR BOX */
-        .lexi-intro {
-            background: #fff;
-            border-radius: 14px;
-            border: 1.5px solid #d8cfee;
-            padding: 14px 16px;
-            display: flex;
-            gap: 12px;
-            align-items: flex-start;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-        }
-
-        .lexi-intro-emoji {
-            font-size: 2.2rem;
-            flex-shrink: 0;
-            margin-top: 2px;
-        }
-
-        .lexi-intro-text p {
-            font-size: 0.82rem;
-            color: #4a4a6a;
-            line-height: 1.5;
-            margin: 0;
-        }
-
-        .lexi-intro-text p:first-child {
-            font-weight: 700;
-            color: #7c3aed;
-            margin-bottom: 6px;
-        }
-
-        /* CARDS GRID */
-        .kingdoms-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-            gap: 12px;
-            padding: 0;
-        }
-
-        .kingdom-card {
-            background: #fff;
-            border-radius: 14px;
-            border: 1.5px solid #e0d9f5;
-            padding: 14px 12px 12px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            cursor: pointer;
-            transition: transform 0.15s, box-shadow 0.15s;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .kingdom-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 20px rgba(124, 58, 237, 0.12);
-            border-color: #a78bfa;
-        }
-
-        .lock-badge {
-            display: none;
-        }
-
-        .kingdom-emoji {
-            font-size: 2rem;
-            margin-bottom: 8px;
-        }
-
-        .kingdom-name {
-            font-size: 0.8rem;
-            font-weight: 700;
-            color: #3b0a8f;
-            margin-bottom: 6px;
-            line-height: 1.3;
-        }
-
-        .kingdom-difficulty {
-            font-size: 0.75rem;
-            font-weight: 600;
-            color: #6d28d9;
-            margin-bottom: 6px;
-        }
-
-        .kingdom-description {
-            color: #6b6b8a;
-            font-size: 0.73rem;
-            line-height: 1.35;
-            flex: 1;
-            margin-bottom: 8px;
-        }
-
-        .kingdom-words-count {
-            font-size: 0.72rem;
-            background: #f0ebff;
-            padding: 4px 10px;
-            border-radius: 20px;
-            color: #6d28d9;
-            font-weight: 600;
-            display: inline-block;
-        }
-
-        /* CONFIRMATION SCREEN */
-        .confirmation-screen {
-            display: none;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(135deg, #ede8fa 0%, #ddd4f0 100%);
-        }
-
-        .confirmation-screen.active {
-            display: flex;
-        }
-
-        .confirmation-box {
-            background: white;
-            border-radius: 16px;
-            padding: 24px 20px;
-            text-align: center;
-            max-width: 500px;
-            box-shadow: 0 12px 40px rgba(124, 58, 237, 0.1);
-        }
-
-        .confirmation-emoji {
-            font-size: 3rem;
-            margin-bottom: 12px;
-        }
-
-        .confirmation-box h3 {
-            font-size: 1.3rem;
-            color: #3b0a8f;
-            margin-bottom: 6px;
-            font-weight: 700;
-        }
-
-        .confirmation-box p {
-            font-size: 0.9rem;
-            color: #6b6b8a;
-            line-height: 1.4;
-            margin-bottom: 14px;
-        }
-
-        .confirmation-stats {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-            margin-bottom: 14px;
-        }
-
-        .stat-item {
-            background: #f5ebff;
-            padding: 10px;
-            border-radius: 8px;
-        }
-
-        .stat-label {
-            font-size: 0.75rem;
-            color: #9370db;
-            margin-bottom: 3px;
-            font-weight: 600;
-        }
-
-        .stat-value {
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: #7c3aed;
-        }
-
-        .button-group {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 8px;
-        }
-
-        .btn-primary {
-            background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
-            color: white;
-            border: none;
-            padding: 10px 16px;
-            font-size: 0.85rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 700;
-            transition: all 0.2s ease;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(124, 58, 237, 0.3);
-        }
-
-        .btn-secondary {
-            background: white;
-            color: #7c3aed;
-            border: 1.5px solid #c4b5fd;
-            padding: 10px 16px;
-            font-size: 0.85rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 700;
-            transition: all 0.2s ease;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .btn-secondary:hover {
-            background: #f5ebff;
-            border-color: #7c3aed;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(15px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .screen {
-            animation: fadeIn 0.4s ease-in;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .container {
-                max-height: 100vh;
-                border-radius: 0;
-            }
-
-            .header-section {
-                padding: 18px 15px;
-                min-height: 120px;
-            }
-
-            .header-section h1 {
-                font-size: 1.4rem;
-            }
-
-            .header-subtitle {
-                font-size: 0.85rem;
-            }
-
-            .main-content {
-                padding: 16px 14px;
-            }
-
-            .welcome-name {
-                font-size: 1rem;
-            }
-
-            .welcome-sub {
-                font-size: 0.9rem;
-            }
-
-            .kingdoms-grid {
-                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-                gap: 10px;
-            }
-
-            .kingdom-card {
-                padding: 12px 10px 10px;
-            }
-
-            .kingdom-emoji {
-                font-size: 1.8rem;
-                margin-bottom: 6px;
-            }
-
-            .kingdom-name {
-                font-size: 0.75rem;
-            }
-
-            .kingdom-description {
-                font-size: 0.7rem;
-            }
-
-            .button-group {
-                grid-template-columns: 1fr;
-            }
-
-            .confirmation-box {
-                max-width: 90%;
-                padding: 20px 16px;
-            }
-        }
-    </style>
+    <title>Spelling Bee 2027 – Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=M+PLUS+Rounded+1c:wght@500;700;800&family=Nunito:wght@400;600;700;800&display=swap">
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js"></script>
 </head>
 <body>
-    <div class="container">
-        <!-- Header Section -->
-        <div class="header-section" id="headerSection">
-            <h1>GO FOR THE GOLD, VIVIAN! ✨</h1>
-            <p class="header-subtitle">Every word you master today is a step closer to the 2027 Trophy! 🏆✨</p>
-        </div>
+    <a class="skip-link" href="#main">Skip to main content</a>
 
-        <!-- Kingdom Map -->
-        <div class="main-content">
-            <div style="text-align: center; margin-bottom: 14px;">
-                <p style="font-size: 1.1rem; color: #7c3aed; font-weight: 700; margin-bottom: 4px;">Welcome, Vivian!</p>
-                <p style="color: #6d28d9; font-size: 0.95rem;">Restore the magic to the kingdom by mastering spelling. Choose your starting level!</p>
-            </div>
-            <div class="lexi-intro">
-                <div class="lexi-intro-emoji">🧙‍♂️</div>
-                <div class="lexi-intro-text">
-                    <p>I am Professor Lexi, your guide through the Kingdom of Words.</p>
-                    <p>The kingdom's magic is fading because people have forgotten how to spell important words correctly. Will you help me restore the magic? Listen carefully to each word, spell it correctly, and unlock the kingdom's hidden treasures!</p>
-                </div>
-            </div>
-            <div class="kingdoms-grid" id="kingdomsGrid"></div>
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            <svg width="36" height="36" viewBox="0 0 36 36" aria-hidden="true"><ellipse cx="12" cy="10" rx="7" ry="5" fill="#EDE6FA" stroke="#6B4FA0" stroke-width="1.5"/><ellipse cx="24" cy="10" rx="7" ry="5" fill="#EDE6FA" stroke="#6B4FA0" stroke-width="1.5"/><ellipse cx="18" cy="21" rx="11" ry="10" fill="#F6C453" stroke="#2A1F3D" stroke-width="2"/><path d="M10 18h16M9 24h18" stroke="#2A1F3D" stroke-width="3" stroke-linecap="round"/></svg>
+            <span>Spelling Bee <span class="brand-year">2027</span></span>
+        </a>
+        <nav class="main-nav" aria-label="Main">
+            <a href="index.html" data-nav="home">Home</a>
+            <a href="game.html" data-nav="exam">Daily Exam</a>
+            <a href="game.html?view=study" data-nav="study">Study</a>
+        </nav>
+        <div class="header-tools">
+            <label for="word-list">Word list</label>
+            <select id="word-list" class="select"></select>
+            <div class="user-chip"><span class="avatar-initial" aria-hidden="true">V</span><span>Vivian</span></div>
         </div>
+    </header>
 
-        <!-- Level Confirmation -->
-        <div class="confirmation-screen" id="confirmationScreen">
-            <div class="confirmation-box">
-                <div class="confirmation-emoji" id="confirmEmoji">🏘️</div>
-                <h3 id="confirmTitle">The Village of First Words</h3>
-                <p id="confirmDescription">Simple words to start your adventure</p>
-                
-                <div class="confirmation-stats">
-                    <div class="stat-item">
-                        <div class="stat-label">Words</div>
-                        <div class="stat-value" id="confirmWordCount">33</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-label">Difficulty</div>
-                        <div class="stat-value">⭐</div>
+    <main id="main" class="page">
+        <div class="home-top">
+            <section class="hero" aria-labelledby="hello">
+                <svg class="sparkle" aria-hidden="true" width="22" height="22" viewBox="0 0 20 20" style="top: 24px; right: 40px"><path d="M10 0L12.5 7.5L20 10L12.5 12.5L10 20L7.5 12.5L0 10L7.5 7.5Z" fill="#F6C453"/></svg>
+                <svg class="sparkle" aria-hidden="true" width="14" height="14" viewBox="0 0 20 20" style="top: 58px; right: 74px"><path d="M10 0L12.5 7.5L20 10L12.5 12.5L10 20L7.5 12.5L0 10L7.5 7.5Z" fill="#C9B6EE"/></svg>
+                <svg class="sparkle" aria-hidden="true" width="18" height="18" viewBox="0 0 20 20" style="bottom: 30px; right: 56px"><ellipse cx="10" cy="10" rx="9" ry="5" transform="rotate(-35 10 10)" fill="#F4A3BD"/></svg>
+                <img class="hero-portrait" src="images/lexi-portrait.png" alt="Professor Lexi, an anime girl with lavender hair and blue eyes" width="260" height="260">
+                <div class="hero-text">
+                    <p class="hero-kicker">Professor Lexi says</p>
+                    <h1 id="hello">Hello, Vivian!</h1>
+                    <p class="hero-lead" id="hero-lead">Loading today’s words…</p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="game.html" id="continue-btn">Start Daily Exam
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                        </a>
+                        <a class="btn btn-outline" href="game.html?view=study">Study a group</a>
                     </div>
                 </div>
+            </section>
 
-                <div class="button-group">
-                    <button class="btn-secondary" onclick="goToMap()">Back to Map</button>
-                    <button class="btn-primary" onclick="startGame()">Start Game</button>
+            <section class="card progress-card" aria-labelledby="today-h">
+                <h2 id="today-h">Today’s progress</h2>
+                <div class="progress-body">
+                    <div class="ring">
+                        <svg width="140" height="140" viewBox="0 0 140 140" role="img" id="ring-svg" aria-label="0 words correct today">
+                            <circle cx="70" cy="70" r="58" fill="none" stroke="var(--track)" stroke-width="14"/>
+                            <circle id="ring-fill" cx="70" cy="70" r="58" fill="none" stroke="var(--primary)" stroke-width="14" stroke-linecap="round" stroke-dasharray="0 364.4" transform="rotate(-90 70 70)"/>
+                        </svg>
+                        <div class="ring-label" aria-hidden="true"><span class="ring-number" id="ring-number">0</span><span class="ring-of" id="ring-of">of 33</span></div>
+                    </div>
+                    <dl class="stat-list">
+                        <div><dt>Words spelled correctly</dt><dd id="stat-mastered">–</dd></div>
+                        <div><dt>Study streak</dt><dd id="stat-streak">–</dd></div>
+                    </dl>
                 </div>
-            </div>
+                <a class="review-link" href="game.html?mode=missed" id="review-link">
+                    <span id="review-text">Review missed words</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+                </a>
+            </section>
         </div>
-    </div>
+
+        <section aria-labelledby="quests-h" style="display: flex; flex-direction: column; gap: 18px">
+            <div class="section-head">
+                <h2 id="quests-h">Choose your quest</h2>
+                <p class="muted">Each quest picks 33 words at random from your list.</p>
+            </div>
+            <div class="quest-grid" id="quest-grid"></div>
+        </section>
+    </main>
+
+    <nav class="bottom-nav" aria-label="Main">
+        <a href="index.html" data-nav="home"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>Home</a>
+        <a href="game.html" data-nav="exam"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/></svg>Exam</a>
+        <a href="game.html?view=study" data-nav="study"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 21V5M9 7h6"/></svg>Study</a>
+    </nav>
 
     <script>
-        // Kingdom data with word ranges
-        const kingdoms = [
-            {
-                id: 1,
-                emoji: "🏘️",
-                name: "The Village of First Words",
-                difficulty: "⭐ Beginner",
-                description: "Simple words to start your adventure",
-                locked: false,
-                wordCount: 33,
-                theme: "🎯 Hear • Type • Learn"
-            },
-            {
-                id: 2,
-                emoji: "🌲",
-                name: "The Forest of Echoes",
-                difficulty: "⭐⭐ Easy-Intermediate",
-                description: "Listen carefully to similar-sounding words",
-                locked: false,
-                wordCount: 33,
-                theme: "👂 Careful Listening"
-            },
-            {
-                id: 3,
-                emoji: "⛰️",
-                name: "The Mountain of Long Words",
-                difficulty: "⭐⭐⭐ Intermediate",
-                description: "Master multi-syllable words and challenges",
-                locked: false,
-                wordCount: 33,
-                theme: "📝 Multi-syllable Quest"
-            },
-            {
-                id: 4,
-                emoji: "🏰",
-                name: "The Castle of Confusing Words",
-                difficulty: "⭐⭐⭐⭐ Advanced",
-                description: "Conquer tricky spellings and complex words",
-                locked: false,
-                wordCount: 33,
-                theme: "⚡ Ultimate Challenge"
-            },
-            {
-                id: 5,
-                emoji: "💎",
-                name: "The Heart of the Kingdom",
-                difficulty: "⭐⭐⭐⭐⭐ Champion",
-                description: "Mixed review of all words and achievements",
-                locked: false,
-                wordCount: 33,
-                theme: "👑 Master Speller"
+        SB.initHeader('home');
+
+        const hour = new Date().getHours();
+        const greeting = hour < 12 ? 'Good morning' : hour < 18 ? 'Good afternoon' : 'Good evening';
+        document.getElementById('hello').textContent = `${greeting}, Vivian!`;
+
+        document.getElementById('quest-grid').innerHTML = SB.QUESTS.map(q => `
+            <a class="quest" href="game.html?kingdom=${q.id}">
+                <span class="quest-icon" style="background: var(${q.tint})"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2A1F3D" stroke-width="2" stroke-linejoin="round" aria-hidden="true">${q.icon}</svg></span>
+                <span class="quest-name">${SB.esc(q.name)}</span>
+                <span class="quest-level">${SB.esc(q.level)}</span>
+                <span class="quest-desc">${SB.esc(q.desc)}</span>
+                <span class="quest-count">33 words</span>
+            </a>`).join('');
+
+        SB.loadWords().then(({ list, words, goal }) => {
+            const p = SB.getProgress();
+            const score = SB.todayScore(p);
+            const inList = new Set(words.map(w => w.word));
+            const mastered = Object.keys(p.correctWords).filter(w => inList.has(w)).length;
+            const missed = Object.keys(p.incorrectWordsCount).filter(w => inList.has(w)).length;
+            const days = SB.streak(p);
+
+            let lead = `Today’s goal is ${goal} words from the ${list.name} list. `;
+            if (score.correct === 0) lead += 'Let’s get started!';
+            else if (score.correct < goal) lead += `You’re ${score.correct} words in — let’s keep going.`;
+            else lead += 'You reached today’s goal — amazing work!';
+            document.getElementById('hero-lead').textContent = lead;
+            if (score.total > 0) document.getElementById('continue-btn').firstChild.textContent = 'Continue Daily Exam ';
+
+            const shown = Math.min(score.correct, goal);
+            document.getElementById('ring-fill').setAttribute('stroke-dasharray', `${(shown / goal * 364.4).toFixed(1)} 364.4`);
+            document.getElementById('ring-svg').setAttribute('aria-label', `${score.correct} of ${goal} words correct today`);
+            document.getElementById('ring-number').textContent = score.correct;
+            document.getElementById('ring-of').textContent = `of ${goal}`;
+            document.getElementById('stat-mastered').textContent = `${mastered} of ${words.length}`;
+            document.getElementById('stat-streak').textContent = days === 1 ? '1 day' : `${days} days`;
+
+            const review = document.getElementById('review-link');
+            if (missed > 0) {
+                document.getElementById('review-text').textContent = `Review ${missed} missed ${missed === 1 ? 'word' : 'words'}`;
+            } else {
+                document.getElementById('review-text').textContent = 'No missed words yet — study a group';
+                review.href = 'game.html?view=study';
             }
-        ];
-
-        let selectedKingdom = null;
-
-        function goToMap() {
-            renderKingdoms();
-            document.getElementById('confirmationScreen').classList.remove('active');
-        }
-
-        function renderKingdoms() {
-            const grid = document.getElementById('kingdomsGrid');
-            grid.innerHTML = '';
-
-            kingdoms.forEach((kingdom, index) => {
-                const card = document.createElement('div');
-                card.className = `kingdom-card ${kingdom.locked ? 'locked' : ''}`;
-                
-                if (!kingdom.locked) {
-                    card.onclick = () => startGame(kingdom);
-                }
-
-                card.innerHTML = `
-                    ${kingdom.locked ? '<div class="lock-badge">🔒</div>' : ''}
-                    <div class="kingdom-emoji">${kingdom.emoji}</div>
-                    <div class="kingdom-name">${kingdom.name}</div>
-                    <div class="kingdom-difficulty">${kingdom.difficulty}</div>
-                    <div class="kingdom-description">${kingdom.description}</div>
-                    <div class="kingdom-words-count">📚 ${kingdom.wordCount} words</div>
-                `;
-
-                grid.appendChild(card);
-            });
-        }
-
-        function startGame(kingdom) {
-            if (kingdom) {
-                // Store selected kingdom in sessionStorage
-                sessionStorage.setItem('selectedKingdom', JSON.stringify(kingdom));
-                
-                // Redirect to main game
-                window.location.href = 'game.html?kingdom=' + kingdom.id;
-            }
-        }
-
-        // Initialize - Start on map screen
-        document.getElementById('homeScreen')?.remove();
-        document.getElementById('lexiScreen')?.remove();
-        renderKingdoms();
+        }).catch(() => {
+            document.getElementById('hero-lead').textContent = 'The word list could not be loaded. Open this app from a web server (for example GitHub Pages), not by double-clicking the file.';
+        });
     </script>
 </body>
 </html>
