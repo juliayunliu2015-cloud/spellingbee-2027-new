@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kingdom of Words - Onboarding</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 95%;
+            height: 95vh;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header Section */
+        .header-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .header-section h1 {
+            font-size: 1.8rem;
+            margin-bottom: 3px;
+            font-weight: 900;
+        }
+
+        .header-subtitle {
+            font-size: 0.9rem;
+            margin-bottom: 2px;
+            opacity: 0.95;
+        }
+
+        .header-tagline {
+            font-size: 0.8rem;
+            opacity: 0.85;
+        }
+
+        /* Screen Management */
+        .screen {
+            display: none;
+            width: 100%;
+            flex: 1;
+            padding: 15px 15px;
+            animation: fadeIn 0.6s ease-in;
+            overflow: hidden auto;
+        }
+
+        .screen.active {
+            display: flex;
+            flex-direction: column;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Home Screen - REMOVED */
+        .home-screen {
+            display: none;
+        }
+
+        /* Lexi Screen - REMOVED */
+        .lexi-screen {
+            display: none;
+        }
+
+        .start-button {
+            display: none;
+        }
+
+        .continue-button {
+            display: none;
+        }
+
+        /* Map Screen */
+        .map-screen {
+            justify-content: flex-start;
+            padding-top: 10px;
+            background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+        }
+
+        .lexi-intro {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 12px 15px;
+            border-radius: 12px;
+            margin-bottom: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .lexi-intro-emoji {
+            font-size: 2rem;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .lexi-intro-text p {
+            font-size: 0.85rem;
+            color: #333;
+            line-height: 1.4;
+            margin: 0;
+        }
+
+        .lexi-intro-text p:first-child {
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 6px;
+        }
+
+        .kingdoms-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            padding: 0 5px;
+            flex: 1;
+            align-content: flex-start;
+            max-height: 100%;
+            overflow-y: auto;
+        }
+
+        .kingdoms-grid::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        .kingdoms-grid::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .kingdoms-grid::-webkit-scrollbar-thumb {
+            background: rgba(102, 126, 234, 0.3);
+            border-radius: 2px;
+        }
+
+        .kingdom-card {
+            background: white;
+            border-radius: 12px;
+            padding: 12px 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .kingdom-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .kingdom-card.locked {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .kingdom-card.locked:hover {
+            transform: translateY(0);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .lock-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 1.8rem;
+            background: rgba(255, 0, 0, 0.7);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .kingdom-emoji {
+            font-size: 2.2rem;
+            margin-bottom: 8px;
+        }
+
+        .kingdom-name {
+            font-size: 0.85rem;
+            font-weight: 900;
+            color: #333;
+            margin-bottom: 4px;
+            line-height: 1.2;
+        }
+
+        .kingdom-difficulty {
+            font-size: 0.75rem;
+            color: #999;
+            margin-bottom: 6px;
+            font-weight: 600;
+        }
+
+        .kingdom-description {
+            font-size: 0.7rem;
+            color: #666;
+            line-height: 1.3;
+            margin-bottom: 8px;
+        }
+
+        .kingdom-words-count {
+            font-size: 0.7rem;
+            background: #f0f0f0;
+            padding: 5px 8px;
+            border-radius: 15px;
+            color: #666;
+            display: inline-block;
+        }
+
+        /* Level Confirmation Screen */
+        .confirmation-screen {
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+        }
+
+        .confirmation-box {
+            background: white;
+            border-radius: 20px;
+            padding: 30px 25px;
+            text-align: center;
+            max-width: 600px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+            animation: slideIn 0.6s ease-out;
+        }
+
+        .confirmation-emoji {
+            font-size: 3.5rem;
+            margin-bottom: 12px;
+        }
+
+        .confirmation-box h3 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .confirmation-box p {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .confirmation-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 15px;
+        }
+
+        .stat-item {
+            background: #f5f5f5;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: #999;
+            margin-bottom: 3px;
+        }
+
+        .stat-value {
+            font-size: 1.4rem;
+            font-weight: 900;
+            color: #667eea;
+        }
+
+        .button-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 11px 20px;
+            font-size: 0.9rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 900;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.6);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: #667eea;
+            border: 2px solid #667eea;
+            padding: 9px 20px;
+            font-size: 0.9rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 900;
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            background: #f5f5f5;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                height: 100vh;
+                border-radius: 0;
+            }
+
+            .header-section {
+                padding: 12px 15px;
+            }
+
+            .header-section h1 {
+                font-size: 1.5rem;
+                margin-bottom: 2px;
+            }
+
+            .header-subtitle {
+                font-size: 0.85rem;
+            }
+
+            .header-tagline {
+                font-size: 0.75rem;
+            }
+
+            .screen {
+                padding: 12px 10px;
+            }
+
+            .kingdoms-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 8px;
+            }
+
+            .button-group {
+                grid-template-columns: 1fr;
+            }
+
+            .confirmation-box {
+                padding: 25px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header-section" id="headerSection">
+            <h1>🧙‍♂️ Kingdom of Words</h1>
+            <p class="header-subtitle">Welcome, Word Explorer!</p>
+            <p class="header-tagline">Restore the magic to the kingdom by mastering spelling. Choose your starting level!</p>
+        </div>
+
+        <!-- Kingdom Map -->
+        <div class="screen map-screen active" id="mapScreen">
+            <div class="lexi-intro">
+                <div class="lexi-intro-emoji">🧙‍♂️</div>
+                <div class="lexi-intro-text">
+                    <p>I am Professor Lexi, your guide through the Kingdom of Words.</p>
+                    <p>The kingdom's magic is fading because people have forgotten how to spell important words correctly. Will you help me restore the magic? Listen carefully to each word, spell it correctly, and unlock the kingdom's hidden treasures!</p>
+                </div>
+            </div>
+            <div class="kingdoms-grid" id="kingdomsGrid"></div>
+        </div>
+
+        <!-- Level Confirmation -->
+        <div class="screen confirmation-screen" id="confirmationScreen">
+            <div class="confirmation-box">
+                <div class="confirmation-emoji" id="confirmEmoji">🏘️</div>
+                <h3 id="confirmTitle">The Village of First Words</h3>
+                <p id="confirmDescription">Simple words to start your adventure</p>
+                
+                <div class="confirmation-stats">
+                    <div class="stat-item">
+                        <div class="stat-label">Words</div>
+                        <div class="stat-value" id="confirmWordCount">80</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Difficulty</div>
+                        <div class="stat-value">⭐</div>
+                    </div>
+                </div>
+
+                <div class="button-group">
+                    <button class="btn-secondary" onclick="goToMap()">Back to Map</button>
+                    <button class="btn-primary" onclick="startGame()">Start Game</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Kingdom data with word ranges
+        const kingdoms = [
+            {
+                id: 1,
+                emoji: "🏘️",
+                name: "The Village of First Words",
+                difficulty: "⭐ Beginner",
+                description: "Simple words to start your adventure",
+                locked: false,
+                wordCount: 33,
+                theme: "🎯 Hear • Type • Learn"
+            },
+            {
+                id: 2,
+                emoji: "🌲",
+                name: "The Forest of Echoes",
+                difficulty: "⭐⭐ Easy-Intermediate",
+                description: "Listen carefully to similar-sounding words",
+                locked: false,
+                wordCount: 33,
+                theme: "👂 Careful Listening"
+            },
+            {
+                id: 3,
+                emoji: "⛰️",
+                name: "The Mountain of Long Words",
+                difficulty: "⭐⭐⭐ Intermediate",
+                description: "Master multi-syllable words and challenges",
+                locked: false,
+                wordCount: 33,
+                theme: "📝 Multi-syllable Quest"
+            },
+            {
+                id: 4,
+                emoji: "🏰",
+                name: "The Castle of Confusing Words",
+                difficulty: "⭐⭐⭐⭐ Advanced",
+                description: "Conquer tricky spellings and complex words",
+                locked: false,
+                wordCount: 33,
+                theme: "⚡ Ultimate Challenge"
+            },
+            {
+                id: 5,
+                emoji: "💎",
+                name: "The Heart of the Kingdom",
+                difficulty: "⭐⭐⭐⭐⭐ Champion",
+                description: "Mixed review of all words and achievements",
+                locked: false,
+                wordCount: 33,
+                theme: "👑 Master Speller"
+            }
+        ];
+
+        let selectedKingdom = null;
+
+        function showScreen(screenId) {
+            document.querySelectorAll('.screen').forEach(screen => {
+                screen.classList.remove('active');
+            });
+            document.getElementById(screenId).classList.add('active');
+        }
+
+        function goToMap() {
+            renderKingdoms();
+            showScreen('mapScreen');
+        }
+
+        function renderKingdoms() {
+            const grid = document.getElementById('kingdomsGrid');
+            grid.innerHTML = '';
+
+            kingdoms.forEach((kingdom, index) => {
+                const card = document.createElement('div');
+                card.className = `kingdom-card ${kingdom.locked ? 'locked' : ''}`;
+                
+                if (!kingdom.locked) {
+                    card.onclick = () => startGame(kingdom);
+                }
+
+                card.innerHTML = `
+                    ${kingdom.locked ? '<div class="lock-badge">🔒</div>' : ''}
+                    <div class="kingdom-emoji">${kingdom.emoji}</div>
+                    <div class="kingdom-name">${kingdom.name}</div>
+                    <div class="kingdom-difficulty">${kingdom.difficulty}</div>
+                    <div class="kingdom-description">${kingdom.description}</div>
+                    <div class="kingdom-words-count">📚 ${kingdom.wordCount} words</div>
+                `;
+
+                grid.appendChild(card);
+            });
+        }
+
+        function startGame(kingdom) {
+            if (kingdom) {
+                // Store selected kingdom in sessionStorage
+                sessionStorage.setItem('selectedKingdom', JSON.stringify(kingdom));
+                
+                // Redirect to main game
+                window.location.href = 'index.html?kingdom=' + kingdom.id;
+            }
+        }
+
+        // Initialize - Start on map screen
+        document.getElementById('homeScreen')?.remove();
+        document.getElementById('lexiScreen')?.remove();
+        renderKingdoms();
+        showScreen('mapScreen');
+    </script>
+</body>
+</html>

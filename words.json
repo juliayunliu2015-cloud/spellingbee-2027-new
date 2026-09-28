@@ -1,0 +1,1675 @@
+{
+    "total_groups":  12,
+    "total_words":  402,
+    "daily_exam_goal":  33,
+    "groups":  [
+                   {
+                       "group":  1,
+                       "words":  [
+                                     {
+                                         "word":  "Asiatic",
+                                         "definition":  "Relating to or deriving from Asia.\nThere are differences between African and Asiatic lions."
+                                     },
+                                     {
+                                         "word":  "Iqaluit",
+                                         "definition":  "The capital city of Nunavut.\nThe city of Iqaluit was formerly known as Frobisher Bay."
+                                     },
+                                     {
+                                         "word":  "Liszt",
+                                         "definition":  "A famous Hungarian composer. Franz Liszt was known for his piano compositions."
+                                     },
+                                     {
+                                         "word":  "Métis",
+                                         "definition":  "A person of mixed indigenous and Euro-Canadian ancestry.\nLouis Riel was a political leader of the\nMétis people of the Canadian Prairies."
+                                     },
+                                     {
+                                         "word":  "Winnipeg",
+                                         "definition":  "The capital city of Manitoba.\nThe city of Winnipeg started as a trading post for the Hudson’s Bay Company."
+                                     },
+                                     {
+                                         "word":  "Zamboni",
+                                         "definition":  "A vehicle that floods the surface to clean the ice in an arena.\nI have always wanted to drive a\nZamboni at a hockey game."
+                                     },
+                                     {
+                                         "word":  "abjure",
+                                         "definition":  "To solemnly renounce a belief or cause. Edward VIII decided to abjure the throne in order to marry the woman of\nhis choice."
+                                     },
+                                     {
+                                         "word":  "abrasion",
+                                         "definition":  "An area damaged by scraping or wearing away.\nHe got an abrasion on his knee when he\nfell off the slide."
+                                     },
+                                     {
+                                         "word":  "absolve",
+                                         "definition":  "To declare a person free from guilt or wrongdoing.\nThe lawyer tried to absolve his client of\nany blame."
+                                     },
+                                     {
+                                         "word":  "abstruse",
+                                         "definition":  "Difficult to understand.\nThe books in the antique bookshop were abstruse."
+                                     },
+                                     {
+                                         "word":  "acclaim",
+                                         "definition":  "Enthusiastic and public praise.\nShe won acclaim for her commitment to the environment."
+                                     },
+                                     {
+                                         "word":  "acclamation",
+                                         "definition":  "The act of getting the position without an election due to being the only candidate.\nThree of the positions on the student council were appointed by acclamation."
+                                     },
+                                     {
+                                         "word":  "acquaint",
+                                         "definition":  "To make someone aware of or familiar with.\nThe dog sitter had to acquaint herself\nwith the dog’s habits."
+                                     },
+                                     {
+                                         "word":  "acumen",
+                                         "definition":  "The ability to make good judgements.\nThe store owner’s business acumen\nhelped make him successful."
+                                     },
+                                     {
+                                         "word":  "adjacent",
+                                         "definition":  "Lying near or close by; adjoining.\nHis best friend lived in the house\nadjacent to his."
+                                     },
+                                     {
+                                         "word":  "affinity",
+                                         "definition":  "A natural attraction to a person or liking for a thing.\nHe was fun to watch in the rodeo because of his strong affinity with horses."
+                                     },
+                                     {
+                                         "word":  "alfalfa",
+                                         "definition":  "A plant widely cultivated as a forage crop.\nMany farmers grow alfalfa for animal\nfeed."
+                                     },
+                                     {
+                                         "word":  "alliance",
+                                         "definition":  "A union formed by agreement; a joining of interests.\nThe European Union is a trade alliance."
+                                     },
+                                     {
+                                         "word":  "almanac",
+                                         "definition":  "An annual calendar containing important dates and statistical information.\nThe fisherman might consult the\nalmanac for tide tables."
+                                     },
+                                     {
+                                         "word":  "alternative",
+                                         "definition":  "Available as another possibility or choice.\nÉpelle-Moi is a French alternative to\nthe English spelling bee."
+                                     },
+                                     {
+                                         "word":  "amend",
+                                         "definition":  "To change the form of something, such as a law, by addition or deletion.\nThe committee will amend the proposal\nbefore we vote on it."
+                                     },
+                                     {
+                                         "word":  "amphibian",
+                                         "definition":  "A cold-blooded vertebrate adapted to life in the water or on land.\nThe bull frog is my favourite\namphibian."
+                                     },
+                                     {
+                                         "word":  "angiogram",
+                                         "definition":  "An X-ray picture of blood vessels, used to show any abnormality in the flow of blood.\nAn angiogram is usually performed in a\nhospital."
+                                     },
+                                     {
+                                         "word":  "anguish",
+                                         "definition":  "Very great pain or grief.\nThe girl felt great anguish over losing her dog."
+                                     },
+                                     {
+                                         "word":  "antibiotic",
+                                         "definition":  "A product that destroys or weakens harmful micro-organisms.\nPenicillin is an antibiotic commonly\nused to fight infections."
+                                     },
+                                     {
+                                         "word":  "antiquated",
+                                         "definition":  "Too old for work, service, or use.\nTheir old computer was antiquated and no longer ran programmes well."
+                                     },
+                                     {
+                                         "word":  "apostrophe",
+                                         "definition":  "A punctuation mark used to show the omission of letters or to indicate possession.\nIn writing, we use an apostrophe “s” to show possession."
+                                     },
+                                     {
+                                         "word":  "arsenal",
+                                         "definition":  "An array of resources.\nWe have an arsenal of computers at our disposal."
+                                     },
+                                     {
+                                         "word":  "asthma",
+                                         "definition":  "A chronic breathing disorder.\nA person with asthma has trouble breathing, especially on humid days."
+                                     },
+                                     {
+                                         "word":  "atrophy",
+                                         "definition":  "To gradually decline in ability due to underuse or neglect.\nThe imagination can atrophy from lack\nof use."
+                                     },
+                                     {
+                                         "word":  "attainment",
+                                         "definition":  "An accomplishment; something that is achieved.\nEveryone commended him for his impressive attainment in winning the\nspelling bee."
+                                     },
+                                     {
+                                         "word":  "auburn",
+                                         "definition":  "Hair that is reddish brown or golden-brown in colour.\nShe donated her long auburn hair for a\nwig for cancer patients."
+                                     },
+                                     {
+                                         "word":  "aura",
+                                         "definition":  "A distinctive atmosphere or pervasive quality that seems to come from a person.\nThe person who got the job exuded an aura of confidence throughout the interview."
+                                     }
+                                 ]
+                   },
+                   {
+                       "group":  2,
+                       "words":  [
+                                     {
+                                         "word":  "awestruck",
+                                         "definition":  "Filled with wonder and admiration.\nI was awestruck by the beauty and grandeur of the Grand Canyon."
+                                     },
+                                     {
+                                         "word":  "awl",
+                                         "definition":  "A pointed tool used for making small holes in leather or wood.\nUse an awl to make another hole in your belt."
+                                     },
+                                     {
+                                         "word":  "babiche",
+                                         "definition":  "Rawhide thongs or lacings.\nCanadians often use babiche in making snowshoes."
+                                     },
+                                     {
+                                         "word":  "barnacle",
+                                         "definition":  "A marine crustacean that spends its entire adult life attached to some underwater object.\nWe saw a huge barnacle stuck to the rock during low tide."
+                                     },
+                                     {
+                                         "word":  "bauxite",
+                                         "definition":  "A clay-like mineral or rock.\nThe chief use of bauxite is in the manufacture of aluminum."
+                                     },
+                                     {
+                                         "word":  "begrudge",
+                                         "definition":  "To resent or be dissatisfied with; to envy someone’s possessions.\nI couldn’t begrudge her the new cell\nphone as she worked so hard for it."
+                                     },
+                                     {
+                                         "word":  "belvedere",
+                                         "definition":  "A structure designed to be opened on several sides to afford a wide view.\nWe overlooked the city from a\nbelvedere."
+                                     },
+                                     {
+                                         "word":  "bereft",
+                                         "definition":  "Deprived or lacking something.\nBecause the room was bereft of colour it appeared cold and sterile."
+                                     },
+                                     {
+                                         "word":  "bestial",
+                                         "definition":  "Cruel or savage; of or like a beast.\nThe bestial zodiac signs include the bull and the ram."
+                                     },
+                                     {
+                                         "word":  "bevy",
+                                         "definition":  "A group of birds or animals.\nWe saw a bevy of quail on our walk."
+                                     },
+                                     {
+                                         "word":  "biannual",
+                                         "definition":  "Occurring twice a year.\nThe family liked to take a biannual\nvacation."
+                                     },
+                                     {
+                                         "word":  "biaxial",
+                                         "definition":  "Having two axes;\nA biaxial graph has both a vertical and horizontal axis."
+                                     },
+                                     {
+                                         "word":  "bilingual",
+                                         "definition":  "Having to do with two languages; able to speak two languages fluently.\nCanada is a bilingual country."
+                                     },
+                                     {
+                                         "word":  "bioregion",
+                                         "definition":  "An area or region that constitutes a natural ecological community.\nEach bioregion has a distinct flora, fauna and ecosystem from those of other areas."
+                                     },
+                                     {
+                                         "word":  "biscuit",
+                                         "definition":  "A small, soft round cake like a scone.\nFor breakfast I like sausage and egg on a biscuit."
+                                     },
+                                     {
+                                         "word":  "blatant",
+                                         "definition":  "Brazenly obvious; forcing one’s attention.\nHis loud behaviour was a blatant\nattempt to disturb us."
+                                     },
+                                     {
+                                         "word":  "borne",
+                                         "definition":  "Carried or transported.\nIn pollination, some seeds are borne by the wind."
+                                     },
+                                     {
+                                         "word":  "bristle",
+                                         "definition":  "A short, stiff hair especially on an animal’s back, often used for making brushes.\nA bristle came out of the paint brush\nand stuck to the wall."
+                                     },
+                                     {
+                                         "word":  "broccoli",
+                                         "definition":  "A vegetable that resembles a tree in shape; a variety of cabbage.\nIt is probably safe to say that broccoli is\nnot the favourite vegetable of most children."
+                                     },
+                                     {
+                                         "word":  "brochure",
+                                         "definition":  "A pamphlet or leaflet, especially one giving descriptive information.\nThe travel agent gave us a brochure\nabout Florida."
+                                     },
+                                     {
+                                         "word":  "brokerage",
+                                         "definition":  "A company providing the services of an intermediary, acting between a buyer and seller.\nI have a meeting at the insurance\nbrokerage to review my policy."
+                                     },
+                                     {
+                                         "word":  "bruschetta",
+                                         "definition":  "Toasted bread drizzled with olive oil and usually topped with diced tomatoes.\nHe prefers garlic bread to bruschetta\nbecause he is not fond of tomatoes."
+                                     },
+                                     {
+                                         "word":  "buffalo",
+                                         "definition":  "A heavily-built wild ox, with backswept horns.\nA buffalo is found mostly in Old World tropics."
+                                     },
+                                     {
+                                         "word":  "bulbous",
+                                         "definition":  "Shaped like a bulb; rounded and/or swollen.\nGarlic is a bulbous herb whose cloves\nare used to flavour food."
+                                     },
+                                     {
+                                         "word":  "bursary",
+                                         "definition":  "A grant of money to a student at a college or university.\nThe bursary will help pay my tuition\nexpenses."
+                                     },
+                                     {
+                                         "word":  "bushel",
+                                         "definition":  "A unit of volume, equal to just over 35 litres, or a container of such capacity.\nI would like to buy a bushel of apples."
+                                     },
+                                     {
+                                         "word":  "bustle",
+                                         "definition":  "Excited activity and movement.\nShe loved the hustle and bustle of the city streets."
+                                     },
+                                     {
+                                         "word":  "cabal",
+                                         "definition":  "A secret political clique or faction.\nThe cabal of dissidents planed the coup to overthrow the government."
+                                     },
+                                     {
+                                         "word":  "cajole",
+                                         "definition":  "To persuade using flattery or promises. My mother tried to cajole my brother into helping by telling him she needed\nhis muscles."
+                                     },
+                                     {
+                                         "word":  "calcium",
+                                         "definition":  "A soft, silver-white element which naturally occurs in bones.\nMilk is an excellent source of calcium."
+                                     },
+                                     {
+                                         "word":  "calumny",
+                                         "definition":  "Slander; a false statement designed to injure the reputation of someone or something.\nAlthough the scientist received a lot of calumny in the newspaper, he pressed on with his research."
+                                     },
+                                     {
+                                         "word":  "camisole",
+                                         "definition":  "A woman’s waist-length, sleeveless under-garment with shoulder straps. My blouse was sheer so I wore a\ncamisole underneath it."
+                                     },
+                                     {
+                                         "word":  "camouflage",
+                                         "definition":  "Concealment that alters or obscures the appearance.\nDrab plumage provides female birds with camouflage against predators."
+                                     }
+                                 ]
+                   },
+                   {
+                       "group":  3,
+                       "words":  [
+                                     {
+                                         "word":  "campaign",
+                                         "definition":  "A series of connected activities planned to achieve some goal.\nWe planned a campaign to raise funds\nfor new computers."
+                                     },
+                                     {
+                                         "word":  "capability",
+                                         "definition":  "The power or ability to do something. Watching the runner’s practice really showed his capability to win a medal."
+                                     },
+                                     {
+                                         "word":  "capsule",
+                                         "definition":  "A small container, usually round or cylindrical.\nThe students buried a time capsule on the school grounds to be opened years\nfrom now."
+                                     },
+                                     {
+                                         "word":  "carafe",
+                                         "definition":  "A wide-mouthed glass or metal bottle for holding serving beverages.\nI broke the carafe for my coffee maker."
+                                     },
+                                     {
+                                         "word":  "cardigan",
+                                         "definition":  "A knitted sweater opening down the front.\nShe selected a long cardigan to go with\nher dress."
+                                     },
+                                     {
+                                         "word":  "caricature",
+                                         "definition":  "A usually comic representation of a person by exaggeration of characteristics in a picture, writing or mime.\nAt our school fair we had an artist that\ncould quickly draw a caricature of a subject but still capture a good likeness."
+                                     },
+                                     {
+                                         "word":  "carnation",
+                                         "definition":  "Long-stalked, fragrant flowers in a variety of colours.\nA carnation is often worn by both men\nand women in a bridal party."
+                                     },
+                                     {
+                                         "word":  "carousel",
+                                         "definition":  "A merry-go-round; or a rotating conveyer system, especially for passenger luggage at an airport.\nAlthough I checked the carousel, my suitcase was definitely not on it."
+                                     },
+                                     {
+                                         "word":  "carpentry",
+                                         "definition":  "The trade or art of building wooden objects or structures.\nBecause I like to do woodwork, I’m\nplanning to study carpentry in college."
+                                     },
+                                     {
+                                         "word":  "catastrophe",
+                                         "definition":  "A sudden, widespread or extraordinary disaster.\nThe flood was a catastrophe, leaving\nthousands of people homeless."
+                                     },
+                                     {
+                                         "word":  "catchment",
+                                         "definition":  "A type of basin or reservoir for catching drainage.\nThe rainwater collected in the\ncatchment basin."
+                                     },
+                                     {
+                                         "word":  "caterpillar",
+                                         "definition":  "The wormlike larva of a certain butterfly or a moth.\nThe caterpillar turned into a beautiful\nbutterfly."
+                                     },
+                                     {
+                                         "word":  "cellist",
+                                         "definition":  "A person who plays the cello which is the second largest member of the violin family.\nYo Yo Ma is a famous cellist."
+                                     },
+                                     {
+                                         "word":  "cellophane",
+                                         "definition":  "A shiny, transparent substance made from cellulose, used to package things.\nWrap the sandwiches in cellophane."
+                                     },
+                                     {
+                                         "word":  "cemetery",
+                                         "definition":  "A place for burying the dead; a graveyard.\nA superstition says to whistle while you\nwalk past the cemetery."
+                                     },
+                                     {
+                                         "word":  "centuries",
+                                         "definition":  "Periods of one hundred years.\nThe medieval castle had stood for centuries until it was levelled by an earthquake."
+                                     },
+                                     {
+                                         "word":  "ceremony",
+                                         "definition":  "An occasion celebrating a particular event or achievement.\nThe whole family came to the wedding\nceremony."
+                                     },
+                                     {
+                                         "word":  "chandelier",
+                                         "definition":  "A fixture with branches for lights, usually hanging from the ceiling. Because of the hanging crystals, it is always a chore to clean the chandelier."
+                                     },
+                                     {
+                                         "word":  "charade",
+                                         "definition":  "A pretense intended to create a respectable appearance.\nHis pretending to study was just a\ncharade."
+                                     },
+                                     {
+                                         "word":  "chauffeur",
+                                         "definition":  "A person whose work is driving an automobile for others.\nThe chauffeur will drive you to school."
+                                     },
+                                     {
+                                         "word":  "chic",
+                                         "definition":  "Stylish and elegant in dress or appearance.\nShe wore a chic dress for the wedding."
+                                     },
+                                     {
+                                         "word":  "chiffon",
+                                         "definition":  "A light, transparent fabric.\nHer chiffon dress floated and swirled as she danced."
+                                     },
+                                     {
+                                         "word":  "chisel",
+                                         "definition":  "A cutting tool with a sharp edge at the end of a strong blade.\nThe carpenter used the chisel to shape\nthe sculpture."
+                                     },
+                                     {
+                                         "word":  "chyron",
+                                         "definition":  "An electronically generated caption superimposed on a television screen. The chyron on the newscast identified\nthe person being interviewed."
+                                     },
+                                     {
+                                         "word":  "clique",
+                                         "definition":  "A small, exclusive group of people. The mother tried to convince her daughter to avoid becoming part of a\nclique when she started high school."
+                                     },
+                                     {
+                                         "word":  "codicil",
+                                         "definition":  "An addition that explains or modifies a will or part of one.\nThe lawyer wrote a codicil to his client’s will."
+                                     },
+                                     {
+                                         "word":  "colossal",
+                                         "definition":  "Extremely large or great.\nPeople often refer to an elephant as being colossal."
+                                     },
+                                     {
+                                         "word":  "commentary",
+                                         "definition":  "An expression of opinion.\nThe journalist wrote a commentary\nabout the current state of politics."
+                                     },
+                                     {
+                                         "word":  "complexion",
+                                         "definition":  "The natural texture, colour and appearance of the skin, especially the face.\nShe has a beautiful peaches and cream\ncomplexion."
+                                     },
+                                     {
+                                         "word":  "conciliatory",
+                                         "definition":  "Intended or likely to be calming. The teacher used a conciliatory approach to settle the playground dispute."
+                                     },
+                                     {
+                                         "word":  "conglomerate",
+                                         "definition":  "A number of things or parts forming a group or mass.\nRogers Communications is perhaps the\nlargest conglomerate in Canada."
+                                     },
+                                     {
+                                         "word":  "conscription",
+                                         "definition":  "The compulsory enlistment of people in the armed forces; draft.\nCanada used a form of conscription to\nenlist people during World War II."
+                                     },
+                                     {
+                                         "word":  "cordillera",
+                                         "definition":  "A system of parallel mountain ranges.\nA good example of cordillera is in the Rockies."
+                                     }
+                                 ]
+                   },
+                   {
+                       "group":  4,
+                       "words":  [
+                                     {
+                                         "word":  "credulous",
+                                         "definition":  "Too ready to believe something.  Never be so credulous that you believe everything you are told."
+                                     },
+                                     {
+                                         "word":  "criminology",
+                                         "definition":  "The scientific study of crime.\nIn criminology, we studied illegal behaviour and the penal system."
+                                     },
+                                     {
+                                         "word":  "crimson",
+                                         "definition":  "Dark, purplish-red.\nThe actress wore a crimson dress to the gala."
+                                     },
+                                     {
+                                         "word":  "daunting",
+                                         "definition":  "Discouraging; intimidating.\nEach labour of Hercules was a daunting task."
+                                     },
+                                     {
+                                         "word":  "dawdling",
+                                         "definition":  "To walk slowly or idly; to delay; to waste time.\nThe boy was dawdling on his way to school."
+                                     },
+                                     {
+                                         "word":  "debut",
+                                         "definition":  "A first appearance.\nThe film marked his debut as a director."
+                                     },
+                                     {
+                                         "word":  "deception",
+                                         "definition":  "A trick meant to deceive; a fraud; a sham.\nThe story he told his mother in order to go to the movies was clearly a\ndeception."
+                                     },
+                                     {
+                                         "word":  "delicacy",
+                                         "definition":  "Something delightful or pleasing, especially rare or expensive food. Escargot is a French delicacy."
+                                     },
+                                     {
+                                         "word":  "delirious",
+                                         "definition":  "Temporarily out of one’s senses; raving.\nThe high fever made him delirious."
+                                     },
+                                     {
+                                         "word":  "demerit",
+                                         "definition":  "A mark against a person’s record given for unsatisfactory performance or behaviour.\nThe teacher gave him another demerit\nfor his bad behaviour."
+                                     },
+                                     {
+                                         "word":  "demonym",
+                                         "definition":  "A noun used to denote the inhabitants of a particular country, state, etc.\nThe demonym for people who live in\nCanada is Canadian."
+                                     },
+                                     {
+                                         "word":  "descendant",
+                                         "definition":  "A person or animal that is later in the same family tree of another.\nQueen Elizabeth I was a descendant of\nHenry VIII."
+                                     },
+                                     {
+                                         "word":  "diagnosis",
+                                         "definition":  "A determination of the cause or nature of an illness.\nWe hope to hear the doctor’s diagnosis\ntoday."
+                                     },
+                                     {
+                                         "word":  "discipline",
+                                         "definition":  "Training, especially of the mind or character.\nThe new recruits were subjected to\nregular discipline."
+                                     },
+                                     {
+                                         "word":  "disparate",
+                                         "definition":  "Essentially different in kind; without comparison or relation.\nMy grandmother and grandfather had very disparate interests, yet they were\nvery happily married."
+                                     },
+                                     {
+                                         "word":  "dissect",
+                                         "definition":  "To cut into pieces; to cut apart.\nI hope we do not dissect anything in\nbiology class today."
+                                     },
+                                     {
+                                         "word":  "divulge",
+                                         "definition":  "To disclose; to reveal a secret.\nHer friend promised not to divulge the contents of our conversation."
+                                     },
+                                     {
+                                         "word":  "domain",
+                                         "definition":  "An area ruled by one person.\nThe king’s domain stretched from sea to sea."
+                                     },
+                                     {
+                                         "word":  "dubious",
+                                         "definition":  "That which can be doubted; uncertain.\nHe was very dubious about his chances of winning the spelling bee."
+                                     },
+                                     {
+                                         "word":  "ductile",
+                                         "definition":  "Pliant and flexible.\nBecause silver is ductile, a jeweller is able to draw it out into a thin wire."
+                                     },
+                                     {
+                                         "word":  "dungeon",
+                                         "definition":  "A dark underground room in which prisoners are kept.\nWe expected the ancient castle to have\na dungeon."
+                                     },
+                                     {
+                                         "word":  "efface",
+                                         "definition":  "To rub out; to destroy or wipe out.\nOver time, exposure to the elements may efface inscriptions on monuments."
+                                     },
+                                     {
+                                         "word":  "effigy",
+                                         "definition":  "A sculpture or model of a person. Canadian coins bear an effigy of the monarch on the face."
+                                     },
+                                     {
+                                         "word":  "elite",
+                                         "definition":  "A select group that is superior in terms of ability.\nAfter the tryouts the best players were selected to make up the elite hockey\nteam."
+                                     },
+                                     {
+                                         "word":  "emanate",
+                                         "definition":  "To give off; to emit.\nA scent will often emanate from a flower."
+                                     },
+                                     {
+                                         "word":  "emissary",
+                                         "definition":  "A person sent on a special mission, usually diplomatic.\nCanada sent an emissary to Greenland."
+                                     },
+                                     {
+                                         "word":  "emission",
+                                         "definition":  "The production and discharge of something, especially gas or radiation. The Paris Accord was designed to reduce the emission of greenhouse gases, among other things."
+                                     },
+                                     {
+                                         "word":  "emperor",
+                                         "definition":  "A male who is the sovereign ruler of an empire.\nThere is a classic story of an emperor who was deceived into believing he had wonderful new clothes."
+                                     },
+                                     {
+                                         "word":  "emulate",
+                                         "definition":  "To try to equal or excel, usually with considerable effort.\nA parable tells us to emulate the\nindustry of the ant."
+                                     },
+                                     {
+                                         "word":  "endemic",
+                                         "definition":  "A plant or animal native to a certain place.\nA kangaroo is endemic to Australia."
+                                     },
+                                     {
+                                         "word":  "engross",
+                                         "definition":  "To occupy wholly; to take up all the attention of.\nThis is a story that will completely\nengross you."
+                                     },
+                                     {
+                                         "word":  "enterprise",
+                                         "definition":  "An action or undertaking, especially a bold or complex one.\nThe business was a joint enterprise with\nhis partner."
+                                     },
+                                     {
+                                         "word":  "envisage",
+                                         "definition":  "To form a mental picture of.\nThe architect was able to envisage the completed building."
+                                     }
+                                 ]
+                   },
+                   {
+                       "group":  5,
+                       "words":  [
+                                     {
+                                         "word":  "epigraph",
+                                         "definition":  "A short quotation at the beginning of a book or chapter intended to suggest its theme.\nThe epigraph was chosen to entice the\nreader."
+                                     },
+                                     {
+                                         "word":  "epitaph",
+                                         "definition":  "A short statement in memory of a dead person.\nWe found the epitaph carved on the\ntombstone."
+                                     },
+                                     {
+                                         "word":  "equidistant",
+                                         "definition":  "At equal distances.\nThe two cities are equidistant from here."
+                                     },
+                                     {
+                                         "word":  "ergonomic",
+                                         "definition":  "Relating to or designed for efficiency and comfort in the work place.\nThe snow shovel’s new ergonomic\ndesign puts less strain on the back during snow removal."
+                                     },
+                                     {
+                                         "word":  "escargots",
+                                         "definition":  "Edible snails that are considered a delicacy.\nHe ordered escargots as an appetizer to\nimpress his date."
+                                     },
+                                     {
+                                         "word":  "eschew",
+                                         "definition":  "To deliberately avoid using.\nHe appealed to the protestors to\neschew the use of violence."
+                                     },
+                                     {
+                                         "word":  "especially",
+                                         "definition":  "Particularly; chiefly.\nHer new book is designed especially for young readers."
+                                     },
+                                     {
+                                         "word":  "essence",
+                                         "definition":  "That which makes a thing what it is; the necessary part or parts.\nKindness is the essence of politeness."
+                                     },
+                                     {
+                                         "word":  "estimation",
+                                         "definition":  "An informed guess.\nHe made an estimation of how much he needed to save to buy the new video game."
+                                     },
+                                     {
+                                         "word":  "eulogy",
+                                         "definition":  "A speech or writing in honour of a person who has died.\nMy uncle gave a fine eulogy at his\nfriend’s funeral."
+                                     },
+                                     {
+                                         "word":  "evacuation",
+                                         "definition":  "The removal of people from a place of danger.\nThe evacuation of the people in the burning apartment was carried out swiftly."
+                                     },
+                                     {
+                                         "word":  "ewer",
+                                         "definition":  "A large water jug with a wide mouth and spout.\nThe archaeologist found pieces of an\nancient ewer at the excavation site."
+                                     },
+                                     {
+                                         "word":  "excellence",
+                                         "definition":  "Unusually good in quality.\nThe inn was famous for the excellence\nof its food."
+                                     },
+                                     {
+                                         "word":  "exhalation",
+                                         "definition":  "An expulsion of breath.\nIt was so cold that my exhalation\ncreated a little cloud in the air."
+                                     },
+                                     {
+                                         "word":  "extricate",
+                                         "definition":  "To free someone or something from a difficulty.\nThey had to extricate the ship from the\nsandbar."
+                                     },
+                                     {
+                                         "word":  "fallow",
+                                         "definition":  "Uncultivated; ploughed and harrowed but left unsown.\nThe farmer decided to leave that field\nfallow this year and plant it next year."
+                                     },
+                                     {
+                                         "word":  "fatalism",
+                                         "definition":  "Belief that everything that happens is inevitable.\nA believer in fatalism does not think\nthat his actions can change things."
+                                     },
+                                     {
+                                         "word":  "faucet",
+                                         "definition":  "A tap.\nThe sink overflowed when she left the\nfaucet running."
+                                     },
+                                     {
+                                         "word":  "feminine",
+                                         "definition":  "Pertaining to a woman or a girl.\nThe store was filled with wonderfully\nfeminine fashions for spring."
+                                     },
+                                     {
+                                         "word":  "ferocious",
+                                         "definition":  "Fierce, savage, widely cruel or destructive.\nThe ferocious snowstorm grounded all\nthe planes."
+                                     },
+                                     {
+                                         "word":  "fictitious",
+                                         "definition":  "Imaginary, unreal; not genuine.\nHe gave a fictitious address, which was actually an empty lot."
+                                     },
+                                     {
+                                         "word":  "finality",
+                                         "definition":  "The fact of being final finished or settled.\nHe spoke with such finality that there\nwas no point in debating the issue."
+                                     },
+                                     {
+                                         "word":  "financial",
+                                         "definition":  "Having to do with money matters. We went to see a financial planner\nafter winning the lottery."
+                                     },
+                                     {
+                                         "word":  "flagrant",
+                                         "definition":  "Highly noticeable, glaring, notorious. The disruptive teenagers were reprimanded for their flagrant\ndisregard of the rules."
+                                     },
+                                     {
+                                         "word":  "foibles",
+                                         "definition":  "Minor weakness or failings of character.\nIt is the many human foibles that\nprovide ideas for most writers."
+                                     },
+                                     {
+                                         "word":  "fractious",
+                                         "definition":  "Irritable and quarrelsome.\nThey fight and squabble like fractious\nchildren who are over-tired."
+                                     },
+                                     {
+                                         "word":  "franchise",
+                                         "definition":  "The privilege of providing a company’s service in a given area by individual owners.\nThe businessmen decided to open a Tim\nHorton’s franchise."
+                                     },
+                                     {
+                                         "word":  "fraudulent",
+                                         "definition":  "Deceitful; dishonest.\nThe man obtained the painting by\nfraudulent means."
+                                     },
+                                     {
+                                         "word":  "fraught",
+                                         "definition":  "Affected by great anxiety or stress, upset.\nThe girls were fraught with worry as they sat on the bench outside of the\nprincipal’s office."
+                                     },
+                                     {
+                                         "word":  "fresco",
+                                         "definition":  "The art of painting with water colours on damp, fresh plaster.\nThe ceiling of the Sistine Chapel is an example of a famous fresco."
+                                     },
+                                     {
+                                         "word":  "friable",
+                                         "definition":  "Easily crumbled.\nFeta cheese is friable."
+                                     },
+                                     {
+                                         "word":  "friction",
+                                         "definition":  "The action of one surface or object rubbing against another.\nA rash can occur where there is friction\nof clothes rubbing against the skin."
+                                     },
+                                     {
+                                         "word":  "frigid",
+                                         "definition":  "Extremely cold.\nIn spite of the bright sun, there was still a frigid wind blowing from the north."
+                                     }
+                                 ]
+                   },
+                   {
+                       "group":  6,
+                       "words":  [
+                                     {
+                                         "word":  "functional",
+                                         "definition":  "In working order.\nAlthough antiquated, my old VCR is still\nfunctional."
+                                     },
+                                     {
+                                         "word":  "gadget",
+                                         "definition":  "A small mechanical or electronic device or tool.\nThe technophile always wanted to have\nthe latest gadget."
+                                     },
+                                     {
+                                         "word":  "gallant",
+                                         "definition":  "Noble, brave or daring.\nThe firemen made a gallant effort to save all the residents and pets from the burning building."
+                                     },
+                                     {
+                                         "word":  "galleon",
+                                         "definition":  "A large, heavy sailing ship, usually having three or four decks.\nIn the 16th century, the Spaniards used a galleon to bring treasure back from\nthe New World."
+                                     },
+                                     {
+                                         "word":  "gamut",
+                                         "definition":  "The entire range of anything.\nIn one minute, I ran the gamut of emotions from hope to despair."
+                                     },
+                                     {
+                                         "word":  "gauze",
+                                         "definition":  "A very thin, light cloth often used to dress wounds.\nCotton gauze is often used for\nbandages."
+                                     },
+                                     {
+                                         "word":  "generosity",
+                                         "definition":  "A willingness to share with others; unselfishness.\nThe lawyer’s donation to the museum\nwas an act of generosity."
+                                     },
+                                     {
+                                         "word":  "genial",
+                                         "definition":  "Pleasant, cheerful and friendly.\nHe was promoted to customer service manager in part because of his genial manner."
+                                     },
+                                     {
+                                         "word":  "gentry",
+                                         "definition":  "People of good family and social position.\nIn historical fiction, the gentry would be seen to live in large manor houses with a lot of staff."
+                                     },
+                                     {
+                                         "word":  "geometry",
+                                         "definition":  "The branch of mathematics that deals with lines, angles, surfaces and solids. The area of mathematics that I find most difficult is geometry."
+                                     },
+                                     {
+                                         "word":  "geranium",
+                                         "definition":  "A plant with large, bright flowers. The geranium was planted in a large earthenware pot."
+                                     },
+                                     {
+                                         "word":  "germinate",
+                                         "definition":  "To begin to grow or develop.\nWe will germinate lima beans as part of the life sciences unit in science class."
+                                     },
+                                     {
+                                         "word":  "gimmick",
+                                         "definition":  "A device, scheme or strategy used to attract attention; a stunt.\nThe store owner hired clowns as a\ngimmick to attract customers."
+                                     },
+                                     {
+                                         "word":  "glimpse",
+                                         "definition":  "A short, quick view.\nWe had a glimpse of the falls as we passed by them."
+                                     },
+                                     {
+                                         "word":  "goatee",
+                                         "definition":  "A small, pointed beard on a man’s chin. Colonel Sanders had a goatee in all his\npictures."
+                                     },
+                                     {
+                                         "word":  "granary",
+                                         "definition":  "A place or building where grain is stored.\nKernels of wheat were evidence that\nthe old building was used as a granary."
+                                     },
+                                     {
+                                         "word":  "graphite",
+                                         "definition":  "A soft form of carbon with a metallic lustre and a greasy feel.\nWhat we call the lead in pencils is\nactually graphite."
+                                     },
+                                     {
+                                         "word":  "gristle",
+                                         "definition":  "Tough tissue full of cartilage.\nThe meat was tough because it was mostly gristle."
+                                     },
+                                     {
+                                         "word":  "grommet",
+                                         "definition":  "A metal eyelet.\nThere was a grommet at the corner of the tarp to prevent it from ripping."
+                                     },
+                                     {
+                                         "word":  "groundskeeper",
+                                         "definition":  "A person who maintains a sports ground or park.\nThe groundskeeper raked the baseball\ndiamond before each game."
+                                     },
+                                     {
+                                         "word":  "grovel",
+                                         "definition":  "To behave in a servile or obedient manner.\nDo you expect me to grovel to him?"
+                                     },
+                                     {
+                                         "word":  "gullible",
+                                         "definition":  "Easily deceived or cheated.\nMy brother is so gullible that he believes everything he sees on television."
+                                     },
+                                     {
+                                         "word":  "gymnastics",
+                                         "definition":  "Exercises and movements that demonstrate strength, balance and agility.\nThe school team gave a display of\ngymnastics."
+                                     },
+                                     {
+                                         "word":  "hallowed",
+                                         "definition":  "Regarded as holy or sacred.\nThey were quiet in the hallowed halls of the cathedral."
+                                     },
+                                     {
+                                         "word":  "harpy",
+                                         "definition":  "A mythical monster.\nIn old Greek stories, a harpy punished those who were violent to others."
+                                     },
+                                     {
+                                         "word":  "heifer",
+                                         "definition":  "A young cow that has not yet had a calf.\nThe heifer stood in the pasture with her tail to the wind and rain."
+                                     },
+                                     {
+                                         "word":  "hemisphere",
+                                         "definition":  "Half of a sphere or globe.\nCanada is a country in the northern\nhemisphere."
+                                     },
+                                     {
+                                         "word":  "hereditary",
+                                         "definition":  "Able to be passed down from generation to generation.\nHer green eyes were hereditary, as they were just like her mother’s and her\ngrandmother’s."
+                                     },
+                                     {
+                                         "word":  "hew",
+                                         "definition":  "To cut with an axe or sword.\nThe pioneers had to hew logs into beams to build their houses."
+                                     },
+                                     {
+                                         "word":  "hoard",
+                                         "definition":  "To save and store away.\nA squirrel will hoard nuts throughout the fall to eat all winter."
+                                     },
+                                     {
+                                         "word":  "homage",
+                                         "definition":  "Respect, reverence and honour. Everyone paid homage to the great leader."
+                                     },
+                                     {
+                                         "word":  "homophone",
+                                         "definition":  "A word that is pronounced the same as another but that differs in meaning.\nHoard is a homophone of horde."
+                                     },
+                                     {
+                                         "word":  "humane",
+                                         "definition":  "Benevolent, compassionate, kind and caring.\nThere are laws promoting the humane\ntreatment of animals."
+                                     }
+                                 ]
+                   },
+                   {
+                       "group":  7,
+                       "words":  [
+                                     {
+                                         "word":  "hurriedly",
+                                         "definition":  "In a quick or hasty manner.\nShe did her homework hurriedly because she wanted to go out with her friends."
+                                     },
+                                     {
+                                         "word":  "ibex",
+                                         "definition":  "Wild goats with semicircular horns. The herd of ibex grazed in the cool of\nthe early morning."
+                                     },
+                                     {
+                                         "word":  "imbue",
+                                         "definition":  "To inspire.\nHe hopes to imbue his son with the ambition to succeed."
+                                     },
+                                     {
+                                         "word":  "immortal",
+                                         "definition":  "Living forever; never dying.\nMany superheroes and cartoon characters are immortal."
+                                     },
+                                     {
+                                         "word":  "impeccable",
+                                         "definition":  "Flawless or faultless.\nMy father’s grooming is impeccable; he\nnever seems to have a hair out of place."
+                                     },
+                                     {
+                                         "word":  "implicit",
+                                         "definition":  "Suggested though not directly expressed.\nIt is implicit, though not actually said, that we should be quiet in a place of\nworship."
+                                     },
+                                     {
+                                         "word":  "imposter",
+                                         "definition":  "A person who assumes a false name or character.\nThe guard’s place was taken by an\nimposter."
+                                     },
+                                     {
+                                         "word":  "incarcerate",
+                                         "definition":  "To imprison or confine.\nUntil recent times, a court could\nincarcerate a debtor."
+                                     },
+                                     {
+                                         "word":  "incessant",
+                                         "definition":  "Never stopping; continued or repeated without interruption.\nThe roar of Niagara Falls is incessant."
+                                     },
+                                     {
+                                         "word":  "incite",
+                                         "definition":  "To encourage or urge on.\nIf the union’s position is not acknowledged by management, it could incite a strike."
+                                     },
+                                     {
+                                         "word":  "indemnify",
+                                         "definition":  "To compensate or reimburse for harm or loss.\nThe court ordered the insurance company to indemnify them for losses\ncaused by the accident."
+                                     },
+                                     {
+                                         "word":  "infantilism",
+                                         "definition":  "Childish behaviour.\nFighting at major league games is an\nexample of infantilism."
+                                     },
+                                     {
+                                         "word":  "infectious",
+                                         "definition":  "Easily transmitted from one person to another; communicable.\nA cold is a very infectious ailment."
+                                     },
+                                     {
+                                         "word":  "infiltrate",
+                                         "definition":  "To enter or gain access surreptitiously. Undercover policemen will try to infiltrate gangs to prove criminal behaviour."
+                                     },
+                                     {
+                                         "word":  "inflexible",
+                                         "definition":  "Not easily bent; stiff; rigid.\nWe used a steel rod that was inflexible."
+                                     },
+                                     {
+                                         "word":  "ingenuity",
+                                         "definition":  "The quality of being clever, original and inventive.\nSoftware designers display great\ningenuity."
+                                     },
+                                     {
+                                         "word":  "ingratiate",
+                                         "definition":  "To get on the good side of someone by flattering or trying to pleasing them.\nThe new girl tried to ingratiate herself\ninto the clique."
+                                     },
+                                     {
+                                         "word":  "innards",
+                                         "definition":  "The internal workings of the body or any complex mechanism.\nWe saw the innards of the machine\nwhen the technician opened it."
+                                     },
+                                     {
+                                         "word":  "inoculate",
+                                         "definition":  "To vaccinate against a disease.\nThe doctor’s office made sure to have enough vaccine to inoculate everyone during flu season."
+                                     },
+                                     {
+                                         "word":  "insignia",
+                                         "definition":  "A badge or distinguishing mark of membership of an organization; symbols of rank or authority.\nThe stripes on an officer’s uniform are\nan insignia of rank."
+                                     },
+                                     {
+                                         "word":  "insipid",
+                                         "definition":  "Without much taste.\nA mixture of milk and water is an\ninsipid drink."
+                                     },
+                                     {
+                                         "word":  "insomnia",
+                                         "definition":  "The inability to sleep, especially when ongoing.\nShe is often tired at work because she\nsuffers from insomnia."
+                                     },
+                                     {
+                                         "word":  "insular",
+                                         "definition":  "Of or having to do with islands or islanders.\nVancouver Island enjoys a moderate,\ninsular climate."
+                                     },
+                                     {
+                                         "word":  "insulin",
+                                         "definition":  "A hormone the body needs to use sugar and carbohydrates.\nDr. Banting and Charles Best discovered\ninsulin, which is used to treat diabetes."
+                                     },
+                                     {
+                                         "word":  "integral",
+                                         "definition":  "Necessary to complete the whole thing; belonging as part of the whole.\nThe enthusiastic new employee quickly became an integral part of the\ncompany."
+                                     },
+                                     {
+                                         "word":  "intercede",
+                                         "definition":  "To intervene in order to bring about an agreement; to mediate.\nI will try to intercede in their argument."
+                                     },
+                                     {
+                                         "word":  "intrigue",
+                                         "definition":  "To arouse interest or curiosity.\nShe presented her proposal in order to intrigue the other members of the group."
+                                     },
+                                     {
+                                         "word":  "intrinsic",
+                                         "definition":  "Belonging to something by its very nature; essential.\nThe ultimate goal of character education is to develop people’s intrinsic motivation to do the right\nthing."
+                                     },
+                                     {
+                                         "word":  "iota",
+                                         "definition":  "A very small quantity.\nThere is not an iota of truth to your story."
+                                     },
+                                     {
+                                         "word":  "iteration",
+                                         "definition":  "The repetition of a process or utterance.\nIn the afternoon announcements, the principal repeated his iteration about\nstaying out of the mud puddles."
+                                     },
+                                     {
+                                         "word":  "jaguar",
+                                         "definition":  "A large spotted or black predatory cat found in the rainforest.\nThe jaguar is a beautiful, graceful\nanimal."
+                                     },
+                                     {
+                                         "word":  "joist",
+                                         "definition":  "Each of a series of parallel supporting beams.\nOne more joist and the roof will be\nready."
+                                     },
+                                     {
+                                         "word":  "jungle",
+                                         "definition":  "A thick, tangled forest in a hot country. Tarzan lived in the jungle."
+                                     }
+                                 ]
+                   },
+                   {
+                       "group":  8,
+                       "words":  [
+                                     {
+                                         "word":  "karma",
+                                         "definition":  "The good or bad emanations felt to be generated by someone or something. Many of my friends sent good karma my way when my mother was in the\nhospital."
+                                     },
+                                     {
+                                         "word":  "karst",
+                                         "definition":  "A type of terrain with sinkholes, caverns and underground streams. We visited the karst topography north of Kingston."
+                                     },
+                                     {
+                                         "word":  "known",
+                                         "definition":  "Recognized; familiar; famous. It is a known fact that he is a millionaire."
+                                     },
+                                     {
+                                         "word":  "knuckle",
+                                         "definition":  "The bone at a finger joint.\nWhen I banged my hand on the doorjamb, I bruised my knuckle."
+                                     },
+                                     {
+                                         "word":  "lacrosse",
+                                         "definition":  "A game played between two ten-player teams using a netted stick and a rubber ball.\nCanada’s national game, lacrosse\nrequires speed and agility."
+                                     },
+                                     {
+                                         "word":  "lampas",
+                                         "definition":  "A patterned drapery or upholstery fabric similar to brocade.\nShe chose a lovely lampas to re-cover\nthe chair."
+                                     },
+                                     {
+                                         "word":  "latent",
+                                         "definition":  "Present or existing and capable of development.\nShe has a latent talent for music."
+                                     },
+                                     {
+                                         "word":  "leaden",
+                                         "definition":  "Heavy; hard to lift or move.\nAt the end of the race, the tired runner’s legs felt leaden."
+                                     },
+                                     {
+                                         "word":  "lectern",
+                                         "definition":  "A tall stand with a sloping top.\nThe principal stood at the lectern to call the names at graduation."
+                                     },
+                                     {
+                                         "word":  "legislature",
+                                         "definition":  "A group of persons having the duty and power to make laws.\nEach Canadian province and territory\nhas its own legislature."
+                                     },
+                                     {
+                                         "word":  "leviathan",
+                                         "definition":  "A very large aquatic creature.\nA whale is sometimes called a leviathan\nof the deep."
+                                     },
+                                     {
+                                         "word":  "libretto",
+                                         "definition":  "The text of an opera or other long musical work.\nWas it Gilbert or Sullivan who wrote the\nlibretto for “The Pirates of Penzance”?"
+                                     },
+                                     {
+                                         "word":  "lief",
+                                         "definition":  "Happily, cheerfully, gladly or with pleasure.\nThe businessperson was as lief to join one certain service club or another."
+                                     },
+                                     {
+                                         "word":  "lieu",
+                                         "definition":  "In place of; instead.\nHe had to write an essay in lieu of doing the exam."
+                                     },
+                                     {
+                                         "word":  "ligament",
+                                         "definition":  "A band of strong tissue that connects bones.\nThe football player damaged a\nligament in his knee when he was tackled."
+                                     },
+                                     {
+                                         "word":  "likelihood",
+                                         "definition":  "Probability.\nThe more you study, the greater the\nlikelihood that you’ll get good grades."
+                                     },
+                                     {
+                                         "word":  "limousine",
+                                         "definition":  "A large, luxurious automobile often with a partition behind the driver.\nHe took his girlfriend to the prom in a\nlimousine."
+                                     },
+                                     {
+                                         "word":  "linchpin",
+                                         "definition":  "A locking pin inserted through a hold in the end of an axle to keep the wheel on.\nThe wheel came off when the linchpin\nbroke."
+                                     },
+                                     {
+                                         "word":  "literary",
+                                         "definition":  "Pertaining to literature, especially good writing.\nThe teacher suggested that they could\nenjoy graphic novels, but that they should also read some literary works."
+                                     },
+                                     {
+                                         "word":  "loam",
+                                         "definition":  "Topsoil.\nIn the spring, he will replant the flowers in the garden using fresh loam."
+                                     },
+                                     {
+                                         "word":  "locomotive",
+                                         "definition":  "A railway engine.\nIn the stories of “Thomas the Tank Engine”, Thomas is a steam\nlocomotive."
+                                     },
+                                     {
+                                         "word":  "lollipop",
+                                         "definition":  "A type of candy on the end of a stick.\nMother always told me not to run with a lollipop in my mouth."
+                                     },
+                                     {
+                                         "word":  "lucid",
+                                         "definition":  "Easy to understand.\nShe provided a lucid explanation of a\ndifficult topic."
+                                     },
+                                     {
+                                         "word":  "lumbago",
+                                         "definition":  "Pain in the muscles and joints of the lower back.\nThe doctor diagnosed her pain as being\nlumbago."
+                                     },
+                                     {
+                                         "word":  "luncheon",
+                                         "definition":  "A formal lunch, usually in connection with a meeting.\nThe awards were presented at a\nluncheon."
+                                     },
+                                     {
+                                         "word":  "magnetite",
+                                         "definition":  "A grey black magnetic mineral. An important form of iron ore is magnetite."
+                                     },
+                                     {
+                                         "word":  "maimed",
+                                         "definition":  "To cause permanent damage to, or loss of, a part of the body.\nHe was permanently maimed by the\naccident."
+                                     },
+                                     {
+                                         "word":  "margarine",
+                                         "definition":  "A compound of oils used as a butter substitute.\nI prefer margarine to butter on my\ntoast."
+                                     },
+                                     {
+                                         "word":  "marinate",
+                                         "definition":  "To soak food, especially meat or fish, in a seasoned liquid, usually containing oil and/or vinegar.\nIf you marinate the steak, it will be\ntender."
+                                     },
+                                     {
+                                         "word":  "marriage",
+                                         "definition":  "Legally or formally recognized union of two people as partners in a personal relationship.\nWe wished the bride and groom a long and happy marriage."
+                                     },
+                                     {
+                                         "word":  "medicine",
+                                         "definition":  "The science of diagnosis, treatment, and prevention of disease.\nHer goal was to study medicine at university to become a children’s\ndoctor."
+                                     },
+                                     {
+                                         "word":  "melodrama",
+                                         "definition":  "A form of drama with exaggerated emotion and limited characterization. We watched the melodrama with\nKleenex boxes on our laps."
+                                     },
+                                     {
+                                         "word":  "memoirs",
+                                         "definition":  "A historical account of facts or events written from personal knowledge.\nSomeday I would like to write my\nmemoirs."
+                                     }
+                                 ]
+                   },
+                   {
+                       "group":  9,
+                       "words":  [
+                                     {
+                                         "word":  "miasma",
+                                         "definition":  "An unhealthy or unpleasant smell.\nMany years ago, it was believed that a\nmiasma caused disease."
+                                     },
+                                     {
+                                         "word":  "mineral",
+                                         "definition":  "A solid, naturally occurring inorganic substance.\nMany mineral products, including iron and nickel, have been important to the\nCanadian economy."
+                                     },
+                                     {
+                                         "word":  "minke",
+                                         "definition":  "A small whale.\nShe recognized it as a minke whale because of its dark gray back and markings on its fins."
+                                     },
+                                     {
+                                         "word":  "mirage",
+                                         "definition":  "An optical illusion, usually in the desert or at sea.\nWe often hear stories of people lost in\nthe desert seeing a mirage of water."
+                                     },
+                                     {
+                                         "word":  "mischief",
+                                         "definition":  "Action or conduct that causes trouble or harm, often not intentionally.\nA child’s mischief with matches may\ncause a serious fire."
+                                     },
+                                     {
+                                         "word":  "module",
+                                         "definition":  "An independent unit that forms part of a larger structure or programme.\nWhen Neil Armstrong went to the\nmoon, they used the lunar module."
+                                     },
+                                     {
+                                         "word":  "monoculture",
+                                         "definition":  "The cultivation of a single crop in a given area.\nYou can ruin the soil with continuous\nmonoculture."
+                                     },
+                                     {
+                                         "word":  "mutation",
+                                         "definition":  "An instance of change or alteration.\nThe plant in the lab underwent a\nstrange mutation."
+                                     },
+                                     {
+                                         "word":  "nanoparticle",
+                                         "definition":  "A particle between one and one hundred nanometres in size.\nA nanoparticle is a microscopic speck."
+                                     },
+                                     {
+                                         "word":  "naïve",
+                                         "definition":  "Natural and unaffected; innocent.\nShe was naïve to believe their promises."
+                                     },
+                                     {
+                                         "word":  "neap",
+                                         "definition":  "Having to do with the lowest level of a high tide in a monthly period.\nThe neap tides occur twice a month at the first and last quarters of the moon."
+                                     },
+                                     {
+                                         "word":  "nebulous",
+                                         "definition":  "Hazy; indistinct; vague.\nIt is often said that there is a nebulous distinction between bravery and foolishness."
+                                     },
+                                     {
+                                         "word":  "neume",
+                                         "definition":  "A note or group of notes to be sung to a single syllable.\nGregorian chants were the originator of\nthe neume."
+                                     },
+                                     {
+                                         "word":  "novella",
+                                         "definition":  "A short novel or narrative story.\nPeople who are pressed for time like to read a novella."
+                                     },
+                                     {
+                                         "word":  "obliterate",
+                                         "definition":  "To wipe out.\nThe solar eclipse will temporarily\nobliterate our view of the sun."
+                                     },
+                                     {
+                                         "word":  "oblivion",
+                                         "definition":  "The state of being completely forgotten.\nAfter she stopped making movies, the actress’ name and reputation fell into\noblivion."
+                                     },
+                                     {
+                                         "word":  "obtrusive",
+                                         "definition":  "Noticeable or prominent in an unwelcome way.\nThe obtrusive cough interrupted our\nenjoyment of the movie."
+                                     },
+                                     {
+                                         "word":  "onyx",
+                                         "definition":  "A semi-precious type of agate with layers of different colours.\nI had a new cameo made from black\nonyx."
+                                     },
+                                     {
+                                         "word":  "optimist",
+                                         "definition":  "A person who chooses to take the favourable view of things.\nAn optimist sees a glass of water as\nhalf full rather than half empty."
+                                     },
+                                     {
+                                         "word":  "optometrist",
+                                         "definition":  "A person who specializes in the examination of the eyes for defects in visions and prescribes corrective measures.\nThe optometrist prescribed new glasses for the student."
+                                     },
+                                     {
+                                         "word":  "orthodontist",
+                                         "definition":  "A dentist who specializes in irregularities in the teeth and jaws. The orthodontist put braces on the\ngirl’s teeth."
+                                     },
+                                     {
+                                         "word":  "pageant",
+                                         "definition":  "An elaborate spectacle or a procession in costume.\nThe coronation of the new king was a\nsplendid pageant."
+                                     },
+                                     {
+                                         "word":  "pandemic",
+                                         "definition":  "Pertaining to a disease that is prevalent over a whole country or the world.\nIn 1918, Spanish flu was pandemic."
+                                     },
+                                     {
+                                         "word":  "panorama",
+                                         "definition":  "A wide, unbroken view of a surrounding region.\nWe enjoyed the panorama from the top\nof the hill."
+                                     },
+                                     {
+                                         "word":  "papaya",
+                                         "definition":  "A large, yellow-skinned tropical fruit. We like to eat papaya as a special treat."
+                                     },
+                                     {
+                                         "word":  "parable",
+                                         "definition":  "A short, simple story used to teach some truth or moral lesson.\nHe told the children the parable of the\nboy who cried wolf."
+                                     },
+                                     {
+                                         "word":  "patriarch",
+                                         "definition":  "The father, or male head, of a family or tribe.\nIn some cultures, the patriarch is the\nfinal authority."
+                                     },
+                                     {
+                                         "word":  "performance",
+                                         "definition":  "An act of presenting a play, concert or other production.\nThe class practised and practised for their performance in the school concert."
+                                     },
+                                     {
+                                         "word":  "peroxide",
+                                         "definition":  "To bleach hair.\nShe planned to peroxide her hair to lighten it."
+                                     },
+                                     {
+                                         "word":  "petulant",
+                                         "definition":  "Childishly sulky or bad tempered.\nThe petulant athlete mouthed off at the referee."
+                                     },
+                                     {
+                                         "word":  "pickerel",
+                                         "definition":  "A young pike; a type of fish.\nThe young boy was proud of himself when he caught a pickerel."
+                                     },
+                                     {
+                                         "word":  "pigeon",
+                                         "definition":  "One of a family of birds with a large body and small head.\nThe pigeon pecked at the crumbs on\nthe ground."
+                                     },
+                                     {
+                                         "word":  "pinnate",
+                                         "definition":  "Having leaflets arranged in pairs on opposite sides of the stem.\nSome ferns have pinnate fronds."
+                                     }
+                                 ]
+                   },
+                   {
+                       "group":  10,
+                       "words":  [
+                                     {
+                                         "word":  "pipette",
+                                         "definition":  "A slender tube attached to a bulb for measuring out small quantities of liquid.\nThey used a pipette to transfer liquids\nin the laboratory experiment."
+                                     },
+                                     {
+                                         "word":  "piracy",
+                                         "definition":  "The illegal use or reproduction of another person’s work.\nDownloading music without paying for\nit is a form of piracy."
+                                     },
+                                     {
+                                         "word":  "plaintiff",
+                                         "definition":  "A person who brings a case against another into court.\nThe plaintiff sued his neighbour when\nhis child maliciously broke the window."
+                                     },
+                                     {
+                                         "word":  "plankton",
+                                         "definition":  "Microscopic organisms in water.\nShellfish feed on plankton."
+                                     },
+                                     {
+                                         "word":  "plummet",
+                                         "definition":  "To plunge or drop quickly and suddenly.\nAs the roller coaster began to plummet\ndownwards, I raised my hands in the air."
+                                     },
+                                     {
+                                         "word":  "politics",
+                                         "definition":  "The art and science of government. Being interested in how the government works, he chose a career in politics."
+                                     },
+                                     {
+                                         "word":  "polygonal",
+                                         "definition":  "Relating to a figure with five or more sides.\nIn geometry class, they had to draw a\npolygonal shape."
+                                     },
+                                     {
+                                         "word":  "poultry",
+                                         "definition":  "Domesticated birds such as chickens and turkeys.\nWhile he does not eat red meat, he will\neat poultry."
+                                     },
+                                     {
+                                         "word":  "pouring",
+                                         "definition":  "To flow rapidly in a steady stream.\nCome and watch the rain pouring off the glass roof."
+                                     },
+                                     {
+                                         "word":  "prairie",
+                                         "definition":  "A large open area of grassland.\nThe Canadian prairie is one of the most productive wheat fields in the world."
+                                     },
+                                     {
+                                         "word":  "preliminary",
+                                         "definition":  "Introductory; preparatory.\nThe inexperienced boxer fought in a\npreliminary bout before challenging the champion."
+                                     },
+                                     {
+                                         "word":  "prestigious",
+                                         "definition":  "Highly esteemed; well respected for one’s achievements.\nWe were lucky to get such a prestigious\nspeaker at our conference."
+                                     },
+                                     {
+                                         "word":  "principal",
+                                         "definition":  "The head of a school or other educational institution.\nOur school got a new principal this\nyear."
+                                     },
+                                     {
+                                         "word":  "proficient",
+                                         "definition":  "Competent or skilled in doing or using something.\nBy taking classes, he became proficient\nin the use of computers."
+                                     },
+                                     {
+                                         "word":  "prolific",
+                                         "definition":  "Producing many works.\nThe prolific author wrote at least two books every year."
+                                     },
+                                     {
+                                         "word":  "ptarmigan",
+                                         "definition":  "A feather-footed bird, native to northern regions.\nThe ptarmigan is the official bird of\nNunavut."
+                                     },
+                                     {
+                                         "word":  "quasar",
+                                         "definition":  "A star-like object thought to be most distant and most luminous in the universe.\nThe astronomer studied the quasar\nthough his telescope."
+                                     },
+                                     {
+                                         "word":  "quelled",
+                                         "definition":  "To extinguish; to quiet or allay.\nThe mother quelled the baby’s cries by rocking him and singing a lullaby."
+                                     },
+                                     {
+                                         "word":  "quesadilla",
+                                         "definition":  "A tortilla filled with cheese, and heated.\nA quesadilla is basically a grilled cheese sandwich on a tortilla instead of bread."
+                                     },
+                                     {
+                                         "word":  "rapidity",
+                                         "definition":  "Swiftness or speed.\nThe goalie moved with great rapidity to block the shot."
+                                     },
+                                     {
+                                         "word":  "rapport",
+                                         "definition":  "A connection or relationship, especially agreeable.\nThe teacher has an excellent rapport\nwith her students."
+                                     },
+                                     {
+                                         "word":  "ravenous",
+                                         "definition":  "Very hungry, famished.\nThe hikers were all ravenous by the time they stopped to eat."
+                                     },
+                                     {
+                                         "word":  "recipient",
+                                         "definition":  "A person who receives or accepts something.\nShe was very proud to be the recipient\nof the Principal’s Award."
+                                     },
+                                     {
+                                         "word":  "recognize",
+                                         "definition":  "To identify a person or thing as previously seen or known.\nI could scarcely recognize my old friend because I hadn’t seen her in such a long\ntime."
+                                     },
+                                     {
+                                         "word":  "rectify",
+                                         "definition":  "To correct or make right; to amend. He tried to rectify his error in filling the order."
+                                     },
+                                     {
+                                         "word":  "reinforce",
+                                         "definition":  "To strengthen or support.\nThey had to reinforce the basement after the flood weakened it."
+                                     },
+                                     {
+                                         "word":  "relinquish",
+                                         "definition":  "Surrender or resign a right or possession.\nThe prince decided to relinquish his\nclaim to the throne."
+                                     },
+                                     {
+                                         "word":  "reluctant",
+                                         "definition":  "Slow to act due to unwillingness.\nHe was very reluctant to enter the cold water."
+                                     },
+                                     {
+                                         "word":  "remedial",
+                                         "definition":  "Intended as a remedy or improvement.\nStudents can go to the math clinic after school for remedial help."
+                                     },
+                                     {
+                                         "word":  "render",
+                                         "definition":  "To give or to provide.\nThe teacher was always ready to render\nassistance when it was needed."
+                                     },
+                                     {
+                                         "word":  "renounce",
+                                         "definition":  "To give up formally; to renounce; to disclaim.\nIn order to keep peace in the family, she\ndecided to renounce her claims to the estate."
+                                     },
+                                     {
+                                         "word":  "repatriation",
+                                         "definition":  "The act of sending back or restoring to one’s own country.\nMany people stood on the bridge over the Highway of Heroes to watch the repatriation of the fallen Canadian\nsoldiers."
+                                     },
+                                     {
+                                         "word":  "repercussion",
+                                         "definition":  "An indirect influence or reaction from an event.\nHaving to replace all her identification was just one repercussion of having her\npurse stolen."
+                                     }
+                                 ]
+                   },
+                   {
+                       "group":  11,
+                       "words":  [
+                                     {
+                                         "word":  "replicate",
+                                         "definition":  "To repeat; to make a copy of.\nNo one was able to replicate his\nexperiment."
+                                     },
+                                     {
+                                         "word":  "reprieve",
+                                         "definition":  "Relief or/from impending punishment or hardship, often temporary.\nThe lull in the storm offered the\nresidents only a temporary reprieve."
+                                     },
+                                     {
+                                         "word":  "reproach",
+                                         "definition":  "A rebuke or censure.\nHe received a reproach from his teacher for his lack of effort."
+                                     },
+                                     {
+                                         "word":  "rescind",
+                                         "definition":  "To revoke or cancel.\nThe teacher threatened to rescind our field trip if we didn’t behave."
+                                     },
+                                     {
+                                         "word":  "residue",
+                                         "definition":  "A small amount of something that remains after the main part is gone. You should always wash fruit to get rid of the residue of any pesticides that\nwere used."
+                                     },
+                                     {
+                                         "word":  "resurrect",
+                                         "definition":  "To bring back from obscurity or disrepair.\nThe Historical Society wants to\nresurrect the historic building to its former glory."
+                                     },
+                                     {
+                                         "word":  "retrospect",
+                                         "definition":  "A survey of past time or events.\nIn retrospect, the first procedure seems better."
+                                     },
+                                     {
+                                         "word":  "revenue",
+                                         "definition":  "Income, especially of a large amount from any source.\nThe revenue the government gets from taxes is used for things like health care."
+                                     },
+                                     {
+                                         "word":  "riboflavin",
+                                         "definition":  "A vitamin of the B complex.\nLiver, milk and eggs are especially good sources of riboflavin."
+                                     },
+                                     {
+                                         "word":  "ridiculous",
+                                         "definition":  "Absurd, laughable; not reasonable.\nIt is ridiculous to think that one person can do the work of seven."
+                                     },
+                                     {
+                                         "word":  "rookery",
+                                         "definition":  "A breeding colony of seabirds, wading birds, seals or turtles.\nThe seals were gathered in the rookery\nat the water’s edge."
+                                     },
+                                     {
+                                         "word":  "rowdy",
+                                         "definition":  "Noisy and disorderly.\nThe supply teacher complained that the class was rowdy."
+                                     },
+                                     {
+                                         "word":  "sacrifice",
+                                         "definition":  "To give up one thing in favour of another.\nSometimes we have to sacrifice convenience for lowering our carbon footprint."
+                                     },
+                                     {
+                                         "word":  "saguaro",
+                                         "definition":  "A giant cactus native to Mexico and the south western United States.\nIt takes a saguaro ten years to grow its\nfirst one and a half inches."
+                                     },
+                                     {
+                                         "word":  "scholar",
+                                         "definition":  "A learned person, having much knowledge; a student.\nHe is a scholar of fine art."
+                                     },
+                                     {
+                                         "word":  "secretary",
+                                         "definition":  "An official of an organization who conducts its correspondence and keeps records.\nThe student council has a secretary\nwho records the minutes of the meetings."
+                                     },
+                                     {
+                                         "word":  "sensor",
+                                         "definition":  "A device which detects a physical property.\nA motion sensor turns the lights on\nwhen we get home."
+                                     },
+                                     {
+                                         "word":  "sepia",
+                                         "definition":  "Brownish in colour.\nShe printed the picture of her son and his grandfather in sepia tone."
+                                     },
+                                     {
+                                         "word":  "sequence",
+                                         "definition":  "A succession of things or events; the order in which events occur.\nShe read the Harry Potter series in the\nsequence of their publication."
+                                     },
+                                     {
+                                         "word":  "shellac",
+                                         "definition":  "Lac resin melted into flakes and used for making varnish.\nI gave the old table a thick coat of\nshellac."
+                                     },
+                                     {
+                                         "word":  "shenanigans",
+                                         "definition":  "High-spirited behaviours; mischief.\nThe children were up to all kinds of\nshenanigans over the weekend."
+                                     },
+                                     {
+                                         "word":  "sincerely",
+                                         "definition":  "In a manner which is genuine in feeling; honest straightforward.\nHe sincerely regretted not being able to attend his best friend’s wedding."
+                                     },
+                                     {
+                                         "word":  "skittish",
+                                         "definition":  "Nervous and shy; easily startled.\nOur young horse was skittish in its new surroundings."
+                                     },
+                                     {
+                                         "word":  "skoal",
+                                         "definition":  "Used to express good health to a friend before a drink.\nThe custom of clinking glasses and saying “skoal” may come from a Viking tradition to ensure to their drink hadn’t been poisoned."
+                                     },
+                                     {
+                                         "word":  "solitaire",
+                                         "definition":  "Any of various card games played by one person.\nHe often played solitaire to pass the\ntime."
+                                     },
+                                     {
+                                         "word":  "sowing",
+                                         "definition":  "To sprinkle or deposit seeds into the soil.\nThe farmer was sowing seeds into the ground."
+                                     },
+                                     {
+                                         "word":  "spartina",
+                                         "definition":  "A kind of grass.\nYou can find spartina growing in salt marshes."
+                                     },
+                                     {
+                                         "word":  "spawn",
+                                         "definition":  "To produce or generate, especially in large amounts.\nFrogs spawn many tadpoles."
+                                     },
+                                     {
+                                         "word":  "spectacular",
+                                         "definition":  "Dramatically beautiful or strikingly large.\nWe were treated to spectacular\nfireworks on Canada Day."
+                                     },
+                                     {
+                                         "word":  "spontaneous",
+                                         "definition":  "Not planned.\nWhile on vacation, the family made a spontaneous decision to visit Disney World."
+                                     },
+                                     {
+                                         "word":  "stasis",
+                                         "definition":  "A period of inactivity.\nHis writer’s block led to a temporary\nstasis."
+                                     },
+                                     {
+                                         "word":  "stewardship",
+                                         "definition":  "The job of taking care of something.\nThe caretaker has the stewardship of the school."
+                                     },
+                                     {
+                                         "word":  "suffix",
+                                         "definition":  "An ending added to a word to give another meaning.\nThe suffix “ly” often indicates an\nadverb."
+                                     }
+                                 ]
+                   },
+                   {
+                       "group":  12,
+                       "words":  [
+                                     {
+                                         "word":  "surrogate",
+                                         "definition":  "Of or having to do with a person or thing taking the place of another.\nThe common cowbird lays her eggs in the nest of another bird, which will act\nas the surrogate mother."
+                                     },
+                                     {
+                                         "word":  "synonym",
+                                         "definition":  "A word that means the same as another word.\nShut is a synonym of close."
+                                     },
+                                     {
+                                         "word":  "talcum",
+                                         "definition":  "A mineral with a soapy feel, often used for powder or lubricants.\nI like to use talcum powder after I’ve\nhad a shower."
+                                     },
+                                     {
+                                         "word":  "tapioca",
+                                         "definition":  "A starchy substance in hard, white grains.\nShe prefers tapioca pudding to rice\npudding."
+                                     },
+                                     {
+                                         "word":  "tarantula",
+                                         "definition":  "A large hairy spider.\nThe bite of a tarantula is painful but not that serious."
+                                     },
+                                     {
+                                         "word":  "taut",
+                                         "definition":  "Of rope or muscles that are tight, not slack.\nHe made sure that the ropes holding the mattress to the roof of his car were\ntaut."
+                                     },
+                                     {
+                                         "word":  "tedium",
+                                         "definition":  "The state of being tedious or tiresome. The tedium of the reading material was putting her to sleep."
+                                     },
+                                     {
+                                         "word":  "tenacity",
+                                         "definition":  "The quality of being very determined.\nHer tenacity helped her to become an elite athlete."
+                                     },
+                                     {
+                                         "word":  "territory",
+                                         "definition":  "In Canada, a region that has not been admitted as a province but has its own legislature.\nNunavut is the newest Canadian\nterritory."
+                                     },
+                                     {
+                                         "word":  "thoroughly",
+                                         "definition":  "Completely; doing all that should be done.\nPlease wash your hands thoroughly\nbefore supper."
+                                     },
+                                     {
+                                         "word":  "transcript",
+                                         "definition":  "A written or recorded copy.\nThe school sent me a transcript of my marks."
+                                     },
+                                     {
+                                         "word":  "treason",
+                                         "definition":  "The act of betraying one’s country or ruler.\nThe man’s disloyal actions against the government resulted in his arrest for\ntreason."
+                                     },
+                                     {
+                                         "word":  "trevally",
+                                         "definition":  "A marine sporting fish of the indo-pacific.\nThey use trevally for making sashimi."
+                                     },
+                                     {
+                                         "word":  "trivial",
+                                         "definition":  "Of little value or importance. Sometimes the media plays up trivial events and ignores the bigger issues."
+                                     },
+                                     {
+                                         "word":  "trombone",
+                                         "definition":  "A large brass wind instrument with a sliding tube.\nHe plays the trombone in the orchestra."
+                                     },
+                                     {
+                                         "word":  "tuff",
+                                         "definition":  "A soft porous rock from a volcanic eruption.\nI have several samples of volcanic tuff\nin my rock collection."
+                                     },
+                                     {
+                                         "word":  "tumultuous",
+                                         "definition":  "Disorderly, characterized by commotion or disturbance.\nThe seagull rookery was a tumultuous\nscene with thousands of birds all squawking at once."
+                                     },
+                                     {
+                                         "word":  "umbra",
+                                         "definition":  "The fully shaded inner region of a shadow that is cast by an opaque object.\nThe artist tried to capture the umbra of the shadow cast by the vase."
+                                     },
+                                     {
+                                         "word":  "underprivileged",
+                                         "definition":  "Deprived; not enjoying the normal standard of living in a society.\nI did not feel underprivileged using a\nbike instead of a car."
+                                     },
+                                     {
+                                         "word":  "unerring",
+                                         "definition":  "Not missing the intended target.\nThe hawk was unerring as it swooped down on the mouse."
+                                     },
+                                     {
+                                         "word":  "upheaval",
+                                         "definition":  "A violent or sudden change or disruption.\nThe earthquake caused an upheaval in\npeople’s lives."
+                                     },
+                                     {
+                                         "word":  "usher",
+                                         "definition":  "Someone who shows people to their seats in a theatre, church, etc.\nThe usher led me to an aisle seat."
+                                     },
+                                     {
+                                         "word":  "vair",
+                                         "definition":  "Fur obtained from red squirrels.\nIn the 13th and 14th century vair was used as trimming for clothing."
+                                     },
+                                     {
+                                         "word":  "ventilation",
+                                         "definition":  "A means of suppling fresh air.\nThe kitchen needs more adequate\nventilation to remove cooking odours."
+                                     },
+                                     {
+                                         "word":  "verification",
+                                         "definition":  "The process of establishing the accuracy of something.\nNewspapers go through a verification process before a story is printed."
+                                     },
+                                     {
+                                         "word":  "vigilant",
+                                         "definition":  "Keeping careful watch for possible danger.\nThe burglar was spotted by vigilant\nneighbours."
+                                     },
+                                     {
+                                         "word":  "vilify",
+                                         "definition":  "To speak ill of; to slander.\nEven if you disagree with him, you shouldn’t vilify him."
+                                     },
+                                     {
+                                         "word":  "vineyard",
+                                         "definition":  "A plantation of grapevines.\nThat vineyard produces many grapes."
+                                     },
+                                     {
+                                         "word":  "vinyl",
+                                         "definition":  "A type of plastic.\nThe siding on our house is made of\nvinyl."
+                                     },
+                                     {
+                                         "word":  "volition",
+                                         "definition":  "Determination.\nShe got into university on her own\nvolition."
+                                     },
+                                     {
+                                         "word":  "voltage",
+                                         "definition":  "The strength of an electrical current.\nDo not touch that wire as it carries a high voltage."
+                                     },
+                                     {
+                                         "word":  "volunteer",
+                                         "definition":  "A person who offers to do a task or who does a job without being paid.\nA volunteer at the hospital showed me\nwhere to find the clinic."
+                                     },
+                                     {
+                                         "word":  "wearisome",
+                                         "definition":  "Tiring, by monotony or length.\nSome people say it is wearisome to travel across the prairies because there is little to break up the monotony."
+                                     },
+                                     {
+                                         "word":  "welcome",
+                                         "definition":  "To show that one is pleased by someone’s arrival.\nThe whole family came to the door to\nwelcome their guests."
+                                     },
+                                     {
+                                         "word":  "welterweight",
+                                         "definition":  "In boxing, weighing between 63.5 and 67 kilograms.\nHe competed in the welterweight\ndivision of the boxing tournament."
+                                     },
+                                     {
+                                         "word":  "wondrous",
+                                         "definition":  "Wonderful; remarkable; admirable.\nThe rainbow was a wondrous sight."
+                                     },
+                                     {
+                                         "word":  "worrisome",
+                                         "definition":  "Causing anxiety or concern.\nWaiting for the laboratory results was\nworrisome."
+                                     },
+                                     {
+                                         "word":  "yeti",
+                                         "definition":  "Abominable snowman.\nThere was another reported sighting of a yeti in the mountains."
+                                     },
+                                     {
+                                         "word":  "zucchini",
+                                         "definition":  "A variety of summer squash.\nOur garden produces lots of zucchini."
+                                     }
+                                 ]
+                   }
+               ]
+}

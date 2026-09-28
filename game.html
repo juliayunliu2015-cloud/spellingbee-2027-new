@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spelling Bee 2027</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f0ff 0%, #ede9f6 50%, #f5f0ff 100%);
+            font-family: 'Poppins', sans-serif;
+            color: #5b21a8;
+            min-height: 100vh;
+            padding: 10px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        .header {
+            background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCr7AYPvVeqUPBshUWTIWJ2iXIQ-8K8woQJVGZzn3gXZOsD91x8eOwU5k1T9eDH0b8uekjykG9rQWN9kNidIOCSsd7p06J8IQ-11QKISWUKktStRsvX6OMpfJvCsTRYpo0Od6Lo3PzYt_R-4ub7Qf8h2gF39R8zVmMyA__pbMkAN2-H2q9T7SHEMfm5ULKJ1bkUS8YXaE2PlMU-5ep8QL2i4x-7ScztKYKjlG8ZguBjXW60PcBOj9SX88vAxsPyEuuZpbcOYlkE3Uc');
+            /* background-size: cover; */
+            background-position: left 25%;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 15px;
+            border: 3px solid rgba(168, 85, 247, 0.3);
+        }
+
+        .header h1 {
+            color: white;
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin: 0;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6), 0 0 4px rgba(0, 0, 0, 0.9);
+        }
+
+        .header p {
+            color: white;
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin: 8px 0 0 0;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6), 0 0 4px rgba(0, 0, 0, 0.9);
+        }
+
+        /* Tabs */
+        .tabs {
+            display: flex;
+            gap: 8px;
+            background-color: rgba(233, 213, 255, 0.6);
+            border-radius: 8px;
+            padding: 8px;
+            border: 2px solid rgba(168, 85, 247, 0.3);
+            margin-bottom: 10px;
+        }
+
+        .tab-button {
+            flex: 1;
+            padding: 10px 16px;
+            background-color: white;
+            border: 1px solid rgba(168, 85, 247, 0.2);
+            border-radius: 4px;
+            font-weight: 900;
+            font-size: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .tab-button:hover {
+            transform: translateY(-2px);
+        }
+
+        .tab-button.active {
+            background: linear-gradient(135deg, #a855f7 0%, #d946ef 100%);
+            color: white;
+            border: 1px solid #a855f7;
+        }
+
+        /* Tab Content */
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        h2 {
+            color: #6b21a8;
+            font-weight: 700;
+            margin-bottom: 12px;
+            font-size: 1.6rem;
+        }
+
+        h3 {
+            color: #6b21a8;
+            font-weight: 700;
+            margin: 8px 0 6px 0;
+            font-size: 1.1rem;
+        }
+
+        h4 {
+            color: #6b21a8;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        /* Form Elements */
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+            color: #5b21a8;
+            font-size: 0.95rem;
+        }
+
+        select, input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 2px solid rgba(168, 85, 247, 0.3);
+            border-radius: 6px;
+            font-size: 15px;
+            background-color: white;
+            color: #5b21a8;
+            font-family: 'Poppins', sans-serif;
+            transition: all 0.3s ease;
+        }
+
+        select:focus, input[type="text"]:focus {
+            border-color: #a855f7;
+            outline: none;
+        }
+
+        /* Progress */
+        .stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+
+        .stat-box {
+            background-color: white;
+            padding: 10px;
+            border-radius: 6px;
+            border: 2px solid rgba(168, 85, 247, 0.2);
+            text-align: center;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            margin-bottom: 3px;
+        }
+
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: #a855f7;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background-color: rgba(168, 85, 247, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #a855f7 0%, #d946ef 50%, #fbbf24 100%);
+            width: 0%;
+            transition: width 0.3s ease;
+            border-radius: 5px;
+        }
+
+        /* Exam Section */
+        .exam-container {
+            background-color: white;
+            padding: 15px;
+            border-radius: 6px;
+            border: 2px solid rgba(168, 85, 247, 0.2);
+            margin-bottom: 10px;
+        }
+
+        .exam-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 10px;
+            align-items: start;
+        }
+
+        .exam-left {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .exam-right {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .exam-right label {
+            margin-bottom: 0;
+        }
+
+        .exam-right input {
+            margin-bottom: 0;
+        }
+
+        .audio-button {
+            background: linear-gradient(135deg, #a855f7 0%, #d946ef 100%);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 6px;
+            font-weight: 900;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-bottom: 10px;
+            width: 100%;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .audio-button:hover {
+            transform: translateY(-2px);
+        }
+
+        button {
+            background: linear-gradient(135deg, #a855f7 0%, #d946ef 100%);
+            color: white;
+            border: 1px solid #6d28d9;
+            border-radius: 6px;
+            padding: 11px 25px;
+            font-weight: 900;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            letter-spacing: 0.5px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+        }
+
+        button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        /* Messages */
+        .message {
+            padding: 12px;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            border: 2px solid;
+            font-size: 0.95rem;
+        }
+
+        .success {
+            background-color: rgba(34, 197, 94, 0.1);
+            border-color: #22c55e;
+            color: #15803d;
+        }
+
+        .error {
+            background-color: rgba(239, 68, 68, 0.1);
+            border-color: #ef4444;
+            color: #dc2626;
+        }
+
+        .info {
+            background-color: rgba(59, 130, 246, 0.1);
+            border-color: #3b82f6;
+            color: #1e40af;
+        }
+
+        /* Study List */
+        .study-item {
+            background-color: white;
+            padding: 12px;
+            border-radius: 6px;
+            border: 2px solid rgba(168, 85, 247, 0.2);
+            margin-bottom: 10px;
+        }
+
+        .study-definition {
+            color: #5b21a8;
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .divider {
+            border: none;
+            border-top: 1px solid rgba(168, 85, 247, 0.2);
+            margin: 30px 0;
+        }
+
+        /* Form Input Row */
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 10px;
+            align-items: flex-end;
+        }
+
+        .form-row input {
+            margin-bottom: 0;
+        }
+
+        .form-row button {
+            margin: 0;
+        }
+
+        /* Fireworks */
+        .fireworks-container {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+        .fireworks-container.active {
+            display: block;
+        }
+
+        .firework {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            pointer-events: none;
+            animation: burst 1s ease-out forwards;
+        }
+
+        @keyframes burst {
+            to {
+                transform: translate(var(--tx), var(--ty));
+                opacity: 0;
+            }
+        }
+
+        .celebration-message {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 4rem;
+            font-weight: 900;
+            text-align: center;
+            z-index: 10000;
+            animation: bounce 0.8s ease-in-out;
+            pointer-events: none;
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translate(-50%, -50%) scale(0);
+            }
+            50% {
+                transform: translate(-50%, -50%) scale(1.2);
+            }
+            100% {
+                transform: translate(-50%, -50%) scale(1);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.6rem;
+            }
+
+            .header p {
+                font-size: 0.9rem;
+            }
+
+            .stats {
+                grid-template-columns: 1fr;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>GO FOR THE GOLD, VIVIAN! ✨</h1>
+            <p>"Every word you master today is a step closer to the 2027 Trophy! 🏆✨"</p>
+        </div>
+
+        <!-- Word List -->
+        <label for="word-list">Word List:</label>
+        <select id="word-list" onchange="changeWordList()"></select>
+
+        <!-- Tabs -->
+        <div class="tabs">
+            <button class="tab-button active" onclick="switchTab('exam')">🎯 Daily Exam</button>
+            <button class="tab-button" onclick="switchTab('learn')">📖 Alphabetical Learn</button>
+        </div>
+
+        <!-- TAB 1: DAILY EXAM -->
+        <div id="exam" class="tab-content active">
+            <h2>Daily Challenge</h2>
+            
+            <label for="exam-group">Select Exam Group or Practice Mode:</label>
+            <select id="exam-group" onchange="handleExamModeChange()">
+                <option value="all">All Words</option>
+                <option value="incorrect">❌ Incorrect Words Only</option>
+            </select>
+
+            <div id="group-options" style="display: none;">
+                <label for="group-number">Select Group (1-<span class="group-count">12</span>):</label>
+                <select id="group-number" onchange="handleExamModeChange()">
+                    <option value="">-- Select --</option>
+                </select>
+            </div>
+
+            <div id="exam-container"></div>
+        </div>
+
+        <!-- TAB 2: ALPHABETICAL LEARN -->
+        <div id="learn" class="tab-content">
+            <h2>📖 Alphabetical Study Groups</h2>
+            
+            <label for="learn-group">Select Learning Group (1-<span class="group-count">12</span>):</label>
+            <select id="learn-group" onchange="loadLearningGroup()">
+                <option value="">-- Select --</option>
+            </select>
+
+            <div id="learn-container"></div>
+        </div>
+    </div>
+
+    <div id="fireworks-container" class="fireworks-container"></div>
+    <div id="celebration-message" class="celebration-message"></div>
+
+    <script>
+        // State Management
+        const state = {
+            words: null,
+            currentTab: 'exam',
+            currentExamMode: 'all',
+            currentGroup: null,
+            currentWord: null,
+            wordQueue: [],
+            attempts: 0,
+            lastResult: null,
+            scores: {}, // date: { correct: n, total: n }
+            incorrectWordsCount: {}, // { word: mistakeCount, ... }
+            randomPool: null, // Random 33-word pool from kingdom selection
+            selectedKingdom: null
+        };
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            // Check for kingdom parameter from onboarding
+            const urlParams = new URLSearchParams(window.location.search);
+            const kingdomId = urlParams.get('kingdom');
+            if (kingdomId) {
+                state.selectedKingdom = parseInt(kingdomId);
+                state.currentExamMode = 'kingdom';
+            }
+            
+            loadState();
+            loadWords();
+        });
+
+        function loadState() {
+            const saved = localStorage.getItem('spellingBeeState');
+            if (saved) {
+                const data = JSON.parse(saved);
+                state.scores = data.scores || {};
+                state.incorrectWordsCount = data.incorrectWordsCount || {};
+            }
+        }
+
+        function saveState() {
+            localStorage.setItem('spellingBeeState', JSON.stringify({
+                scores: state.scores,
+                incorrectWordsCount: state.incorrectWordsCount
+            }));
+        }
+
+        // Available word lists. Lists without recorded audio use text-to-speech.
+        const WORD_LISTS = {
+            intermediate2021: { name: 'Intermediate 2021 (SBOC)', file: 'words_intermediate_2021.json', hasAudio: false },
+            original: { name: 'Original List', file: 'words.json', hasAudio: true }
+        };
+        const DEFAULT_WORD_LIST = 'intermediate2021';
+
+        function getWordListKey() {
+            let key = null;
+            try { key = localStorage.getItem('spellingBeeWordList'); } catch (e) {}
+            return WORD_LISTS[key] ? key : DEFAULT_WORD_LIST;
+        }
+
+        function changeWordList() {
+            try { localStorage.setItem('spellingBeeWordList', document.getElementById('word-list').value); } catch (e) {}
+            location.reload();
+        }
+
+        async function loadWords() {
+            const listKey = getWordListKey();
+            const listSelect = document.getElementById('word-list');
+            Object.entries(WORD_LISTS).forEach(([key, list]) => {
+                const option = document.createElement('option');
+                option.value = key;
+                option.textContent = list.name;
+                option.selected = key === listKey;
+                listSelect.appendChild(option);
+            });
+
+            try {
+                const response = await fetch(WORD_LISTS[listKey].file);
+                state.words = await response.json();
+                
+                // Add group property to each word
+                state.words.groups.forEach(group => {
+                    group.words.forEach(word => {
+                        word.group = group.group;
+                    });
+                });
+                
+                initializeUI();
+            } catch (error) {
+                console.error('Error loading words:', error);
+                document.getElementById('exam-container').innerHTML = '<div class="message error">Error: Could not load ' + WORD_LISTS[listKey].file + '. Make sure it\'s in the same directory as game.html</div>';
+            }
+        }
+
+        function initializeUI() {
+            document.querySelectorAll('.group-count').forEach(el => el.textContent = state.words.total_groups);
+
+            // Populate group selects
+            const groupSelects = document.querySelectorAll('#group-number, #learn-group');
+            groupSelects.forEach(select => {
+                for (let i = 1; i <= state.words.total_groups; i++) {
+                    const option = document.createElement('option');
+                    option.value = i;
+                    option.textContent = `Group ${i}`;
+                    select.appendChild(option);
+                }
+            });
+
+            // If coming from kingdom selection, load directly
+            if (state.selectedKingdom) {
+                loadExamMode();
+            } else {
+                // Set default exam mode
+                handleExamModeChange();
+            }
+        }
+
+        function switchTab(tab) {
+            state.currentTab = tab;
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.tab-button').forEach(el => el.classList.remove('active'));
+            document.getElementById(tab).classList.add('active');
+            document.querySelector(`[onclick="switchTab('${tab}')"]`).classList.add('active');
+        }
+
+        function handleExamModeChange() {
+            const modeSelect = document.getElementById('exam-group');
+            const groupOptions = document.getElementById('group-options');
+            const mode = modeSelect.value;
+
+            state.currentExamMode = mode;
+
+            if (mode === 'all' || mode === 'incorrect') {
+                groupOptions.style.display = 'none';
+                loadExamMode();
+            } else {
+                groupOptions.style.display = 'block';
+                const groupNum = document.getElementById('group-number').value;
+                if (groupNum) {
+                    loadExamMode(parseInt(groupNum));
+                }
+            }
+        }
+
+        function loadExamMode(groupNum = null) {
+            const container = document.getElementById('exam-container');
+
+            if (!state.words) {
+                container.innerHTML = '<div class="message error">Words not loaded</div>';
+                return;
+            }
+
+            let pool = [];
+
+            if (state.currentExamMode === 'kingdom') {
+                // Generate random 33-word pool from all words
+                const allWords = state.words.groups.flatMap(g => g.words);
+                state.randomPool = getRandomWords(allWords, 33);
+                pool = state.randomPool;
+            } else if (state.currentExamMode === 'all') {
+                pool = state.words.groups.flatMap(g => g.words);
+            } else if (state.currentExamMode === 'incorrect') {
+                pool = state.words.groups.flatMap(g => g.words).filter(w => state.incorrectWordsCount.hasOwnProperty(w.word));
+            }
+
+            if (pool.length === 0) {
+                container.innerHTML = '<div class="message info">No words found in this mode.</div>';
+                return;
+            }
+
+            // Shuffle and set word queue
+            state.wordQueue = pool.map((_, i) => i).sort(() => Math.random() - 0.5);
+            loadNextExamWord(pool);
+            renderExam(pool);
+        }
+
+        function getRandomWords(allWords, count) {
+            // Shuffle and pick random words
+            const shuffled = [...allWords].sort(() => Math.random() - 0.5);
+            return shuffled.slice(0, count);
+        }
+
+        function loadNextExamWord(pool) {
+            if (state.wordQueue.length > 0) {
+                const idx = state.wordQueue.shift();
+                state.currentWord = pool[idx];
+                state.attempts = 0;
+                state.lastResult = null;
+            } else {
+                state.currentWord = null;
+            }
+        }
+
+        function renderExam(pool) {
+            const container = document.getElementById('exam-container');
+            const today = new Date().toISOString().split('T')[0];
+            const todayScore = state.scores[today] || { correct: 0, total: 0 };
+
+            // Trigger fireworks on perfect score
+            if (todayScore.correct === 33 && state.lastResult && state.lastResult.is_correct) {
+                triggerFireworks();
+            }
+
+            if (!state.currentWord) {
+                container.innerHTML = `
+                    <div class="message info">No more words in this session. Great effort! 🎉</div>
+                    <button onclick="location.reload()">Restart</button>
+                `;
+                return;
+            }
+
+            const word = state.currentWord.word;
+            // Use group property from word if available (for random pools), otherwise calculate from pool index
+            const groupNum = state.currentWord.group || (Math.floor(pool.indexOf(state.currentWord) / 33) + 1);
+            const audioPath = `audio/group_${groupNum}/${word.replace(/\s+/g, '_').toLowerCase()}.mp3`;
+
+            let html = `
+                <div class="stats">
+                    <div class="stat-box">
+                        <div class="stat-label">Daily Progress</div>
+                        <div class="stat-value">${todayScore.correct}/33</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-label">Words Left</div>
+                        <div class="stat-value">${state.wordQueue.length}</div>
+                    </div>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: ${Math.min(todayScore.correct / 33 * 100, 100)}%"></div>
+                </div>
+            `;
+
+            if (state.lastResult) {
+                const res = state.lastResult;
+                if (res.is_correct) {
+                    html += `<div class="message success">✅ Correct! Ready for the next word?</div>`;
+                } else {
+                    html += `
+                        <div class="message error">
+                            ❌ Incorrect - Correct Spelling: <strong>${res.word}</strong><br>
+                            Meaning: ${res.definition}
+                        </div>
+                    `;
+                }
+            }
+
+            html += `
+                <div class="exam-container">
+                    <div class="exam-grid">
+                        <div class="exam-left">
+                            <button class="audio-button" onclick="playAudio('${audioPath}', '${word}')">🔊 Listen</button>
+            `;
+
+            if (state.lastResult && !state.lastResult.is_correct) {
+                html += `<button onclick="nextWord()" style="width: 100%;">Next Word</button>`;
+            }
+
+            html += `
+                        </div>
+                        <div class="exam-right">
+                            <label for="spell-input">Type the word:</label>
+                            <div class="form-row">
+                                <input type="text" id="spell-input" placeholder="Type your answer..." autocomplete="off">
+                                <button onclick="checkSpelling()">Check</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            container.innerHTML = html;
+
+            // Focus on input and clear it
+            const inputField = document.getElementById('spell-input');
+            if (inputField) {
+                inputField.value = '';
+                setTimeout(() => inputField.focus(), 100);
+            }
+        }
+
+        function playAudio(path, word) {
+            if (!WORD_LISTS[getWordListKey()].hasAudio) {
+                speakWord(word);
+                return;
+            }
+            const audio = new Audio(path);
+            audio.playbackRate = 0.8;
+            audio.play().catch(() => speakWord(word));
+        }
+
+        function speakWord(word) {
+            if (!('speechSynthesis' in window)) {
+                alert('Text-to-speech is not supported in this browser.');
+                return;
+            }
+            window.speechSynthesis.cancel();
+            const utterance = new SpeechSynthesisUtterance(word);
+            utterance.lang = 'en-CA';
+            utterance.rate = 0.8;
+            window.speechSynthesis.speak(utterance);
+        }
+
+        function triggerFireworks() {
+            const container = document.getElementById('fireworks-container');
+            const message = document.getElementById('celebration-message');
+            
+            container.classList.add('active');
+            message.innerHTML = '🎉 Perfect Score! 🎉<br>Amazing Job! 🏆';
+            message.style.display = 'block';
+            
+            const colors = ['#FF6B6B', '#4ECDC4', '#45B7D1', '#FFA07A', '#98D8C8', '#F7DC6F', '#BB8FCE'];
+            
+            for (let i = 0; i < 150; i++) {
+                setTimeout(() => {
+                    const firework = document.createElement('div');
+                    firework.classList.add('firework');
+                    const color = colors[Math.floor(Math.random() * colors.length)];
+                    firework.style.backgroundColor = color;
+                    
+                    const x = Math.random() * window.innerWidth;
+                    const y = Math.random() * window.innerHeight;
+                    firework.style.left = x + 'px';
+                    firework.style.top = y + 'px';
+                    
+                    const angle = (Math.random() * Math.PI * 2);
+                    const distance = 100 + Math.random() * 200;
+                    const tx = Math.cos(angle) * distance;
+                    const ty = Math.sin(angle) * distance;
+                    
+                    firework.style.setProperty('--tx', tx + 'px');
+                    firework.style.setProperty('--ty', ty + 'px');
+                    
+                    container.appendChild(firework);
+                    
+                    setTimeout(() => firework.remove(), 1000);
+                }, i * 30);
+            }
+            
+            setTimeout(() => {
+                container.classList.remove('active');
+                message.style.display = 'none';
+            }, 5000);
+        }
+
+        function checkSpelling() {
+            const input = document.getElementById('spell-input').value.trim().toLowerCase();
+            const correct = input === state.currentWord.word.trim().toLowerCase();
+
+            const today = new Date().toISOString().split('T')[0];
+            if (!state.scores[today]) {
+                state.scores[today] = { correct: 0, total: 0 };
+            }
+
+            state.attempts++;
+
+            if (correct) {
+                state.scores[today].correct++;
+                state.scores[today].total++;
+                // Auto-advance to next word on correct answer
+                const pool = state.words.groups.flatMap(g => g.words);
+                loadNextExamWord(pool);
+                state.lastResult = {
+                    is_correct: true,
+                    was_just_correct: true
+                };
+            } else {
+                state.scores[today].total++;
+                // Track incorrect word and increment count
+                const word = state.currentWord.word;
+                if (state.incorrectWordsCount.hasOwnProperty(word)) {
+                    state.incorrectWordsCount[word]++;
+                } else {
+                    state.incorrectWordsCount[word] = 1;
+                }
+                state.lastResult = {
+                    is_correct: false,
+                    word: state.currentWord.word,
+                    definition: state.currentWord.definition
+                };
+            }
+
+            saveState();
+            renderExam(state.words.groups.flatMap(g => g.words));
+        }
+
+        function nextWord() {
+            const pool = state.words.groups.flatMap(g => g.words);
+            loadNextExamWord(pool);
+            renderExam(pool);
+        }
+
+        function loadLearningGroup() {
+            const groupNum = parseInt(document.getElementById('learn-group').value);
+            if (!groupNum) {
+                document.getElementById('learn-container').innerHTML = '';
+                return;
+            }
+
+            const group = state.words.groups.find(g => g.group === groupNum);
+            if (!group) return;
+
+            let html = '';
+            group.words.forEach((word, idx) => {
+                const audioPath = `audio/group_${groupNum}/${word.word.replace(/\s+/g, '_').toLowerCase()}.mp3`;
+                html += `
+                    <div class="study-item">
+                        <h4>${word.word}</h4>
+                        <div class="study-definition"><strong>Meaning:</strong> ${word.definition}</div>
+                        <button class="audio-button" onclick="playAudio('${audioPath}', '${word.word}')">🔊 Listen</button>
+                    </div>
+                `;
+            });
+
+            document.getElementById('learn-container').innerHTML = html;
+        }
+    </script>
+</body>
+</html>
