@@ -69,14 +69,15 @@ const SB = (() => {
         return p.scores[todayKey()] || { correct: 0, total: 0 };
     }
 
-    function streak(p) {
+    // Consecutive days with at least minWords tested.
+    function streak(p, minWords = 1) {
         let count = 0;
         const day = new Date();
         // Today counts once practised; otherwise the streak can still run up to yesterday.
-        if (!(p.scores[todayKey(day)] && p.scores[todayKey(day)].total > 0)) {
+        if (!(p.scores[todayKey(day)] && p.scores[todayKey(day)].total >= minWords)) {
             day.setDate(day.getDate() - 1);
         }
-        while (p.scores[todayKey(day)] && p.scores[todayKey(day)].total > 0) {
+        while (p.scores[todayKey(day)] && p.scores[todayKey(day)].total >= minWords) {
             count++;
             day.setDate(day.getDate() - 1);
         }

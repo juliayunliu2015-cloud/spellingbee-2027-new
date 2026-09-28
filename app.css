@@ -430,6 +430,7 @@ html.high-contrast .word-example { color: var(--ink); }
 .cal-day.goal { background: var(--good-soft); color: var(--good); }
 .cal-day.done { background: var(--lavender); color: var(--lavender-ink); }
 .cal-day.missed { background: var(--bad-soft); color: var(--bad); }
+.cal-day.partial { background: var(--honey-soft); color: #5A3E00; }
 .cal-day.pending { background: var(--surface); border-color: var(--field-line); }
 .cal-day.future, .cal-day.none { background: transparent; color: var(--muted); }
 .cal-day.selected { border-color: var(--ink); }
@@ -445,6 +446,7 @@ html.high-contrast .word-example { color: var(--ink); }
 .status-pill.goal { background: var(--good-soft); color: var(--good); }
 .status-pill.done { background: var(--lavender); color: var(--lavender-ink); }
 .status-pill.missed { background: var(--bad-soft); color: var(--bad); }
+.status-pill.partial { background: var(--honey-soft); color: #5A3E00; }
 .status-pill.pending, .status-pill.none, .status-pill.future { background: var(--bg); color: var(--muted); }
 .plain-list { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; }
 .plain-list li { display: flex; justify-content: space-between; gap: 12px; padding: 8px 12px; border-radius: 10px; background: var(--bg); }

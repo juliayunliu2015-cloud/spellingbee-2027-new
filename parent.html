@@ -38,10 +38,10 @@
         </div>
 
         <section aria-label="This month at a glance" class="tiles">
-            <div class="tile"><span class="tile-label">Days practised this month</span><span class="tile-value" id="t-practised">0</span><span class="tile-note" id="t-practised-note"></span></div>
-            <div class="tile"><span class="tile-label">Days missed this month</span><span class="tile-value" id="t-missed">0</span><span class="tile-note">Days with no exam</span></div>
-            <div class="tile"><span class="tile-label">Daily goal reached</span><span class="tile-value" id="t-goal">0</span><span class="tile-note" id="t-goal-note">Days with 33+ correct</span></div>
-            <div class="tile"><span class="tile-label">Current streak</span><span class="tile-value" id="t-streak">0</span><span class="tile-note">Days in a row</span></div>
+            <div class="tile"><span class="tile-label">Days done this month</span><span class="tile-value" id="t-done">0</span><span class="tile-note" id="t-done-note">All 33 words tested</span></div>
+            <div class="tile"><span class="tile-label">Not finished</span><span class="tile-value" id="t-partial">0</span><span class="tile-note" id="t-partial-note">Started, but fewer than 33 words</span></div>
+            <div class="tile"><span class="tile-label">Days missed this month</span><span class="tile-value" id="t-missed">0</span><span class="tile-note">No exam at all</span></div>
+            <div class="tile"><span class="tile-label">Done streak</span><span class="tile-value" id="t-streak">0</span><span class="tile-note">Days in a row with all 33 tested</span></div>
         </section>
 
         <div class="parent-grid">
@@ -58,10 +58,11 @@
                     <tbody id="cal-body"></tbody>
                 </table>
                 <div class="legend" aria-label="Legend">
-                    <span><i class="swatch" style="background: var(--good-soft); border: 1px solid var(--good)"></i>Goal reached</span>
-                    <span><i class="swatch" style="background: var(--lavender); border: 1px solid var(--lavender-ink)"></i>Practised</span>
+                    <span><i class="swatch" style="background: var(--good-soft); border: 1px solid var(--good)"></i>Goal: all 33 correct</span>
+                    <span><i class="swatch" style="background: var(--lavender); border: 1px solid var(--lavender-ink)"></i>Done: 33 tested</span>
+                    <span><i class="swatch" style="background: var(--honey-soft); border: 1px solid #8A6100"></i>Not finished (e.g. 12/33)</span>
                     <span><i class="swatch" style="background: var(--bad-soft); border: 1px solid var(--bad)"></i>Missed</span>
-                    <span><i class="swatch" style="background: var(--surface); border: 2px solid var(--field-line)"></i>Today, not yet</span>
+                    <span><i class="swatch" style="background: var(--surface); border: 2px solid var(--field-line)"></i>Today, in progress</span>
                 </div>
             </section>
 
@@ -103,7 +104,7 @@
 
         const ICON_OK = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>';
         const ICON_NO = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>';
-        const STATUS_TEXT = { goal: 'Goal reached', done: 'Practised', missed: 'Missed', pending: 'Not yet today', future: 'Upcoming', none: 'Before tracking started' };
+        const STATUS_TEXT = { goal: 'Done, goal reached', done: 'Done', partial: 'Not finished', missed: 'Missed', pending: 'Today, in progress', future: 'Upcoming', none: 'Before tracking started' };
         const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
         const DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
@@ -121,10 +122,13 @@
 
         function statusOf(key) {
             const rec = progress.scores[key];
-            if (rec && rec.total > 0) return rec.correct >= GOAL ? 'goal' : 'done';
+            const tested = rec ? rec.total : 0;
+            // "Done" only once the full daily set (33 words) has been tested.
+            if (tested >= GOAL) return rec.correct >= GOAL ? 'goal' : 'done';
             if (key > todayKey) return 'future';
-            if (key < firstKey) return 'none';
             if (key === todayKey) return 'pending';
+            if (tested > 0) return 'partial';
+            if (key < firstKey) return 'none';
             return 'missed';
         }
 
@@ -139,13 +143,13 @@
             const dayCount = new Date().getDate();
             for (let d = 1; d <= dayCount; d++) upToToday.push(keyOf(new Date().getFullYear(), new Date().getMonth(), d));
             const statuses = upToToday.map(statusOf);
-            const practised = statuses.filter(s => s === 'goal' || s === 'done').length;
-            document.getElementById('t-practised').textContent = practised;
-            document.getElementById('t-practised-note').textContent = `Out of ${upToToday.filter(k => statusOf(k) !== 'none').length} days so far in ${MONTHS[new Date().getMonth()]}`;
-            document.getElementById('t-missed').textContent = statuses.filter(s => s === 'missed').length;
-            document.getElementById('t-goal').textContent = statuses.filter(s => s === 'goal').length;
-            document.getElementById('t-goal-note').textContent = `Days with ${GOAL}+ correct`;
-            const streak = SB.streak(progress);
+            const goalDays = statuses.filter(st => st === 'goal').length;
+            document.getElementById('t-done').textContent = statuses.filter(st => st === 'goal' || st === 'done').length;
+            document.getElementById('t-done-note').textContent = `All ${GOAL} words tested · ${goalDays} with all ${GOAL} correct`;
+            document.getElementById('t-partial').textContent = statuses.filter(st => st === 'partial').length;
+            document.getElementById('t-partial-note').textContent = `Started, but fewer than ${GOAL} words`;
+            document.getElementById('t-missed').textContent = statuses.filter(st => st === 'missed').length;
+            const streak = SB.streak(progress, GOAL);
             document.getElementById('t-streak').textContent = streak;
         }
 
@@ -160,8 +164,9 @@
                 const key = keyOf(year, month, d);
                 const st = statusOf(key);
                 const rec = progress.scores[key];
-                const detail = rec && rec.total > 0 ? `, ${rec.correct} of ${rec.total} correct` : '';
-                const tag = st === 'goal' ? `${ICON_OK}<span class="tag-text">Goal</span>` : st === 'done' ? `${ICON_OK}<span class="tag-text">Done</span>` : st === 'missed' ? `${ICON_NO}<span class="tag-text">Missed</span>` : st === 'pending' ? '<span class="tag-text">Today</span>' : '';
+                const detail = rec && rec.total > 0 ? `, ${rec.total} of ${GOAL} words tested, ${rec.correct} correct` : '';
+                const count = rec ? `${Math.min(rec.total, GOAL)}/${GOAL}` : '';
+                const tag = st === 'goal' ? `${ICON_OK}<span class="tag-text">Goal</span>` : st === 'done' ? `${ICON_OK}<span class="tag-text">Done</span>` : st === 'missed' ? `${ICON_NO}<span class="tag-text">Missed</span>` : st === 'partial' ? count : st === 'pending' ? (rec && rec.total ? count : '<span class="tag-text">Today</span>') : '';
                 const clickable = st !== 'future' && st !== 'none';
                 html += `<td><button type="button" class="cal-day ${st}${key === view.selected ? ' selected' : ''}" data-key="${key}"${clickable ? '' : ' disabled'} aria-pressed="${key === view.selected}" aria-label="${niceDate(key)}: ${STATUS_TEXT[st]}${detail}"><span class="num" aria-hidden="true">${d}</span><span class="tag" aria-hidden="true">${tag}</span></button></td>`;
                 if ((first + d) % 7 === 0 && d !== days) html += '</tr><tr>';
@@ -186,6 +191,9 @@
             const rec = progress.scores[key];
             document.getElementById('day-title').textContent = niceDate(key);
             let html = `<p class="status-pill ${st}">${STATUS_TEXT[st]}</p>`;
+            if (rec && rec.total > 0 && rec.total < GOAL) {
+                html += `<p style="margin-top: 10px">Tested ${rec.total} of ${GOAL} words — ${GOAL - rec.total} more needed for this day to count as done.</p>`;
+            }
             if (rec && rec.total > 0) {
                 const pct = Math.round(rec.correct / rec.total * 100);
                 html += `
