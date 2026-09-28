@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spelling Bee 2027 – Parent</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=M+PLUS+Rounded+1c:wght@500;700;800&family=Nunito:wght@400;600;700;800&display=swap">
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            <svg width="36" height="36" viewBox="0 0 36 36" aria-hidden="true"><ellipse cx="12" cy="10" rx="7" ry="5" fill="#EDE6FA" stroke="#6B4FA0" stroke-width="1.5"/><ellipse cx="24" cy="10" rx="7" ry="5" fill="#EDE6FA" stroke="#6B4FA0" stroke-width="1.5"/><ellipse cx="18" cy="21" rx="11" ry="10" fill="#F6C453" stroke="#2A1F3D" stroke-width="2"/><path d="M10 18h16M9 24h18" stroke="#2A1F3D" stroke-width="3" stroke-linecap="round"/></svg>
+            <span>Spelling Bee <span class="brand-year">2027</span></span>
+        </a>
+        <nav class="main-nav" aria-label="Main">
+            <a href="index.html" data-nav="home">Home</a>
+            <a href="game.html" data-nav="exam">Daily Exam</a>
+            <a href="game.html?view=study" data-nav="study">Study</a>
+            <a href="parent.html" data-nav="parent">Parent</a>
+        </nav>
+        <div class="header-tools">
+            <label for="word-list">Word list</label>
+            <select id="word-list" class="select"></select>
+            <div class="user-chip"><span class="avatar-initial" aria-hidden="true">V</span><span>Vivian</span></div>
+        </div>
+    </header>
+
+    <main id="main" class="page">
+        <div style="display: flex; flex-direction: column; gap: 6px">
+            <h1 style="font-size: 2.125rem">Parent dashboard</h1>
+            <p class="muted">Vivian’s practice record and the words she finds tricky. This record is saved in this browser on this device.</p>
+        </div>
+
+        <section aria-label="This month at a glance" class="tiles">
+            <div class="tile"><span class="tile-label">Days practised this month</span><span class="tile-value" id="t-practised">0</span><span class="tile-note" id="t-practised-note"></span></div>
+            <div class="tile"><span class="tile-label">Days missed this month</span><span class="tile-value" id="t-missed">0</span><span class="tile-note">Days with no exam</span></div>
+            <div class="tile"><span class="tile-label">Daily goal reached</span><span class="tile-value" id="t-goal">0</span><span class="tile-note" id="t-goal-note">Days with 33+ correct</span></div>
+            <div class="tile"><span class="tile-label">Current streak</span><span class="tile-value" id="t-streak">0</span><span class="tile-note">Days in a row</span></div>
+        </section>
+
+        <div class="parent-grid">
+            <section class="card panel" aria-labelledby="cal-title">
+                <div class="cal-head">
+                    <button type="button" class="icon-btn" id="prev-month" aria-label="Previous month"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+                    <h2 id="cal-title" aria-live="polite">Month</h2>
+                    <button type="button" class="icon-btn" id="next-month" aria-label="Next month"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+                </div>
+                <table class="cal" aria-labelledby="cal-title">
+                    <thead><tr>
+                        <th scope="col" abbr="Sunday">Sun</th><th scope="col" abbr="Monday">Mon</th><th scope="col" abbr="Tuesday">Tue</th><th scope="col" abbr="Wednesday">Wed</th><th scope="col" abbr="Thursday">Thu</th><th scope="col" abbr="Friday">Fri</th><th scope="col" abbr="Saturday">Sat</th>
+                    </tr></thead>
+                    <tbody id="cal-body"></tbody>
+                </table>
+                <div class="legend" aria-label="Legend">
+                    <span><i class="swatch" style="background: var(--good-soft); border: 1px solid var(--good)"></i>Goal reached</span>
+                    <span><i class="swatch" style="background: var(--lavender); border: 1px solid var(--lavender-ink)"></i>Practised</span>
+                    <span><i class="swatch" style="background: var(--bad-soft); border: 1px solid var(--bad)"></i>Missed</span>
+                    <span><i class="swatch" style="background: var(--surface); border: 2px solid var(--field-line)"></i>Today, not yet</span>
+                </div>
+            </section>
+
+            <section class="card panel" aria-labelledby="day-title" id="day-panel">
+                <h2 id="day-title" tabindex="-1">Day details</h2>
+                <div id="day-body"></div>
+            </section>
+        </div>
+
+        <section class="card panel" aria-labelledby="missed-title">
+            <div class="section-head">
+                <h2 id="missed-title">Incorrect words</h2>
+                <p class="muted" id="missed-summary"></p>
+            </div>
+            <div class="toolbar">
+                <label for="sort" style="font-weight: 700">Sort by</label>
+                <select id="sort" class="select">
+                    <option value="count">Most missed</option>
+                    <option value="recent">Most recent</option>
+                    <option value="az">A to Z</option>
+                </select>
+                <a class="btn btn-primary btn-small" href="game.html?mode=missed">Practise these words</a>
+                <button type="button" class="btn btn-outline btn-small" id="export-words">Download words (CSV)</button>
+                <button type="button" class="btn btn-outline btn-small" id="export-days">Download daily log (CSV)</button>
+            </div>
+            <div class="table-wrap" id="missed-wrap"></div>
+        </section>
+    </main>
+
+    <nav class="bottom-nav" aria-label="Main">
+        <a href="index.html" data-nav="home"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>Home</a>
+        <a href="game.html" data-nav="exam"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/></svg>Exam</a>
+        <a href="game.html?view=study" data-nav="study"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 21V5M9 7h6"/></svg>Study</a>
+        <a href="parent.html" data-nav="parent"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Parent</a>
+    </nav>
+
+    <script>
+        SB.initHeader('parent');
+
+        const ICON_OK = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>';
+        const ICON_NO = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>';
+        const STATUS_TEXT = { goal: 'Goal reached', done: 'Practised', missed: 'Missed', pending: 'Not yet today', future: 'Upcoming', none: 'Before tracking started' };
+        const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+        const DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+        const progress = SB.getProgress();
+        const todayKey = SB.todayKey();
+        let GOAL = 33;
+        const practisedKeys = Object.keys(progress.scores).filter(k => progress.scores[k] && progress.scores[k].total > 0).sort();
+        const firstKey = practisedKeys[0] || todayKey;
+
+        const view = { year: new Date().getFullYear(), month: new Date().getMonth(), selected: todayKey };
+
+        function keyOf(y, m, d) {
+            return SB.todayKey(new Date(y, m, d));
+        }
+
+        function statusOf(key) {
+            const rec = progress.scores[key];
+            if (rec && rec.total > 0) return rec.correct >= GOAL ? 'goal' : 'done';
+            if (key > todayKey) return 'future';
+            if (key < firstKey) return 'none';
+            if (key === todayKey) return 'pending';
+            return 'missed';
+        }
+
+        function niceDate(key) {
+            const [y, m, d] = key.split('-').map(Number);
+            const date = new Date(y, m - 1, d);
+            return `${DAYS[date.getDay()]}, ${MONTHS[m - 1]} ${d}, ${y}`;
+        }
+
+        function renderTiles() {
+            const upToToday = [];
+            const dayCount = new Date().getDate();
+            for (let d = 1; d <= dayCount; d++) upToToday.push(keyOf(new Date().getFullYear(), new Date().getMonth(), d));
+            const statuses = upToToday.map(statusOf);
+            const practised = statuses.filter(s => s === 'goal' || s === 'done').length;
+            document.getElementById('t-practised').textContent = practised;
+            document.getElementById('t-practised-note').textContent = `Out of ${upToToday.filter(k => statusOf(k) !== 'none').length} days so far in ${MONTHS[new Date().getMonth()]}`;
+            document.getElementById('t-missed').textContent = statuses.filter(s => s === 'missed').length;
+            document.getElementById('t-goal').textContent = statuses.filter(s => s === 'goal').length;
+            document.getElementById('t-goal-note').textContent = `Days with ${GOAL}+ correct`;
+            const streak = SB.streak(progress);
+            document.getElementById('t-streak').textContent = streak;
+        }
+
+        function renderCalendar() {
+            const { year, month } = view;
+            document.getElementById('cal-title').textContent = `${MONTHS[month]} ${year}`;
+            const first = new Date(year, month, 1).getDay();
+            const days = new Date(year, month + 1, 0).getDate();
+            let html = '<tr>';
+            for (let i = 0; i < first; i++) html += '<td></td>';
+            for (let d = 1; d <= days; d++) {
+                const key = keyOf(year, month, d);
+                const st = statusOf(key);
+                const rec = progress.scores[key];
+                const detail = rec && rec.total > 0 ? `, ${rec.correct} of ${rec.total} correct` : '';
+                const tag = st === 'goal' ? `${ICON_OK}<span class="tag-text">Goal</span>` : st === 'done' ? `${ICON_OK}<span class="tag-text">Done</span>` : st === 'missed' ? `${ICON_NO}<span class="tag-text">Missed</span>` : st === 'pending' ? '<span class="tag-text">Today</span>' : '';
+                const clickable = st !== 'future' && st !== 'none';
+                html += `<td><button type="button" class="cal-day ${st}${key === view.selected ? ' selected' : ''}" data-key="${key}"${clickable ? '' : ' disabled'} aria-pressed="${key === view.selected}" aria-label="${niceDate(key)}: ${STATUS_TEXT[st]}${detail}"><span class="num" aria-hidden="true">${d}</span><span class="tag" aria-hidden="true">${tag}</span></button></td>`;
+                if ((first + d) % 7 === 0 && d !== days) html += '</tr><tr>';
+            }
+            const trailing = (7 - ((first + days) % 7)) % 7;
+            for (let i = 0; i < trailing; i++) html += '<td></td>';
+            html += '</tr>';
+            document.getElementById('cal-body').innerHTML = html;
+            document.querySelectorAll('.cal-day[data-key]:not([disabled])').forEach(b => b.addEventListener('click', () => {
+                view.selected = b.dataset.key;
+                renderCalendar();
+                renderDay();
+                document.querySelector(`.cal-day[data-key="${view.selected}"]`).focus();
+            }));
+            const now = new Date();
+            document.getElementById('next-month').disabled = year > now.getFullYear() || (year === now.getFullYear() && month >= now.getMonth());
+        }
+
+        function renderDay() {
+            const key = view.selected;
+            const st = statusOf(key);
+            const rec = progress.scores[key];
+            document.getElementById('day-title').textContent = niceDate(key);
+            let html = `<p class="status-pill ${st}">${STATUS_TEXT[st]}</p>`;
+            if (rec && rec.total > 0) {
+                const pct = Math.round(rec.correct / rec.total * 100);
+                html += `
+                    <dl class="day-stats" style="margin-top: 14px">
+                        <div><dt>Words tried</dt><dd>${rec.total}</dd></div>
+                        <div><dt>Spelled correctly</dt><dd>${rec.correct}</dd></div>
+                        <div><dt>Incorrect</dt><dd>${rec.total - rec.correct}</dd></div>
+                        <div><dt>Accuracy</dt><dd>${pct}%</dd></div>
+                    </dl>`;
+                const wrong = rec.wrong ? Object.entries(rec.wrong).sort((a, b) => b[1] - a[1]) : [];
+                if (wrong.length) {
+                    html += `<h3 style="font-size: 1rem; margin: 18px 0 8px">Words missed this day</h3><ul class="plain-list">${wrong.map(([w, n]) => `<li><strong>${SB.esc(w)}</strong><span>${n} ${n === 1 ? 'time' : 'times'}</span></li>`).join('')}</ul>`;
+                } else if (rec.total > rec.correct) {
+                    html += '<p class="muted" style="margin-top: 14px">The list of missed words is recorded from this update onward, so it isn’t available for this day.</p>';
+                } else {
+                    html += '<p style="margin-top: 14px">No mistakes this day. Wonderful!</p>';
+                }
+            } else if (st === 'missed') {
+                html += '<p style="margin-top: 14px">No Daily Exam was done on this day.</p>';
+            } else if (st === 'pending') {
+                html += '<p style="margin-top: 14px">No words practised yet today.</p>';
+            }
+            document.getElementById('day-body').innerHTML = html;
+        }
+
+        function missedRows() {
+            return Object.entries(progress.incorrectWordsCount).map(([word, count]) => ({
+                word,
+                count,
+                right: progress.correctWords[word] || 0,
+                last: progress.lastMissed[word] || '',
+                typed: progress.lastTyped[word] || ''
+            }));
+        }
+
+        function renderMissed() {
+            const rows = missedRows();
+            const sort = document.getElementById('sort').value;
+            if (sort === 'count') rows.sort((a, b) => b.count - a.count || a.word.localeCompare(b.word));
+            else if (sort === 'recent') rows.sort((a, b) => b.last.localeCompare(a.last) || b.count - a.count);
+            else rows.sort((a, b) => a.word.localeCompare(b.word));
+            const totalMisses = rows.reduce((n, r) => n + r.count, 0);
+            document.getElementById('missed-summary').textContent = rows.length
+                ? `${rows.length} different ${rows.length === 1 ? 'word' : 'words'}, ${totalMisses} ${totalMisses === 1 ? 'mistake' : 'mistakes'} in total`
+                : '';
+            const wrap = document.getElementById('missed-wrap');
+            if (!rows.length) {
+                wrap.innerHTML = '<p class="empty-note">No incorrect words yet. They will appear here after Vivian misses a word in the Daily Exam.</p>';
+                return;
+            }
+            const max = Math.max(...rows.map(r => r.count));
+            wrap.innerHTML = `
+                <table class="data-table">
+                    <caption class="visually-hidden">Incorrect words and how often each was missed</caption>
+                    <thead><tr><th scope="col">Word</th><th scope="col" class="num">Times wrong</th><th scope="col" class="num">Times right</th><th scope="col">Last typed as</th><th scope="col">Last missed</th></tr></thead>
+                    <tbody>${rows.map(r => `
+                        <tr>
+                            <td class="word">${SB.esc(r.word)}</td>
+                            <td class="num">${r.count}<span class="count-bar" aria-hidden="true" style="width: ${Math.max(6, r.count / max * 60)}px"></span></td>
+                            <td class="num">${r.right}</td>
+                            <td>${r.typed ? `“${SB.esc(r.typed)}”` : '<span class="muted">–</span>'}</td>
+                            <td>${r.last ? SB.esc(niceDate(r.last)) : '<span class="muted">Not recorded</span>'}</td>
+                        </tr>`).join('')}
+                    </tbody>
+                </table>`;
+        }
+
+        function download(name, rows) {
+            const csv = rows.map(r => r.map(v => `"${String(v).replace(/"/g, '""')}"`).join(',')).join('\r\n');
+            const blob = new Blob(['﻿' + csv], { type: 'text/csv;charset=utf-8' });
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = name;
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+            setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+        }
+
+        document.getElementById('export-words').addEventListener('click', () => {
+            const rows = missedRows().sort((a, b) => b.count - a.count);
+            download(`vivian-incorrect-words-${todayKey}.csv`, [['Word', 'Times wrong', 'Times right', 'Last typed as', 'Last missed'], ...rows.map(r => [r.word, r.count, r.right, r.typed, r.last])]);
+        });
+
+        document.getElementById('export-days').addEventListener('click', () => {
+            const rows = [['Date', 'Status', 'Words tried', 'Correct', 'Incorrect', 'Words missed']];
+            const d = new Date(firstKey.slice(0, 4), Number(firstKey.slice(5, 7)) - 1, Number(firstKey.slice(8, 10)));
+            const end = new Date();
+            while (SB.todayKey(d) <= SB.todayKey(end)) {
+                const key = SB.todayKey(d);
+                const rec = progress.scores[key] || { correct: 0, total: 0 };
+                const wrong = rec.wrong ? Object.entries(rec.wrong).map(([w, n]) => n > 1 ? `${w} (${n})` : w).join('; ') : '';
+                rows.push([key, STATUS_TEXT[statusOf(key)], rec.total, rec.correct, rec.total - rec.correct, wrong]);
+                d.setDate(d.getDate() + 1);
+            }
+            download(`vivian-daily-log-${todayKey}.csv`, rows);
+        });
+
+        document.getElementById('prev-month').addEventListener('click', () => {
+            view.month--;
+            if (view.month < 0) { view.month = 11; view.year--; }
+            renderCalendar();
+        });
+        document.getElementById('next-month').addEventListener('click', () => {
+            view.month++;
+            if (view.month > 11) { view.month = 0; view.year++; }
+            renderCalendar();
+        });
+        document.getElementById('sort').addEventListener('change', renderMissed);
+
+        function renderAll() {
+            renderTiles();
+            renderCalendar();
+            renderDay();
+            renderMissed();
+        }
+
+        SB.loadWords().then(data => { GOAL = data.goal; renderAll(); }).catch(renderAll);
+    </script>
+</body>
+</html>

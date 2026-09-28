@@ -49,7 +49,9 @@ const SB = (() => {
             scores: s.scores || {},
             incorrectWordsCount: s.incorrectWordsCount || {},
             correctWords: s.correctWords || {},
-            starred: s.starred || {}
+            starred: s.starred || {},
+            lastMissed: s.lastMissed || {},
+            lastTyped: s.lastTyped || {}
         };
     }
 
@@ -98,7 +100,8 @@ const SB = (() => {
                     example: parts.slice(1).join(' ').trim(),
                     pos: w.pos || '',
                     pron: w.pronunciation || '',
-                    alt: w.alternate || ''
+                    alt: w.alternate || '',
+                    audio: w.audio || ''
                 });
             });
         });
@@ -155,7 +158,8 @@ const SB = (() => {
             speak(w.word, rate);
             return;
         }
-        const path = `audio/group_${w.group}/${w.word.replace(/\s+/g, '_').toLowerCase()}.mp3`;
+        const file = w.audio || w.word.replace(/\s+/g, '_').toLowerCase();
+        const path = `audio/group_${w.group}/${file}.mp3`;
         currentAudio = new Audio(path);
         currentAudio.playbackRate = Math.max(0.5, rate);
         currentAudio.play().catch(() => speak(w.word, rate));

@@ -22,6 +22,7 @@
             <a href="index.html" data-nav="home">Home</a>
             <a href="game.html" data-nav="exam">Daily Exam</a>
             <a href="game.html?view=study" data-nav="study">Study</a>
+            <a href="parent.html" data-nav="parent">Parent</a>
         </nav>
         <div class="header-tools">
             <label for="word-list">Word list</label>
@@ -100,6 +101,7 @@
         <a href="index.html" data-nav="home"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>Home</a>
         <a href="game.html" data-nav="exam"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/></svg>Exam</a>
         <a href="game.html?view=study" data-nav="study"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 21V5M9 7h6"/></svg>Study</a>
+        <a href="parent.html" data-nav="parent"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Parent</a>
     </nav>
 
     <script>
@@ -230,8 +232,23 @@
                 feedback = `
                     <div class="feedback feedback-bad">
                         ${ICON_CROSS}
-                        <div style="flex-grow: 1"><p class="feedback-title">Not quite — you’ll get it next time.</p><p class="feedback-body">You typed “${SB.esc(exam.typed)}”. The spelling is <strong>${SB.esc(w.word.toUpperCase().split('').join('-'))}</strong>.</p></div>
+                        <div style="flex-grow: 1"><p class="feedback-title">Not quite — you’ll get it next time.</p><p class="feedback-body">You typed “${SB.esc(exam.typed)}”.</p></div>
                         <button type="button" class="next-btn" id="next-btn">Next word</button>
+                    </div>
+                    <div class="answer-card">
+                        <p class="answer-label">The correct spelling</p>
+                        <div class="answer-word-row">
+                            <p class="answer-word">${SB.esc(w.word)}</p>
+                            <button type="button" class="small-listen" id="hear-again-btn" aria-label="Listen to ${SB.esc(w.word)}">${ICON_SPEAKER_SM}Listen</button>
+                        </div>
+                        <p class="answer-letters">${SB.esc(w.word.toUpperCase().split('').join(' - '))}</p>
+                        ${w.pron || w.pos ? `<div class="meta-row">${w.pron ? `<span class="pron">${SB.esc(w.pron)}</span>` : ''}${w.pos ? `<span class="pos-tag">${SB.esc(w.pos)}</span>` : ''}</div>` : ''}
+                        ${w.alt ? `<p class="muted" style="font-size: 0.875rem">Also spelled: ${SB.esc(w.alt)}</p>` : ''}
+                        <dl class="answer-details">
+                            <dt>Meaning</dt>
+                            <dd>${SB.esc(w.def || 'No definition available.')}</dd>
+                            ${w.example ? `<dt>Sample sentence</dt><dd class="word-example">${SB.esc(w.example)}</dd>` : ''}
+                        </dl>
                     </div>`;
             } else if (exam.result === 'empty') {
                 feedback = `<div class="feedback feedback-info"><div>Type the word first, then press Check.</div></div>`;
@@ -279,6 +296,8 @@
                 e.preventDefault();
                 checkAnswer(w);
             });
+            const hearAgain = document.getElementById('hear-again-btn');
+            if (hearAgain) hearAgain.addEventListener('click', () => SB.playWord(w));
             const next = document.getElementById('next-btn');
             if (next) next.addEventListener('click', nextWord);
 
@@ -305,6 +324,12 @@
             } else {
                 exam.result = 'wrong';
                 progress.incorrectWordsCount[w.word] = (progress.incorrectWordsCount[w.word] || 0) + 1;
+                // Per-day record for the Parent page: which words were missed that day, and what was typed.
+                const day = progress.scores[today];
+                if (!day.wrong) day.wrong = {};
+                day.wrong[w.word] = (day.wrong[w.word] || 0) + 1;
+                progress.lastMissed[w.word] = today;
+                progress.lastTyped[w.word] = typed;
             }
             SB.saveProgress(progress);
             renderExam('next');
