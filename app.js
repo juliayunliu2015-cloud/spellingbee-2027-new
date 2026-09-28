@@ -1,11 +1,12 @@
 // Spelling Bee 2027 — shared logic for every page (word lists, progress, settings, audio).
 const SB = (() => {
     const WORD_LISTS = {
-        intermediate2021: { name: 'Intermediate 2021', file: 'words_intermediate_2021.json', hasAudio: false },
-        junior2019: { name: '2019 Junior', file: 'words_junior_2019.json', hasAudio: false },
-        original: { name: 'Original List', file: 'words.json', hasAudio: true }
+        junior2019: { name: '2019 Junior', file: 'words_junior_2019.json', hasAudio: false }
+        // To offer more lists in the Word list menu, uncomment them:
+        // intermediate2021: { name: 'Intermediate 2021', file: 'words_intermediate_2021.json', hasAudio: false },
+        // original: { name: 'Original List', file: 'words.json', hasAudio: true }
     };
-    const DEFAULT_LIST = 'intermediate2021';
+    const DEFAULT_LIST = 'junior2019';
 
     const QUESTS = [
         { id: 1, name: 'The Village of First Words', level: 'Level 1 · Beginner', desc: 'Simple words to start your adventure.', tint: '--primary-soft', icon: '<path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/>' },
