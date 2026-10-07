@@ -45,8 +45,18 @@ const SB = (() => {
     }
 
     // Progress is shared across lists and keyed by word, as in the original app.
+    // It has its own key: other Spelling Bee apps on the same github.io site save to 'spellingBeeState'
+    // and drop the fields they don't know about (daily missed words, last typed, etc.).
+    const STATE_KEY = 'spellingBee2027State';
+    const LEGACY_STATE_KEY = 'spellingBeeState';
+
     function getProgress() {
-        const s = readJSON('spellingBeeState', {}) || {};
+        let s = readJSON(STATE_KEY, null);
+        if (!s) {
+            // First run with the new key: carry over whatever the shared key still holds.
+            s = readJSON(LEGACY_STATE_KEY, {}) || {};
+            writeJSON(STATE_KEY, s);
+        }
         return {
             scores: s.scores || {},
             incorrectWordsCount: s.incorrectWordsCount || {},
@@ -58,7 +68,7 @@ const SB = (() => {
     }
 
     function saveProgress(p) {
-        writeJSON('spellingBeeState', p);
+        writeJSON(STATE_KEY, p);
     }
 
     function todayKey(date = new Date()) {
@@ -85,6 +95,115 @@ const SB = (() => {
         }
         return count;
     }
+
+    // ---------- online record (Google Sheets) ----------
+    // Paste the Web app URL from Google Apps Script here (see google-sheets/SETUP.md).
+    // Leave it empty to keep the record on this device only.
+    const SHEET_URL = 'https://script.google.com/macros/s/AKfycbw7int4MNmf6S2hOPHxy42nBkNmvtDpibQRAhRW8sv6waHOg3h14XTrTkbdPvbpcEYI5A/exec';
+    const OUTBOX_KEY = 'spellingBee2027Outbox';
+    const PIN_KEY = 'spellingBee2027ParentPin';
+    let sending = false;
+
+    // Every first-try answer is queued here and stays queued until the sheet confirms it, so nothing is lost offline.
+    function recordAnswer(word, isRight, typed) {
+        if (!SHEET_URL) return;
+        const outbox = readJSON(OUTBOX_KEY, []) || [];
+        outbox.push({
+            id: Date.now().toString(36) + Math.random().toString(36).slice(2, 8),
+            time: new Date().toISOString(),
+            date: todayKey(),
+            word,
+            result: isRight ? 'correct' : 'wrong',
+            typed,
+            list: getList().name
+        });
+        writeJSON(OUTBOX_KEY, outbox);
+        sendOutbox();
+    }
+
+    async function sendOutbox() {
+        if (!SHEET_URL || sending) return;
+        const outbox = readJSON(OUTBOX_KEY, []) || [];
+        if (!outbox.length) return;
+        sending = true;
+        let more = false;
+        try {
+            // A plain-text body keeps this a "simple" request that Apps Script accepts from another site.
+            const res = await fetch(SHEET_URL, { method: 'POST', body: JSON.stringify({ rows: outbox }) });
+            const data = await res.json();
+            if (data.ok) {
+                const sent = new Set(outbox.map(r => r.id));
+                const left = (readJSON(OUTBOX_KEY, []) || []).filter(r => !sent.has(r.id));
+                writeJSON(OUTBOX_KEY, left);
+                more = left.length > 0;
+            }
+        } catch (e) {
+            // Offline or blocked: try again on the next answer, page load or when the device comes back online.
+        } finally {
+            sending = false;
+        }
+        if (more) sendOutbox();
+    }
+
+    function getParentPin() {
+        try { return localStorage.getItem(PIN_KEY) || ''; } catch (e) { return ''; }
+    }
+
+    function setParentPin(pin) {
+        try {
+            if (pin) localStorage.setItem(PIN_KEY, pin);
+            else localStorage.removeItem(PIN_KEY);
+        } catch (e) {}
+    }
+
+    async function fetchOnlineRows(pin) {
+        const res = await fetch(`${SHEET_URL}?key=${encodeURIComponent(pin)}`);
+        const data = await res.json();
+        if (!data.ok) throw new Error(data.error || 'failed');
+        return data.rows;
+    }
+
+    // Combines the online answers (plus any not sent yet) with this device's record, saves it here, and returns it.
+    // This also restores the record on a device whose browser data was cleared.
+    function mergeOnlineRows(rows) {
+        const byId = new Map();
+        rows.concat(readJSON(OUTBOX_KEY, []) || []).forEach(r => byId.set(r.id, r));
+        const answers = [...byId.values()].sort((a, b) => String(a.time).localeCompare(String(b.time)));
+
+        const days = {}, wrongCount = {}, rightCount = {}, lastMissed = {}, lastTyped = {};
+        answers.forEach(r => {
+            const day = days[r.date] || (days[r.date] = { correct: 0, total: 0, wrong: {} });
+            day.total++;
+            if (r.result === 'correct') {
+                day.correct++;
+                rightCount[r.word] = (rightCount[r.word] || 0) + 1;
+            } else {
+                day.wrong[r.word] = (day.wrong[r.word] || 0) + 1;
+                wrongCount[r.word] = (wrongCount[r.word] || 0) + 1;
+                lastMissed[r.word] = r.date;
+                lastTyped[r.word] = r.typed;
+            }
+        });
+
+        const p = getProgress();
+        // A day or count recorded here before the sheet was set up may be larger; keep whichever is bigger.
+        Object.entries(days).forEach(([key, day]) => {
+            if (!p.scores[key] || day.total >= p.scores[key].total) p.scores[key] = day;
+        });
+        Object.entries(wrongCount).forEach(([w, n]) => { p.incorrectWordsCount[w] = Math.max(n, p.incorrectWordsCount[w] || 0); });
+        Object.entries(rightCount).forEach(([w, n]) => { p.correctWords[w] = Math.max(n, p.correctWords[w] || 0); });
+        Object.entries(lastMissed).forEach(([w, d]) => {
+            if (d >= (p.lastMissed[w] || '')) {
+                p.lastMissed[w] = d;
+                p.lastTyped[w] = lastTyped[w];
+            }
+        });
+        saveProgress(p);
+        return p;
+    }
+
+    window.addEventListener('online', sendOutbox);
+    sendOutbox();
 
     // ---------- words ----------
     async function loadWords() {
@@ -216,6 +335,7 @@ const SB = (() => {
 
     return {
         QUESTS, getList, getProgress, saveProgress, todayKey, todayScore, streak,
-        loadWords, getSettings, saveSettings, speak, playWord, esc, shuffle, initHeader
+        loadWords, getSettings, saveSettings, speak, playWord, esc, shuffle, initHeader,
+        onlineEnabled: !!SHEET_URL, recordAnswer, getParentPin, setParentPin, fetchOnlineRows, mergeOnlineRows
     };
 })();

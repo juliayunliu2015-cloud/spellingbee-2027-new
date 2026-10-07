@@ -333,6 +333,8 @@
                 return;
             }
 
+            // Re-read before saving so a tab left open from an earlier day can't overwrite newer records.
+            progress = SB.getProgress();
             const today = SB.todayKey();
             if (!progress.scores[today]) progress.scores[today] = { correct: 0, total: 0 };
             progress.scores[today].total++;
@@ -353,6 +355,7 @@
                 progress.lastTyped[w.word] = typed;
             }
             SB.saveProgress(progress);
+            SB.recordAnswer(w.word, isRight, typed);
             renderExam(isRight ? 'next' : 'retry');
         }
 
@@ -437,6 +440,7 @@
             cards.querySelectorAll('[data-listen]').forEach(b => b.addEventListener('click', () => SB.playWord(WORDS[b.dataset.listen])));
             cards.querySelectorAll('[data-star]').forEach(b => b.addEventListener('click', () => {
                 const w = WORDS[b.dataset.star];
+                progress = SB.getProgress();
                 if (progress.starred[w.word]) delete progress.starred[w.word];
                 else progress.starred[w.word] = true;
                 SB.saveProgress(progress);

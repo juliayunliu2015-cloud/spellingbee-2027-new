@@ -34,8 +34,13 @@
     <main id="main" class="page">
         <div style="display: flex; flex-direction: column; gap: 6px">
             <h1 style="font-size: 2.125rem">Parent dashboard</h1>
-            <p class="muted">Vivian’s practice record and the words she finds tricky. This record is saved in this browser on this device.</p>
+            <p class="muted" id="intro-note">Vivian’s practice record and the words she finds tricky. This record is saved in this browser on this device.</p>
         </div>
+
+        <section class="card panel" aria-labelledby="online-title" id="online-panel" hidden>
+            <h2 id="online-title">Online record</h2>
+            <div id="online-body" aria-live="polite"></div>
+        </section>
 
         <section aria-label="This month at a glance" class="tiles">
             <div class="tile"><span class="tile-label">Days done this month</span><span class="tile-value" id="t-done">0</span><span class="tile-note" id="t-done-note">All 33 words tested</span></div>
@@ -108,11 +113,17 @@
         const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
         const DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
-        const progress = SB.getProgress();
+        let progress = SB.getProgress();
         const todayKey = SB.todayKey();
         let GOAL = 33;
-        const practisedKeys = Object.keys(progress.scores).filter(k => progress.scores[k] && progress.scores[k].total > 0).sort();
-        const firstKey = practisedKeys[0] || todayKey;
+        let firstKey = todayKey;
+
+        function useProgress(p) {
+            progress = p;
+            const practisedKeys = Object.keys(p.scores).filter(k => p.scores[k] && p.scores[k].total > 0).sort();
+            firstKey = practisedKeys[0] || todayKey;
+        }
+        useProgress(progress);
 
         const view = { year: new Date().getFullYear(), month: new Date().getMonth(), selected: todayKey };
 
@@ -311,7 +322,77 @@
             renderMissed();
         }
 
-        SB.loadWords().then(data => { GOAL = data.goal; renderAll(); }).catch(renderAll);
+        // ---------- online record ----------
+        function showPinForm(message) {
+            const body = document.getElementById('online-body');
+            body.innerHTML = `
+                <p>Every answer Vivian gives is also saved to your Google Sheet. Enter your parent PIN to see the full record on this device.</p>
+                ${message ? `<p class="status-pill missed" role="alert">${SB.esc(message)}</p>` : ''}
+                <form class="toolbar" id="pin-form">
+                    <label for="pin-input" style="font-weight: 700">Parent PIN</label>
+                    <input class="select" id="pin-input" type="password" autocomplete="current-password" required>
+                    <button type="submit" class="btn btn-primary btn-small">Load online record</button>
+                </form>`;
+            document.getElementById('pin-form').addEventListener('submit', e => {
+                e.preventDefault();
+                const pin = document.getElementById('pin-input').value.trim();
+                if (!pin) return;
+                SB.setParentPin(pin);
+                loadOnline(true);
+            });
+        }
+
+        async function loadOnline(focusAfter) {
+            const pin = SB.getParentPin();
+            if (!pin) {
+                showPinForm();
+                return;
+            }
+            const body = document.getElementById('online-body');
+            body.innerHTML = '<p>Loading the online record…</p>';
+            try {
+                const rows = await SB.fetchOnlineRows(pin);
+                useProgress(SB.mergeOnlineRows(rows));
+                renderAll();
+                const time = new Date().toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' });
+                body.innerHTML = `
+                    <p class="status-pill goal">Showing the online record</p>
+                    <p>${rows.length} ${rows.length === 1 ? 'answer' : 'answers'} saved in your Google Sheet. Updated at ${SB.esc(time)}.</p>
+                    <div class="toolbar">
+                        <button type="button" class="btn btn-outline btn-small" id="online-refresh">Refresh</button>
+                        <button type="button" class="btn btn-outline btn-small" id="online-forget">Forget PIN on this device</button>
+                    </div>`;
+                document.getElementById('online-refresh').addEventListener('click', () => loadOnline(true));
+                document.getElementById('online-forget').addEventListener('click', () => {
+                    SB.setParentPin('');
+                    showPinForm();
+                    document.getElementById('pin-input').focus();
+                });
+                if (focusAfter) document.getElementById('online-refresh').focus();
+            } catch (err) {
+                if (err.message === 'wrong-pin') {
+                    SB.setParentPin('');
+                    showPinForm('That PIN is not right. Please try again.');
+                    document.getElementById('pin-input').focus();
+                } else {
+                    body.innerHTML = `
+                        <p class="status-pill missed" role="alert">Could not reach the Google Sheet</p>
+                        <p>Check the internet connection and try again. The record below is from this device only.</p>
+                        <div class="toolbar"><button type="button" class="btn btn-outline btn-small" id="online-retry">Try again</button></div>`;
+                    document.getElementById('online-retry').addEventListener('click', () => loadOnline(true));
+                }
+            }
+        }
+
+        if (SB.onlineEnabled) {
+            document.getElementById('online-panel').hidden = false;
+            document.getElementById('intro-note').textContent = 'Vivian’s practice record and the words she finds tricky. Every answer is saved in this browser and to your Google Sheet.';
+        }
+
+        SB.loadWords().then(data => { GOAL = data.goal; }).catch(() => {}).then(() => {
+            renderAll();
+            if (SB.onlineEnabled) loadOnline(false);
+        });
     </script>
 </body>
 </html>
