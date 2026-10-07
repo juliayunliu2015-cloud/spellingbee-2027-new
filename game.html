@@ -145,7 +145,8 @@
         });
 
         // ===================== DAILY EXAM =====================
-        const exam = { pool: [], index: 0, result: null, typed: '', sessionCorrect: 0, label: '' };
+        // missed: the first try at this word was wrong, so the word must be retyped correctly before moving on.
+        const exam = { pool: [], index: 0, result: null, typed: '', missed: false, attempts: 0, sessionCorrect: 0, label: '' };
 
         function initExam() {
             const kingdom = parseInt(params.get('kingdom'), 10);
@@ -217,23 +218,17 @@
             }
 
             const w = exam.pool[exam.index];
-            const answered = exam.result === 'correct' || exam.result === 'wrong';
+            const answered = exam.result === 'correct';
+            const retrying = exam.missed && !answered;
             const score = SB.todayScore(progress);
 
-            let feedback = '';
-            if (exam.result === 'correct') {
-                feedback = `
-                    <div class="feedback feedback-good">
-                        ${ICON_CHECK}
-                        <div style="flex-grow: 1"><p class="feedback-title">Correct! Wonderful!</p><p class="feedback-body">${SB.esc(w.word)} is spelled ${SB.esc(w.word.toUpperCase().split('').join('-'))}.</p></div>
-                        <button type="button" class="next-btn" id="next-btn">Next word</button>
-                    </div>`;
-            } else if (exam.result === 'wrong') {
-                feedback = `
+            // While retrying, the correct word, meaning and example sit above the input so no scrolling is needed.
+            let retryPanel = '';
+            if (retrying) {
+                retryPanel = `
                     <div class="feedback feedback-bad">
                         ${ICON_CROSS}
-                        <div style="flex-grow: 1"><p class="feedback-title">Not quite — you’ll get it next time.</p><p class="feedback-body">You typed “${SB.esc(exam.typed)}”.</p></div>
-                        <button type="button" class="next-btn" id="next-btn">Next word</button>
+                        <div style="flex-grow: 1"><p class="feedback-title">${exam.attempts > 1 ? 'Still not quite — try again.' : 'Not quite — let’s fix it.'}</p><p class="feedback-body">You typed “${SB.esc(exam.typed)}”. Study the correct spelling, then type it again below.</p></div>
                     </div>
                     <div class="answer-card">
                         <p class="answer-label">The correct spelling</p>
@@ -250,10 +245,20 @@
                             ${w.example ? `<dt>Sample sentence</dt><dd class="word-example">${SB.esc(w.example)}</dd>` : ''}
                         </dl>
                     </div>`;
+            }
+
+            let feedback = '';
+            if (exam.result === 'correct') {
+                feedback = `
+                    <div class="feedback feedback-good">
+                        ${ICON_CHECK}
+                        <div style="flex-grow: 1"><p class="feedback-title">${exam.missed ? 'That’s it! Now you’ve got it.' : 'Correct! Wonderful!'}</p><p class="feedback-body">${SB.esc(w.word)} is spelled ${SB.esc(w.word.toUpperCase().split('').join('-'))}.</p></div>
+                        <button type="button" class="next-btn" id="next-btn">Next word</button>
+                    </div>`;
             } else if (exam.result === 'empty') {
                 feedback = `<div class="feedback feedback-info"><div>Type the word first, then press Check.</div></div>`;
             }
-            if (exam.result === 'correct' && score.correct === GOAL) {
+            if (exam.result === 'correct' && !exam.missed && score.correct === GOAL) {
                 feedback += `<div class="celebrate" style="margin-top: 12px">You reached today’s goal of ${GOAL} words! Amazing job, Vivian!</div>`;
             }
 
@@ -275,10 +280,10 @@
                         </div>
                     </section>
 
-                    <section class="card spell-panel" aria-label="Spell the word">
-                        <dl class="clues">${clues.join('')}</dl>
+                    <section class="card spell-panel" id="spell-panel" aria-label="Spell the word">
+                        ${retrying ? `<div aria-live="polite" style="display: flex; flex-direction: column; gap: 16px">${retryPanel}</div>` : `<dl class="clues">${clues.join('')}</dl>`}
                         <form class="spell-form" id="spell-form" novalidate>
-                            <label for="answer">Type the word you hear</label>
+                            <label for="answer">${retrying ? 'Now type the correct spelling' : 'Type the word you hear'}</label>
                             <div class="spell-row">
                                 <input class="spell-input" id="answer" type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" aria-describedby="answer-tip"${answered ? ' disabled' : ''} value="${answered ? SB.esc(exam.typed) : ''}">
                                 <button type="submit" class="check-btn"${answered ? ' disabled' : ''}>Check</button>
@@ -302,6 +307,11 @@
             if (next) next.addEventListener('click', nextWord);
 
             if (focusTarget === 'next' && next) next.focus();
+            else if (focusTarget === 'retry') {
+                // On stacked (phone/tablet) layouts the listen panel sits above; bring the answer and input into view.
+                document.getElementById('spell-panel').scrollIntoView({ block: 'start' });
+                document.getElementById('answer').focus({ preventScroll: true });
+            }
             else if (focusTarget === 'answer') document.getElementById('answer').focus();
         }
 
@@ -312,17 +322,28 @@
                 renderExam('answer');
                 return;
             }
+            exam.typed = typed;
+            exam.attempts++;
+            const isRight = typed.toLowerCase() === w.word.toLowerCase();
+
+            // Retries after a miss don't change the score; only the first try counts.
+            if (exam.missed) {
+                exam.result = isRight ? 'correct' : 'wrong';
+                renderExam(isRight ? 'next' : 'retry');
+                return;
+            }
+
             const today = SB.todayKey();
             if (!progress.scores[today]) progress.scores[today] = { correct: 0, total: 0 };
             progress.scores[today].total++;
-            exam.typed = typed;
-            if (typed.toLowerCase() === w.word.toLowerCase()) {
+            if (isRight) {
                 exam.result = 'correct';
                 exam.sessionCorrect++;
                 progress.scores[today].correct++;
                 progress.correctWords[w.word] = (progress.correctWords[w.word] || 0) + 1;
             } else {
                 exam.result = 'wrong';
+                exam.missed = true;
                 progress.incorrectWordsCount[w.word] = (progress.incorrectWordsCount[w.word] || 0) + 1;
                 // Per-day record for the Parent page: which words were missed that day, and what was typed.
                 const day = progress.scores[today];
@@ -332,13 +353,15 @@
                 progress.lastTyped[w.word] = typed;
             }
             SB.saveProgress(progress);
-            renderExam('next');
+            renderExam(isRight ? 'next' : 'retry');
         }
 
         function nextWord() {
             exam.index++;
             exam.result = null;
             exam.typed = '';
+            exam.missed = false;
+            exam.attempts = 0;
             renderExam('answer');
         }
 
