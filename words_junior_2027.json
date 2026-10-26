@@ -1,0 +1,2948 @@
+{
+  "total_groups": 13,
+  "total_words": 400,
+  "daily_exam_goal": 33,
+  "groups": [
+    {
+      "group": 1,
+      "words": [
+        {
+          "word": "abbess",
+          "definition": "A woman who is the head of a community of nuns.\nShe was a nun for many years before she became an abbess.",
+          "pos": "noun",
+          "pronunciation": "ab-is",
+          "source": "2027"
+        },
+        {
+          "word": "abrogate",
+          "definition": "To cancel or do away with.\nEach year, we hoped the principal would abrogate the assigning of homework.",
+          "pos": "verb",
+          "pronunciation": "ab-ruh-gayt",
+          "source": "2027"
+        },
+        {
+          "word": "acajou",
+          "definition": "A less common name for a cashew.\nWe made popcorn balls with acajou nuts.",
+          "pos": "noun",
+          "pronunciation": "ak-uh-zhoo or ak-uh-joo",
+          "source": "2027"
+        },
+        {
+          "word": "accoutre",
+          "definition": "To equip or outfit, especially a military.\nThe quartermaster said it was his job to make sure that they had all the supplies to fully accoutre the troops.",
+          "pos": "verb",
+          "pronunciation": "uh-koo-ter",
+          "source": "2027",
+          "alternate": "accouter"
+        },
+        {
+          "word": "acetic",
+          "definition": "Referring to the main acid in vinegar.\nTasty salad oils are made with olive oil and acetic vinegar.",
+          "pos": "adjective",
+          "pronunciation": "uh-see-tihk or uh-set-ihk",
+          "source": "2027",
+          "homophone": "ascetic"
+        },
+        {
+          "word": "acrimonious",
+          "definition": "Bad-tempered.\nWhen the ball flew through our window, my father spoke to my brother in an acrimonious manner.",
+          "pos": "adjective",
+          "pronunciation": "ak-rih-moh-nee-uhs or ak-ruh-moh-nee-uhs",
+          "source": "2027"
+        },
+        {
+          "word": "acrobat",
+          "definition": "An entertainer who performs gymnastic feats, such as walking a tightrope or swinging on a trapeze.\nWe saw a wonderful acrobat at the Cirque du Soleil.",
+          "pos": "noun",
+          "pronunciation": "ak-ruh-bat",
+          "source": "2027"
+        },
+        {
+          "word": "advantageous",
+          "definition": "Profitable, useful, or providing an advantage.\nWhen the champion player joined the team, it was very advantageous.",
+          "pos": "adjective",
+          "pronunciation": "ad-vun-tay-juhs",
+          "source": "2027"
+        },
+        {
+          "word": "affirmation",
+          "definition": "Emotional support or encouragement.\nThe dog looked at his master for affirmation.",
+          "pos": "noun",
+          "pronunciation": "af-er-may-shuhn",
+          "source": "2027"
+        },
+        {
+          "word": "agonistic",
+          "definition": "Trying to win in an argument.\nThe board member’s agonistic tone in the meeting made it hard for anyone to agree with him.",
+          "pos": "adjective",
+          "pronunciation": "ag-uh-nihs-tihk",
+          "source": "2027"
+        },
+        {
+          "word": "agrimony",
+          "definition": "A plant in the rose family.\nSome examples of an agrimony are blackberry, raspberry, and strawberry.",
+          "pos": "noun",
+          "pronunciation": "ag-ruh-moh-nee",
+          "source": "2027"
+        },
+        {
+          "word": "aleurone",
+          "definition": "Plant protein found in seeds.\nThe seeds store aleurone as little granules in the cells.",
+          "pos": "noun",
+          "pronunciation": "al-yuh-rohn or uh-loor-ohn",
+          "source": "2027",
+          "alternate": "aleuron"
+        },
+        {
+          "word": "amalgamate",
+          "definition": "To join or unite; to form a larger organization.\nThe two small towns decided to amalgamate their police forces to make it one large service.",
+          "pos": "verb",
+          "pronunciation": "uh-mal-guh-mayt",
+          "source": "2027"
+        },
+        {
+          "word": "amercement",
+          "definition": "A fine that was discretionary rather than set out in law.\nIn the Middle Ages, a court could impose an amercement, which could include forfeiture of goods.",
+          "pos": "verb",
+          "pronunciation": "uh-murs-muhnt",
+          "source": "2027",
+          "homophone": "immersement"
+        },
+        {
+          "word": "Andorra",
+          "definition": "A small European country.\nAs they were driving from France to Spain, they went through Andorra.",
+          "pos": "proper noun",
+          "pronunciation": "an-dawr-uh or ahn-dawr-rah",
+          "source": "2027"
+        },
+        {
+          "word": "angina",
+          "definition": "A condition where there is an inadequate blood supply to the heart.\nThe condition of angina is marked by severe pain in the chest, shoulders, and neck.",
+          "pos": "noun",
+          "pronunciation": "an-jeye-nuh or an-juh-nuh",
+          "source": "2027"
+        },
+        {
+          "word": "anomaly",
+          "definition": "Something that departs from the normal.\nIn baseball, a game where one team has no hits is an anomaly.",
+          "pos": "noun",
+          "pronunciation": "uh-nom-uh-lee",
+          "source": "2027"
+        },
+        {
+          "word": "anterior",
+          "definition": "Near the front of the body.\nThe veins are anterior to the heart.",
+          "pos": "adjective",
+          "pronunciation": "an-teer-ee-er",
+          "source": "2027"
+        },
+        {
+          "word": "anxious",
+          "definition": "Referring to suffering mental distress or uneasiness, or great fear.\nShe was extremely anxious about her exams.",
+          "pos": "adjective",
+          "pronunciation": "angk-shuhs or ang-shuhs",
+          "source": "2027"
+        },
+        {
+          "word": "apostate",
+          "definition": "A person who abandons a religion, political belief, or a cause.\nAfter asking to be traded to a different team, the hockey player felt like an apostate.",
+          "pos": "noun",
+          "pronunciation": "uh-pos-tayt or uh-pos-tiht",
+          "source": "2027"
+        },
+        {
+          "word": "armada",
+          "definition": "A fleet of warships.\nAn armada of destroyers, minesweepers, and gunboats made up the invasion fleet standing just off the coast.",
+          "pos": "noun",
+          "pronunciation": "ar-mah-duh or ar-may-duh",
+          "source": "2027",
+          "homophone": "Armada"
+        },
+        {
+          "word": "asperity",
+          "definition": "Harshness and roughness in manner, tone or temper.\nWhen we kept asking the same thing over and over again, he answered with asperity.",
+          "pos": "noun",
+          "pronunciation": "uh-spair-ih-tee",
+          "source": "2027"
+        },
+        {
+          "word": "asphalt",
+          "definition": "A black, sticky substance, often mixed with small stones or sand that forms a strong surface when hard.\nThe new road was paved with asphalt.",
+          "pos": "noun",
+          "pronunciation": "as-fawlt or as-falt or ash-fawlt",
+          "source": "2027"
+        },
+        {
+          "word": "atypical",
+          "definition": "Not usual.\nIt is atypical for every person in the class to stay home with an illness on the same day.",
+          "pos": "adjective",
+          "pronunciation": "ay-tip-ih-kuhl",
+          "source": "2027"
+        },
+        {
+          "word": "austere",
+          "definition": "An extremely plain or simple, undecorated look.\nMy room was full of ruffles and colour while my brother liked his to be more austere.",
+          "pos": "adjective",
+          "pronunciation": "aw-steer",
+          "source": "2027"
+        },
+        {
+          "word": "autonomy",
+          "definition": "A self-governing country or region.\nCanada is a member of the British Commonwealth, but has its own autonomy.",
+          "pos": "noun",
+          "pronunciation": "aw-ton-uh-mee",
+          "source": "2027"
+        },
+        {
+          "word": "avowal",
+          "definition": "An open declaration or an acknowledgement of a belief or intention.\nA marriage vow is a type of avowal because you affirm your love and loyalty to someone.",
+          "pos": "noun",
+          "pronunciation": "uh-vow-uhl",
+          "source": "2027"
+        },
+        {
+          "word": "bailiwick",
+          "definition": "A person’s area of expertise, authority or interest.\nThe student struggled with science, saying English literature was more his bailiwick.",
+          "pos": "noun",
+          "pronunciation": "bay-lih-wik or bay-luh-wik",
+          "source": "2027"
+        },
+        {
+          "word": "ballyrag",
+          "definition": "To harass or bully.\nWe would not allow the opposing team to ballyrag us into losing our confidence.",
+          "pos": "verb",
+          "pronunciation": "bal-ee-rag",
+          "source": "2027"
+        },
+        {
+          "word": "barbotine",
+          "definition": "Liquid clay used to decorate pottery.\nThe antique vase was decorated with barbotine flowers.",
+          "pos": "noun",
+          "pronunciation": "bahr-buh-teen",
+          "source": "2027"
+        },
+        {
+          "word": "batiste",
+          "definition": "A fine, light fabric typically made from cotton, linen, or synthetic fibres.\nThe batiste dress was cool and comfortable on a hot summer day.",
+          "pos": "noun",
+          "pronunciation": "ba-teest or buh-teest",
+          "source": "2027"
+        },
+        {
+          "word": "befuddle",
+          "definition": "To thoroughly confuse.\nUntil I studied it carefully, geometry could really befuddle me.",
+          "pos": "verb",
+          "pronunciation": "bih-fud-uhl",
+          "source": "2027"
+        },
+        {
+          "word": "belligerent",
+          "definition": "Referring to being hostile, aggressive, or ready to fight or argue.\nThe woman took a belligerent tone when her boss questioned why she was late for work most days.",
+          "pos": "adjective",
+          "pronunciation": "buh-lij-er-uhnt",
+          "source": "2027"
+        }
+      ]
+    },
+    {
+      "group": 2,
+      "words": [
+        {
+          "word": "betrothed",
+          "definition": "The person to whom one is engaged to be married.\nIn the movie, the prince and his betrothed announced their engagement at the ball.",
+          "pos": "noun",
+          "pronunciation": "bih-trohthd",
+          "source": "2027"
+        },
+        {
+          "word": "bibelot",
+          "definition": "A small, decorative ornament or trinket.\nThe museum’s collection of precious ornaments included a Fabergé bibelot.",
+          "pos": "noun",
+          "pronunciation": "bib-loh or bib-uh-loh or beeb-uh-loh",
+          "source": "2027"
+        },
+        {
+          "word": "bilateral",
+          "definition": "Involving two parties, especially countries.\nThe two countries had a bilateral agreement to boost tourism.",
+          "pos": "adjective",
+          "pronunciation": "beye-lat-er-uhl",
+          "source": "2027"
+        },
+        {
+          "word": "bilious",
+          "definition": "Bad tempered and sullen.\nOur new neighbour seemed to be a bilious person until we got to know him.",
+          "pos": "adjective",
+          "pronunciation": "bil-yuhs or bil-ee-uhs",
+          "source": "2027"
+        },
+        {
+          "word": "biogeographic",
+          "definition": "The study of the geographical distribution of plants and animals.\nThere are important biogeographic studies done to track which creatures are under threat of extinction.",
+          "pos": "adjective",
+          "pronunciation": "beye-oh-jee-uh-graf-ihk",
+          "source": "2027"
+        },
+        {
+          "word": "biota",
+          "definition": "The animal and plant life of a certain region, habitat or geological period.\nThe biologists went to the isolated island to study the biota.",
+          "pos": "noun",
+          "pronunciation": "beye-oh-tuh",
+          "source": "2027"
+        },
+        {
+          "word": "biphasic",
+          "definition": "Having two stages or forms.\nA butterfly has a biphasic life cycle, as it changes from a crawling caterpillar into a flying insect.",
+          "pos": "adjective",
+          "pronunciation": "beye-fay-zihk",
+          "source": "2027"
+        },
+        {
+          "word": "blight",
+          "definition": "A plant disease.\nThe Irish potato famine was caused by a blight on the potatoes.",
+          "pos": "noun",
+          "pronunciation": "bleyet",
+          "source": "2027"
+        },
+        {
+          "word": "bolide",
+          "definition": "A large meteor which explodes in the atmosphere.\nA bolide is also known as a fireball.",
+          "pos": "noun",
+          "pronunciation": "boh-leyed or boh-lihd",
+          "source": "2027"
+        },
+        {
+          "word": "bradawl",
+          "definition": "A woodworking tool similar to a straight screwdriver.\nThe carpenter used a bradawl to make an indentation in the wood to ease the insertion of the screw.",
+          "pos": "noun",
+          "pronunciation": "brad-awl",
+          "source": "2027",
+          "homophone": "brattle"
+        },
+        {
+          "word": "brunette",
+          "definition": "Referring to a dark colour of eyes or hair.\nMy sister has brunette hair but I am a red-head.",
+          "pos": "adjective",
+          "pronunciation": "broo-neht",
+          "source": "2027",
+          "alternate": "brunet"
+        },
+        {
+          "word": "butte",
+          "definition": "An isolated hill with steep sides.\nThe valley was beautiful with a view of the large butte in the distance.",
+          "pos": "noun",
+          "pronunciation": "byoot",
+          "source": "2027",
+          "homophone": "Butte, beaut, bute"
+        },
+        {
+          "word": "buttress",
+          "definition": "Projecting supports built against a wall.\nWe built a treehouse with a large buttress to strengthen it.",
+          "pos": "noun",
+          "pronunciation": "buh-trihs",
+          "source": "2027"
+        },
+        {
+          "word": "caecum",
+          "definition": "A pouch connected to the junction of the small and large intestines.\nThe appendix usually hangs down from the caecum.",
+          "pos": "noun",
+          "pronunciation": "see-kuhm",
+          "source": "2027",
+          "alternate": "cecum"
+        },
+        {
+          "word": "Caerphilly",
+          "definition": "A kind of mild white cheese.\nWe first tasted Caerphilly on our visit to Wales.",
+          "pos": "proper noun",
+          "pronunciation": "kair-fil-ee",
+          "source": "2027",
+          "homophone": "carefully"
+        },
+        {
+          "word": "Callisto",
+          "definition": "One of the moons of Jupiter.\nThe moon called Callisto is roughly four billion years old.",
+          "pos": "proper noun",
+          "pronunciation": "kuh-lis-toh",
+          "source": "2027"
+        },
+        {
+          "word": "camarilla",
+          "definition": "A small group of people who act as unofficial advisors to a person of power.\nSometimes, a camarilla is informally called a ‘kitchen cabinet’.",
+          "pos": "noun",
+          "pronunciation": "kam-uh-ril-uh or kah-mah-ree-lyah or kam-uh-ree-yah",
+          "source": "2027"
+        },
+        {
+          "word": "canorous",
+          "definition": "Musical or melodious.\nOur piano teacher taught us a canorous melody for our recital.",
+          "pos": "adjective",
+          "pronunciation": "kuh-nawr-uhs",
+          "source": "2027"
+        },
+        {
+          "word": "capriole",
+          "definition": "A leap in dancing.\nThe ballet dancer made a spectacular capriole during the performance.",
+          "pos": "noun",
+          "pronunciation": "kap-ree-ohl",
+          "source": "2027"
+        },
+        {
+          "word": "capybara",
+          "definition": "A South American mammal resembling a giant guinea pig.\nThe capybara is the largest living rodent.",
+          "pos": "noun",
+          "pronunciation": "kap-ih-bahr-uh or kap-uh-bahr-uh",
+          "source": "2027",
+          "alternate": "capibara"
+        },
+        {
+          "word": "caribou",
+          "definition": "A large North American deer related to reindeer.\nMammals like caribou can travel many miles in search of food.",
+          "pos": "noun",
+          "pronunciation": "ka-rih-boo or ka-ruh-boo",
+          "source": "2027"
+        },
+        {
+          "word": "carphology",
+          "definition": "The action of picking or grasping at bedclothes by a delirious person.\nThe carphology of the patient continued until he became fully conscious.",
+          "pos": "noun",
+          "pronunciation": "kahr-fol-uh-jee",
+          "source": "2027"
+        },
+        {
+          "word": "casein",
+          "definition": "The main protein present in milk.\nEighty percent of the protein in milk is casein.",
+          "pos": "noun",
+          "pronunciation": "kay-seen or kay-see-ihn",
+          "source": "2027"
+        },
+        {
+          "word": "cataphract",
+          "definition": "Historically, a form of heavily armoured cavalry fielded by ancient empires across Eurasia.\nThe cataphract was designed to smash through dense infantry and opposing cavalry.",
+          "pos": "noun",
+          "pronunciation": "kat-uh-frakt",
+          "source": "2027"
+        },
+        {
+          "word": "cenacle",
+          "definition": "A supper room, especially on an upper floor.\nThe literary society met for dinner in a cenacle created in historic building.",
+          "pos": "noun",
+          "pronunciation": "sen-uh-kuhl",
+          "source": "2027",
+          "homophone": "cynical"
+        },
+        {
+          "word": "ceruse",
+          "definition": "White lead used as a cosmetic face whitener in medieval times.\nBecause a pale complexion was an indication that the person did not have to labour outdoors, many women applied ceruse to the skin.",
+          "pos": "noun",
+          "pronunciation": "sih-roos or seer-oos",
+          "source": "2027"
+        },
+        {
+          "word": "chaffinch",
+          "definition": "A species of bird in the finch family.\nThe chaffinch is a bird with a bluish head and dark wings.",
+          "pos": "noun",
+          "pronunciation": "chaf-inch",
+          "source": "2027"
+        },
+        {
+          "word": "chamomile",
+          "definition": "A herb in the daisy family.\nFor relaxing, a cup of chamomile tea is widely enjoyed.",
+          "pos": "noun",
+          "pronunciation": "kam-uh-meyel or kam-uh-meel",
+          "source": "2027",
+          "alternate": "camomile"
+        },
+        {
+          "word": "chateaubriand",
+          "definition": "A thick filet of beef steak.\nWe ate chateaubriand at a fancy restaurant.",
+          "pos": "noun",
+          "pronunciation": "shah-toh-bree-ahn or sha-toh-bree-ahn",
+          "source": "2027",
+          "homophone": "Chateaubriand"
+        },
+        {
+          "word": "chesterfield",
+          "definition": "A sofa.\nThe large, overstuffed chesterfield was so comfortable that I didn’t want to get up.",
+          "pos": "noun",
+          "pronunciation": "ches-ter-feeld",
+          "source": "2027",
+          "homophone": "Chesterfield"
+        },
+        {
+          "word": "chicle",
+          "definition": "The milky latex of the sapodilla tree.\nThe main ingredient in chewing gum is chicle.",
+          "pos": "noun",
+          "pronunciation": "chik-uhl",
+          "source": "2027"
+        },
+        {
+          "word": "chockablock",
+          "definition": "Extremely full.\nHis cupboard was chockablock with toys and games.",
+          "pos": "noun",
+          "pronunciation": "chok-uh-blok",
+          "source": "2027",
+          "alternate": "chock-a-block"
+        },
+        {
+          "word": "cicada",
+          "definition": "A large, noisy insect.\nThe cicada is found mainly in warmer climates.",
+          "pos": "noun",
+          "pronunciation": "sih-kay-duh or sih-kah-duh",
+          "source": "2027"
+        }
+      ]
+    },
+    {
+      "group": 3,
+      "words": [
+        {
+          "word": "cilium",
+          "definition": "An eyelash.\nA cilium fell into my eye and scratched the cornea.",
+          "pos": "noun",
+          "pronunciation": "sil-ee-uhm",
+          "source": "2027",
+          "homophone": "psyllium"
+        },
+        {
+          "word": "Cincinnati",
+          "definition": "An industrial city in Ohio.\nWhile in Cincinnati, the family went to the zoo, the aquarium, and the art museum.",
+          "pos": "proper noun",
+          "pronunciation": "sin-suh-nat-ee or sin-sih-nat-ee",
+          "source": "2027"
+        },
+        {
+          "word": "circa",
+          "definition": "Often preceding a date, meaning approximately.\nThe house was built circa 1870.",
+          "pos": "preposition",
+          "pronunciation": "sur-kuh",
+          "source": "2027"
+        },
+        {
+          "word": "clemency",
+          "definition": "Mercy or leniency.\nThe judge showed clemency by reducing the sentence.",
+          "pos": "noun",
+          "pronunciation": "klem-uhn-see",
+          "source": "2027"
+        },
+        {
+          "word": "collocation",
+          "definition": "A natural group of words that frequently appear together.\nAn example of a collocation is ‘make a mistake’, because we wouldn’t usually say ‘do a mistake’.",
+          "pos": "noun",
+          "pronunciation": "kol-uh-kay or shuhn",
+          "source": "2027"
+        },
+        {
+          "word": "compensation",
+          "definition": "Something given to pay for a loss.\nWhen our tree fell on the neighbour’s car, we had to pay compensation.",
+          "pos": "noun",
+          "pronunciation": "kom-puhn-say-shuhn",
+          "source": "2027"
+        },
+        {
+          "word": "compliant",
+          "definition": "Willing to agree with others or obey rules.\nThe new restaurant ensured it was compliant with all the health department codes.",
+          "pos": "adjective",
+          "pronunciation": "kum-pleye-uhnt",
+          "source": "2027"
+        },
+        {
+          "word": "compress",
+          "definition": "To condense or compact into less space.\nBy rolling it tightly, I can compress my sleeping bag so it fits easily into my pack.",
+          "pos": "verb",
+          "pronunciation": "kum-pres or kom-pres",
+          "source": "2027"
+        },
+        {
+          "word": "comrade",
+          "definition": "A colleague or fellow member of an organization.\nHe looked forward to meeting up with a comrade from his days working for a political party.",
+          "pos": "noun",
+          "pronunciation": "kom-rad or kom-ruhd or kom-rihd",
+          "source": "2027"
+        },
+        {
+          "word": "concavity",
+          "definition": "The quality of having a surface that curves inwards, like the inside of a bowl.\nThe concavity of the mirror made us look distorted.",
+          "pos": "noun",
+          "pronunciation": "kon-kav-ih-tee",
+          "source": "2027"
+        },
+        {
+          "word": "concourse",
+          "definition": "A large open area at the front of a public building.\nThe bus station has a two-storey concourse with waiting rooms and ticket booths.",
+          "pos": "noun",
+          "pronunciation": "kon-kawrs or kong-kawrs",
+          "source": "2027"
+        },
+        {
+          "word": "confirmation",
+          "definition": "The action of establishing the truth or accuracy of something.\nThe fans were very excited to get confirmation that the band was going on tour.",
+          "pos": "noun",
+          "pronunciation": "kon-fer-may-shuhn",
+          "source": "2027"
+        },
+        {
+          "word": "confusion",
+          "definition": "Uncertainty about what is happening, intended, or required.\nThere was total confusion at the airport after the snow storm caused the cancellation of many flights.",
+          "pos": "noun",
+          "pronunciation": "kuhn-fyoo-zhuhn",
+          "source": "2027"
+        },
+        {
+          "word": "consolidate",
+          "definition": "To combine a number of things into a single, unified whole.\nThe bank official suggested to the customer that it would be financially helpful to consolidate his outstanding debts into one loan.",
+          "pos": "verb",
+          "pronunciation": "kuhn-sol-ih-dayt",
+          "source": "2027"
+        },
+        {
+          "word": "consommé",
+          "definition": "A clear soup made by boiling meat, bones or vegetables.\nThe host started the elegant meal with a clear consommé enriched with finely diced vegetables.",
+          "pos": "noun",
+          "pronunciation": "kon-suh-may",
+          "source": "2027"
+        },
+        {
+          "word": "continental",
+          "definition": "Belonging to a continent.\nHudson Bay is in the Canadian part of continental North America.",
+          "pos": "adjective",
+          "pronunciation": "kon-tin-en-tuhl",
+          "source": "2027",
+          "homophone": "Continental"
+        },
+        {
+          "word": "contusion",
+          "definition": "A bruise.\nAfter falling off her bike, my sister had a contusion on her knee.",
+          "pos": "noun",
+          "pronunciation": "kuhn-too-zhuhn or kuhn-tyoo-zhuhn",
+          "source": "2027"
+        },
+        {
+          "word": "counteract",
+          "definition": "To act against something in order to reduce its force.\nMany initiatives, if carried out, could counteract global warming.",
+          "pos": "verb",
+          "pronunciation": "kown-ter-akt",
+          "source": "2027"
+        },
+        {
+          "word": "countrywide",
+          "definition": "Extending throughout a nation.\nThe band used a bus to go on a countrywide tour.",
+          "pos": "adjective",
+          "pronunciation": "kuhn-tree-weyed",
+          "source": "2027",
+          "alternate": "country-wide"
+        },
+        {
+          "word": "credulity",
+          "definition": "Willing to believe or trust without proof.\nHis credulity led him to believe everything he read on social media.",
+          "pos": "noun",
+          "pronunciation": "kruh-dyoo-lih-tee or kruh-doo-lih-tee",
+          "source": "2027"
+        },
+        {
+          "word": "crosier",
+          "definition": "A ceremonial staff carried by a bishop.\nA crosier is hooked at one end like a shepherd’s crook.",
+          "pos": "noun",
+          "pronunciation": "kroh-zher",
+          "source": "2027",
+          "alternate": "crozier"
+        },
+        {
+          "word": "crowdsource",
+          "definition": "To obtain ideas, services or content from a large group of people.\nI used the internet to crowdsource some help assembling my new furniture.",
+          "pos": "verb",
+          "pronunciation": "krowd-sawrs",
+          "source": "2027"
+        },
+        {
+          "word": "cruciate",
+          "definition": "Cross-shaped.\nThe knee has two cruciate ligaments, referring to the way they cross each other in an X-shape.",
+          "pos": "adjective",
+          "pronunciation": "kroo-shee-iht or kroo-shee-ayt",
+          "source": "2027"
+        },
+        {
+          "word": "crucible",
+          "definition": "A ceramic or metal container used for melting metals at high heat.\nThe craftsman carefully poured the molten gold from the crucible into the mold.",
+          "pos": "noun",
+          "pronunciation": "kroo-suh-buhl or kroo-sih-buhl",
+          "source": "2027"
+        },
+        {
+          "word": "curtilage",
+          "definition": "The land and outbuildings immediately surrounding a house.\nUnder Canadian law, curtilage considers an attached garage to be part of the dwelling.",
+          "pos": "noun",
+          "pronunciation": "kur-tih-lihj",
+          "source": "2027"
+        },
+        {
+          "word": "cyma",
+          "definition": "An ornamental strip of wood or other material with an S-shaped profile, used in architecture.\nYou are more likely to see a cyma on a classical house design than a modern one.",
+          "pos": "noun",
+          "pronunciation": "seye-muh",
+          "source": "2027",
+          "homophone": "sima"
+        },
+        {
+          "word": "cytokines",
+          "definition": "Chemical messengers that help direct an attack on a microbial invader.\nThe immune system may produce a variety of cytokines when fighting off germs.",
+          "pos": "noun",
+          "pronunciation": "seye-tuh-keyens",
+          "source": "2027"
+        },
+        {
+          "word": "decipher",
+          "definition": "To decode, solve, and explain.\nHe was the only one who could decipher the secret code.",
+          "pos": "verb",
+          "pronunciation": "dih-seye-fer",
+          "source": "2027"
+        },
+        {
+          "word": "deodar",
+          "definition": "A tall conical cedar tree native to the Himalayan mountains.\nThe deodar can grow as high as 40 to 50 metres.",
+          "pos": "noun",
+          "pronunciation": "dee-uh-dahr",
+          "source": "2027"
+        },
+        {
+          "word": "deplore",
+          "definition": "To feel or express strong disapproval of something.\nWe deplore people who do not tell the truth.",
+          "pos": "verb",
+          "pronunciation": "dih-plawr",
+          "source": "2027"
+        },
+        {
+          "word": "deprecate",
+          "definition": "To express disapproval of something.\nThe protest was held as a way to deprecate the government’s climate policy.",
+          "pos": "verb",
+          "pronunciation": "dep-rih-kayt",
+          "source": "2027"
+        },
+        {
+          "word": "derailment",
+          "definition": "The action of a train or street car accidently leaving its track.\nWe were late getting home because of the streetcar derailment.",
+          "pos": "noun",
+          "pronunciation": "dee-rayl-muhnt",
+          "source": "2027"
+        },
+        {
+          "word": "derrick",
+          "definition": "A crane used for lifting heavy weights.\nThe cargo boxes on the ship were lifted by a derrick.",
+          "pos": "noun",
+          "pronunciation": "deh-rick",
+          "source": "2027"
+        }
+      ]
+    },
+    {
+      "group": 4,
+      "words": [
+        {
+          "word": "desolate",
+          "definition": "Barren; uninhabited.\nI enjoyed the novel about a man who was ship-wrecked on a desolate island.",
+          "pos": "adjective",
+          "pronunciation": "des-uh-liht or des-uh-layt",
+          "source": "2027"
+        },
+        {
+          "word": "deuce",
+          "definition": "The ‘two’ on dice or playing cards.\nAll he needed to win the card game was to draw a deuce.",
+          "pos": "noun",
+          "pronunciation": "doos or dyoos",
+          "source": "2027",
+          "homophone": "douce"
+        },
+        {
+          "word": "devolution",
+          "definition": "The legal transfer of property from one owner to another.\nThe devolution of my grandfather’s farm was decided in favour of my uncles.",
+          "pos": "noun",
+          "pronunciation": "dev-uh-loo-shuhn or dee-vuh-loo-shuhn",
+          "source": "2027"
+        },
+        {
+          "word": "dictate",
+          "definition": "To say or read words aloud so that they can be written down.\nI have some new spelling words to dictate to you.",
+          "pos": "verb",
+          "pronunciation": "dik-tayt",
+          "source": "2027"
+        },
+        {
+          "word": "digest",
+          "definition": "To break down food into substances that can be used by the body.\nGrandfather said he liked to have a nap while waiting for his body to digest his dinner.",
+          "pos": "verb",
+          "pronunciation": "deye-jest or dih-jest",
+          "source": "2027"
+        },
+        {
+          "word": "discomfit",
+          "definition": "To thwart or foil plans.\nThe sudden downpour served to discomfit our carefully laid plans for a picnic.",
+          "pos": "verb",
+          "pronunciation": "dis-kuhm-fiht",
+          "source": "2027"
+        },
+        {
+          "word": "disinfest",
+          "definition": "To get rid of insects, rodents, etc.\nThe pest control team will disinfest the old warehouse.",
+          "pos": "verb",
+          "pronunciation": "dis-in-fest",
+          "source": "2027"
+        },
+        {
+          "word": "disreputable",
+          "definition": "Not good in appearance or character.\nThe villain in the book was a disreputable character.",
+          "pos": "adjective",
+          "pronunciation": "dis-rep-yuh-tuh-buhl",
+          "source": "2027"
+        },
+        {
+          "word": "dissent",
+          "definition": "To differ in opinion, especially from the majority.\nTwo of the nine judges chose to dissent on the matter before them.",
+          "pos": "verb",
+          "pronunciation": "dih-sent",
+          "source": "2027",
+          "homophone": "descent"
+        },
+        {
+          "word": "dissipate",
+          "definition": "To gradually disappear.\nThe morning sun caused the thick fog to dissipate.",
+          "pos": "verb",
+          "pronunciation": "dis-ih-payt or dis-uh-payt",
+          "source": "2027"
+        },
+        {
+          "word": "diversion",
+          "definition": "An amusement or pastime, especially one that acts as a distraction.\nBoard games provide our family with a pleasant diversion on a rainy day at the cottage.",
+          "pos": "noun",
+          "pronunciation": "deye-vur-zhuhn or deye-vur-shuhn or dih-vur-zhuhn or dih-vur-shuhn",
+          "source": "2027"
+        },
+        {
+          "word": "drupe",
+          "definition": "A fleshy fruit containing a central seed or stone.\nThe cherry and plum are examples of a drupe.",
+          "pos": "noun",
+          "pronunciation": "droop",
+          "source": "2027",
+          "homophone": "droop"
+        },
+        {
+          "word": "durian",
+          "definition": "A spiny oval tropical fruit.\nDespite its terrible smell, durian is highly valued for its flavour.",
+          "pos": "noun",
+          "pronunciation": "door-ee-uhn or door-ee-ahn or djoor-ee-uhn",
+          "source": "2027",
+          "alternate": "durion"
+        },
+        {
+          "word": "dystonia",
+          "definition": "A neurological disorder that causes involuntary muscle contractions and abnormal posture.\nA brain injury is one of the causes of dystonia.",
+          "pos": "noun",
+          "pronunciation": "dis-toh-nee-uh",
+          "source": "2027"
+        },
+        {
+          "word": "éclair",
+          "definition": "A long thin cake filled with cream.\nFor dessert, we selected an éclair topped with chocolate.",
+          "pos": "noun",
+          "pronunciation": "ay-klair or ih-klair",
+          "source": "2027"
+        },
+        {
+          "word": "ecstasy",
+          "definition": "A feeling of great happiness or excitement.\nWhen my mother baked shortbread cookies, I was in ecstasy.",
+          "pos": "noun",
+          "pronunciation": "ek-stuh-see",
+          "source": "2027"
+        },
+        {
+          "word": "egress",
+          "definition": "A way out; exit.\nWe looked for an egress from the concert hall.",
+          "pos": "noun",
+          "pronunciation": "ee-gres or ih-gres",
+          "source": "2027"
+        },
+        {
+          "word": "elision",
+          "definition": "The omission of a sound or syllable when speaking.\nSaying ‘fam-lee’ instead of ‘fam-i-lee’ is an example of an elision.",
+          "pos": "noun",
+          "pronunciation": "ih-lizh-uhn",
+          "source": "2027"
+        },
+        {
+          "word": "embalm",
+          "definition": "To preserve something or someone in an unaltered state.\nAncient Egyptians would embalm and mummify their kings and bury them in tombs.",
+          "pos": "verb",
+          "pronunciation": "em-bahm or im-bahm",
+          "source": "2027"
+        },
+        {
+          "word": "embolism",
+          "definition": "A block in an artery such as a blood clot.\nA pulmonary embolism needs emergency treatment.",
+          "pos": "noun",
+          "pronunciation": "em-buh-liz-uhm",
+          "source": "2027"
+        },
+        {
+          "word": "empathize",
+          "definition": "To understand another’s feelings.\nHis ability to empathize made him an excellent counsellor.",
+          "pos": "verb",
+          "pronunciation": "em-puh-theyez",
+          "source": "2027",
+          "alternate": "empathise"
+        },
+        {
+          "word": "enamoured",
+          "definition": "Being in love or captivated by someone.\nMy sister’s boyfriend is completely enamoured with her.",
+          "pos": "adjective",
+          "pronunciation": "in-am-erd",
+          "source": "2027",
+          "alternate": "enamored"
+        },
+        {
+          "word": "ensnared",
+          "definition": "To be caught in something, like a trap.\nThe whale became ensnared in fishing gear.",
+          "pos": "verb",
+          "pronunciation": "en-snaird or in-snaird",
+          "source": "2027"
+        },
+        {
+          "word": "epact",
+          "definition": "The difference in days between a solar year and a lunar year.\nHistorically, an epact was a calendar tool used to calculate the date of Easter.",
+          "pos": "noun",
+          "pronunciation": "ee-pakt",
+          "source": "2027"
+        },
+        {
+          "word": "epithet",
+          "definition": "A word or phrase applied to a person to describe an attributed quality.\n‘Richard the Lion-Heart’ is an epithet of King Richard I.",
+          "pos": "noun",
+          "pronunciation": "ep-ih-thet or ep-uh-thet",
+          "source": "2027"
+        },
+        {
+          "word": "epitome",
+          "definition": "A person or thing that is a perfect example of a certain quality or type.\nThe princess looked the epitome of elegance and good taste.",
+          "pos": "noun",
+          "pronunciation": "ih-pit-uh-mee or eh-pit-uh-mee",
+          "source": "2027"
+        },
+        {
+          "word": "equity",
+          "definition": "The quality of being fair and impartial.\nThe girls’ soccer team demanded equity with the boy’s team when it came to practice times.",
+          "pos": "noun",
+          "pronunciation": "ek-wih-tee",
+          "source": "2027"
+        },
+        {
+          "word": "ergometer",
+          "definition": "An exercise machine that measures how much physical work your body puts out while you move.\nThe athletes found the rowing machine was an excellent ergometer to track their overall performance.",
+          "pos": "noun",
+          "pronunciation": "ur-gom-ih-ter",
+          "source": "2027"
+        },
+        {
+          "word": "erosion",
+          "definition": "The process by which the surface of the earth is worn away by water, winds, glaciers, etc.\nThe cliffs along the ocean were being worn away by erosion.",
+          "pos": "noun",
+          "pronunciation": "ih-roh-zhuhn",
+          "source": "2027"
+        },
+        {
+          "word": "excelsior",
+          "definition": "Softwood shavings used for packing fragile goods.\nWhen we moved, mother packed her good dishes in a box filled with excelsior.",
+          "pos": "noun",
+          "pronunciation": "ik-sel-see-er or ek-sel-see-er",
+          "source": "2027"
+        },
+        {
+          "word": "exigent",
+          "definition": "Requiring immediate action.\nThe exigent circumstances of the wildfire necessitated an evacuation.",
+          "pos": "adjective",
+          "pronunciation": "ek-sih-juhnt",
+          "source": "2027"
+        },
+        {
+          "word": "expatriate",
+          "definition": "A person who lives outside their native country.\nThe expatriate looked forward to visiting family in her homeland.",
+          "pos": "noun",
+          "pronunciation": "eks-pay-tree-ayt or eks-pa-tree-ayt or eks-pay-tree-iht or eks-pa-tree-iht",
+          "source": "2027"
+        },
+        {
+          "word": "expletive",
+          "definition": "An exclamatory word or phrase, especially a swear word.\nThe woman accidently used an expletive when she stubbed her toe.",
+          "pos": "noun",
+          "pronunciation": "ek-splih-tiv or ik-splee-tiv",
+          "source": "2027"
+        }
+      ]
+    },
+    {
+      "group": 5,
+      "words": [
+        {
+          "word": "exterminator",
+          "definition": "A person whose job is to get rid of pests from a building.\nIf your house has an influx of ants, call a professional exterminator.",
+          "pos": "noun",
+          "pronunciation": "ik-stur-mih-nay-ter",
+          "source": "2027"
+        },
+        {
+          "word": "exultant",
+          "definition": "Triumphant; jubilant.\nThe exultant soccer team celebrated their championship win.",
+          "pos": "adjective",
+          "pronunciation": "ig-zuhl-tuhnt",
+          "source": "2027"
+        },
+        {
+          "word": "fabulate",
+          "definition": "To tell invented stories or create stories filled with fantasy.\nThe author loves to fabulate magical worlds filled with extraordinary creatures.",
+          "pos": "noun",
+          "pronunciation": "fab-yuh-layt",
+          "source": "2027"
+        },
+        {
+          "word": "facile",
+          "definition": "Easily or effortlessly done or performed.\nThe student’s academic achievement looked facile, but she had, in fact, worked very hard.",
+          "pos": "adjective",
+          "pronunciation": "fas-ihl or fas-eyel",
+          "source": "2027"
+        },
+        {
+          "word": "falsetto",
+          "definition": "A voice or sound that is unusually high, especially in a man.\nThe singer will long be remembered for his highly emotive falsetto.",
+          "pos": "noun",
+          "pronunciation": "fawl-set-oh",
+          "source": "2027"
+        },
+        {
+          "word": "fandangles",
+          "definition": "Elaborate ornaments.\nHer wedding dress was covered with lace and fandangles.",
+          "pos": "noun",
+          "pronunciation": "fan-dang-guhls",
+          "source": "2027"
+        },
+        {
+          "word": "farfalle",
+          "definition": "Pasta in the shape of a bow or butterfly.\nI love to mix my farfalle with cheese sauce.",
+          "pos": "noun",
+          "pronunciation": "fahr-fah-lee or fahr-fah-lay or fahr-fal-lay",
+          "source": "2027"
+        },
+        {
+          "word": "fecund",
+          "definition": "Greatly productive; fertile.\nThe heavy rain turned the dry yard into a fecund garden full of green plants.",
+          "pos": "adjective",
+          "pronunciation": "fee-kuhnd or feh-kuhnd",
+          "source": "2027"
+        },
+        {
+          "word": "ferrous",
+          "definition": "Referring to or containing iron.\nSteel is a ferrous metal.",
+          "pos": "adjective",
+          "pronunciation": "feh-ruhs",
+          "source": "2027",
+          "homophone": "Ferris"
+        },
+        {
+          "word": "filibeg",
+          "definition": "A type of kilt.\nMen in Scotland wear a filibeg which show their clan’s tartan.",
+          "pos": "noun",
+          "pronunciation": "fil-uh-beg",
+          "source": "2027",
+          "alternate": "philibeg"
+        },
+        {
+          "word": "flews",
+          "definition": "The thick loosely-hanging lips of a bloodhound or similar dog.\nIn some hounds, the flews help trap scent and direct it towards the dog’s nose as they track.",
+          "pos": "noun",
+          "pronunciation": "flooz",
+          "source": "2027",
+          "homophone": "flues, flus"
+        },
+        {
+          "word": "flexion",
+          "definition": "Bending, especially of a limb or joint.\nIt is important for the fingers to have easy and complete flexion.",
+          "pos": "noun",
+          "pronunciation": "flek-shuhn",
+          "source": "2027",
+          "alternate": "flection"
+        },
+        {
+          "word": "flintlock",
+          "definition": "An old-fashioned type of gun.\nThe flintlock has been replaced by more modern firearms.",
+          "pos": "noun",
+          "pronunciation": "flint-lok",
+          "source": "2027"
+        },
+        {
+          "word": "follis",
+          "definition": "A type of bronze or copper coin used by the ancient Romans.\nThe follis continued to be used as money as late as the sixth century.",
+          "pos": "noun",
+          "pronunciation": "fol-ihs",
+          "source": "2027"
+        },
+        {
+          "word": "formation",
+          "definition": "The act of creating, shaping or arranging something.\nAt the glass factory, we watched the formation of a beautiful bowl.",
+          "pos": "noun",
+          "pronunciation": "fawr-may-shuhn",
+          "source": "2027"
+        },
+        {
+          "word": "fortitude",
+          "definition": "Courage while in pain; bravery.\nShe endured her illness with great fortitude.",
+          "pos": "noun",
+          "pronunciation": "fawr-tih-tood or fawr-tih-tyood",
+          "source": "2027"
+        },
+        {
+          "word": "frenetic",
+          "definition": "Referring to behaviour or situations that are highly active, but chaotic.\nThe student worked at a frenetic pace to complete the assignment on time.",
+          "pos": "adjective",
+          "pronunciation": "fruh-net-ihk",
+          "source": "2027"
+        },
+        {
+          "word": "frore",
+          "definition": "An old-fashioned word meaning frozen or frosty.\nThe wind howled across the frore wasteland.",
+          "pos": "adjective",
+          "pronunciation": "frawr",
+          "source": "2027"
+        },
+        {
+          "word": "fructification",
+          "definition": "The fruiting of a plant, fungus, etc.\nThe apple tree yielded a heavy crop during fructification.",
+          "pos": "noun",
+          "pronunciation": "fruhk-tih-fih-kay-shuhn or fruhk-tuh-fih-kay-shuhn",
+          "source": "2027"
+        },
+        {
+          "word": "fustian",
+          "definition": "A strong fabric of cotton and flax.\nThe farmer wore a fustian jacket while working in the cold barn.",
+          "pos": "noun",
+          "pronunciation": "fuhs-chuhn",
+          "source": "2027"
+        },
+        {
+          "word": "futuristic",
+          "definition": "Ahead of the times; advanced.\nThe company makes futuristic computer chips.",
+          "pos": "adjective",
+          "pronunciation": "fyoo-chuh-ris-tihk",
+          "source": "2027"
+        },
+        {
+          "word": "garnishee",
+          "definition": "To seize money, especially part of a person’s salary, to settle a debt or claim.\nThere was a court order to garnishee his wages to pay his debt.",
+          "pos": "verb",
+          "pronunciation": "gahr-nih-shee",
+          "source": "2027"
+        },
+        {
+          "word": "genteel",
+          "definition": "Refined and polite.\nAt the formal dinner, you are expected to behave in a genteel manner.",
+          "pos": "adjective",
+          "pronunciation": "jen-teel",
+          "source": "2027"
+        },
+        {
+          "word": "geodesy",
+          "definition": "The science of accurately measuring and understanding Earth’s geometric shape and orientation in space.\nThe team’s work in satellite geodesy contributed to the accuracy of modern GPS systems.",
+          "pos": "noun",
+          "pronunciation": "jee-od-ih-see or jee-od-uh-see",
+          "source": "2027"
+        },
+        {
+          "word": "georgic",
+          "definition": "Referring to a specific genre of poetry that praises the virtues of outdoor labour and country living.\nThe poet said his georgic poem was to celebrate the dignity of physical toil and struggle against the elements.",
+          "pos": "adjective",
+          "pronunciation": "jawr-jihk",
+          "source": "2027"
+        },
+        {
+          "word": "golem",
+          "definition": "An artificial human figure in Jewish folklore.\nSome people believe the golem served as an inspiration for Mary Shelley’s Frankenstein.",
+          "pos": "noun",
+          "pronunciation": "goh-luhm or goh-lem",
+          "source": "2027"
+        },
+        {
+          "word": "goosander",
+          "definition": "A type of diving duck with a jagged bill.\nEating fish, nesting in holes in trees, and having a crested head are three traits of the goosander.",
+          "pos": "noun",
+          "pronunciation": "goo-san-der",
+          "source": "2027"
+        },
+        {
+          "word": "gourmet",
+          "definition": "An expert judge of good food.\nThe gourmet liked to savour exotic dishes from around the globe.",
+          "pos": "noun",
+          "pronunciation": "goor-may",
+          "source": "2027"
+        },
+        {
+          "word": "gradation",
+          "definition": "A step-by-step change, or a series of stages in a progression.\nThe artist created a beautiful gradation of colour, smoothly blending the sunset’s fiery orange into deep purple.",
+          "pos": "noun",
+          "pronunciation": "gray-day-shuhn or gruh-day-shuhn",
+          "source": "2027"
+        },
+        {
+          "word": "grappling",
+          "definition": "A broad category of combat sports and martial arts focused on physical contact and leverage rather than striking.\nThe primary goal of grappling is to manipulate and unbalance an opponent.",
+          "pos": "noun",
+          "pronunciation": "grap-ling",
+          "source": "2027"
+        },
+        {
+          "word": "Grenada",
+          "definition": "A country in the West Indies.\nThe island of Grenada lies about one hundred miles off the coast of South America.",
+          "pos": "proper noun",
+          "pronunciation": "greh-nay-duh or grih-nay-duh",
+          "source": "2027"
+        },
+        {
+          "word": "guacharo",
+          "definition": "A large, nocturnal, fruit-eating bird.\nThe guacharo, also called an oilbird, lives in caves in Central and South America.",
+          "pos": "noun",
+          "pronunciation": "gwah-chuh-roh",
+          "source": "2027"
+        },
+        {
+          "word": "hansom",
+          "definition": "A two-wheeled horse-drawn cab.\nThe hansom accommodated two people inside, with the driver mounted on an elevated seat behind.",
+          "pos": "noun",
+          "pronunciation": "han-sum",
+          "source": "2027",
+          "homophone": "handsome"
+        }
+      ]
+    },
+    {
+      "group": 6,
+      "words": [
+        {
+          "word": "harrier",
+          "definition": "A dog breed used for hunting hares and rabbits.\nThe painting of the hunting scene featured a harrier.",
+          "pos": "noun",
+          "pronunciation": "ha-ree-er",
+          "source": "2027",
+          "homophone": "Harrier, hairier"
+        },
+        {
+          "word": "heteronym",
+          "definition": "Each of two or more words which are spelled identically but have different sounds and meanings, such as tear meaning ‘rip’ and tear meaning ‘liquid from the eye’.\nA triple heteronym is extremely rare.",
+          "pos": "noun",
+          "pronunciation": "het-er-uh-nim",
+          "source": "2027"
+        },
+        {
+          "word": "hidrosis",
+          "definition": "The action of sweating.\nCertain foods such as hot peppers can increase hidrosis.",
+          "pos": "noun",
+          "pronunciation": "hih-droh-sihs or heye-droh-sihs",
+          "source": "2027"
+        },
+        {
+          "word": "hied",
+          "definition": "Went quickly.\nThe travellers hied back to their hotel when the downpour started.",
+          "pos": "verb",
+          "pronunciation": "heyed",
+          "source": "2027",
+          "homophone": "hide"
+        },
+        {
+          "word": "hirsute",
+          "definition": "Hairy.\nExamples of hirsute plants include the staghorn sumac and the black oak.",
+          "pos": "adjective",
+          "pronunciation": "hur-soot or hur-syoot",
+          "source": "2027"
+        },
+        {
+          "word": "historian",
+          "definition": "An expert in history.\nThe historian worked at the National Archives.",
+          "pos": "noun",
+          "pronunciation": "hih-stawr-ee-uhn",
+          "source": "2027"
+        },
+        {
+          "word": "hoagie",
+          "definition": "A sandwich made of a long roll filled with meat, cheese, and salad.\nEvery layer of a hoagie makes it that much more flavourful.",
+          "pos": "noun",
+          "pronunciation": "hoh-gee",
+          "source": "2027"
+        },
+        {
+          "word": "hoyden",
+          "definition": "A boisterous or carefree girl; a tomboy.\nThe pigtailed hoyden grew into a refined and educated woman.",
+          "pos": "noun",
+          "pronunciation": "hoyd-uhn",
+          "source": "2027",
+          "alternate": "hoiden"
+        },
+        {
+          "word": "hubris",
+          "definition": "Pride or arrogance.\nThe driver’s hubris prevented him from asking for directions, causing him to be late.",
+          "pos": "noun",
+          "pronunciation": "hyoo-brihs or hoo-brihs",
+          "source": "2027"
+        },
+        {
+          "word": "huntress",
+          "definition": "A woman who hunts.\nIn Roman mythology, Diana is known as the supreme huntress of the woods.",
+          "pos": "noun",
+          "pronunciation": "hun-tris",
+          "source": "2027"
+        },
+        {
+          "word": "hussar",
+          "definition": "A lightly-armoured cavalry soldier, originating in 15th century Hungary, and known for their brightly-coloured uniforms.\nA hussar was usually a wealthy nobleman who had to finance his own equipment.",
+          "pos": "noun",
+          "pronunciation": "huh-zahr",
+          "source": "2027"
+        },
+        {
+          "word": "hydrozoan",
+          "definition": "Very small predatory animals that live in seawater.\nThe science student studied the hydrozoan under a microscope.",
+          "pos": "noun",
+          "pronunciation": "heye-druh-zoh-uhn",
+          "source": "2027"
+        },
+        {
+          "word": "hyperinflation",
+          "definition": "Monetary inflation occurring at a very high rate.\nWhen prices increase very quickly, this is referred to as hyperinflation.",
+          "pos": "noun",
+          "pronunciation": "heye-per-in-flay-shuhn",
+          "source": "2027"
+        },
+        {
+          "word": "iconoclast",
+          "definition": "A person who attacks or criticizes cherished beliefs or organizations.\nBecause the new manager dared to question the company’s deeply held traditions, his bosses viewed him as an iconoclast.",
+          "pos": "noun",
+          "pronunciation": "eye-kon-uh-klast",
+          "source": "2027"
+        },
+        {
+          "word": "ideate",
+          "definition": "To imagine or come up with an idea.\nThe department leader used brainstorming to ideate innovative options.",
+          "pos": "verb",
+          "pronunciation": "eye-dee-ayt",
+          "source": "2027"
+        },
+        {
+          "word": "illustration",
+          "definition": "A picture provided in a book, newspaper, etc.\nEach fairy tale in the book included a beautiful illustration.",
+          "pos": "noun",
+          "pronunciation": "il-uh-stray-shuhn",
+          "source": "2027"
+        },
+        {
+          "word": "immensity",
+          "definition": "Vastness; enormous extent.\nThe immensity of the Roman Empire stretched from modern-day Portugal and Britain to Iraq.",
+          "pos": "noun",
+          "pronunciation": "ih-men-sih-tee",
+          "source": "2027"
+        },
+        {
+          "word": "immutable",
+          "definition": "Unchanging over time; ageless.\nAlthough I tried to change my dad’s mind, I realized his decision was immutable.",
+          "pos": "adjective",
+          "pronunciation": "ih-myoo-tuh-buhl",
+          "source": "2027"
+        },
+        {
+          "word": "impaled",
+          "definition": "To pierce with a sharp tool.\nAs part of Halloween decorating, they impaled miniature pumpkins on a dead branch.",
+          "pos": "verb",
+          "pronunciation": "im-payld",
+          "source": "2027"
+        },
+        {
+          "word": "impalpable",
+          "definition": "Unable to be felt by touch.\nThe hot dry wind brought with it clouds of impalpable dust.",
+          "pos": "adjective",
+          "pronunciation": "im-pal-puh-buhl",
+          "source": "2027"
+        },
+        {
+          "word": "imperiled",
+          "definition": "To put at risk of being harmed or destroyed.\nThe rescue team worked tirelessly to save the imperiled hikers trapped on the mountain ledge.",
+          "pos": "verb",
+          "pronunciation": "im-pair-ihld",
+          "source": "2027",
+          "alternate": "imperilled"
+        },
+        {
+          "word": "impertinence",
+          "definition": "Disrespectful behaviour or language; rudeness.\nThe teacher sent the student out of the room for his ongoing impertinence.",
+          "pos": "noun",
+          "pronunciation": "im-pur-tihn-uhns",
+          "source": "2027"
+        },
+        {
+          "word": "impinge",
+          "definition": "To have an impact, especially unwanted, on someone’s freedom, space or time.\nI was being selfish and didn’t think about how my actions could impinge on others.",
+          "pos": "verb",
+          "pronunciation": "im-pinj",
+          "source": "2027"
+        },
+        {
+          "word": "inane",
+          "definition": "Silly.\nThe actor disliked reporters who asked inane questions.",
+          "pos": "adjective",
+          "pronunciation": "ih-nayn",
+          "source": "2027"
+        },
+        {
+          "word": "inaugurated",
+          "definition": "To induct into office with formal ceremonies.\nThe city’s new mayor was inaugurated at a public ceremony.",
+          "pos": "verb",
+          "pronunciation": "in-aw-gyuh-rayt-ihd or in-aw-guh-rayt-ihd",
+          "source": "2027"
+        },
+        {
+          "word": "incandescent",
+          "definition": "Emitting light as a result of being heated.\nMost homes in Canada have switched from using incandescent light bulbs to LED ones.",
+          "pos": "adjective",
+          "pronunciation": "in-kan-des-uhnt or in-kuhn-des-uhnt",
+          "source": "2027"
+        },
+        {
+          "word": "incentivize",
+          "definition": "To provide someone with a reason to do something.\nParents sometimes incentivize their children to study more with a special treat.",
+          "pos": "verb",
+          "pronunciation": "in-sen-tih-veyez",
+          "source": "2027"
+        },
+        {
+          "word": "incision",
+          "definition": "A surgical cut made in skin or flesh.\nGreat care is taken to prevent infection when surgeons have to make an incision.",
+          "pos": "noun",
+          "pronunciation": "in-sihzh-uhn",
+          "source": "2027"
+        },
+        {
+          "word": "incisor",
+          "definition": "A narrow-edged tooth at the front of the mouth.\nThe dentist noticed a cavity on the incisor.",
+          "pos": "noun",
+          "pronunciation": "in-seye-zer",
+          "source": "2027"
+        },
+        {
+          "word": "inconsistent",
+          "definition": "Not staying the same throughout.\nThe builder quit buying lumber from the closest store because the quality of the wood was often inconsistent.",
+          "pos": "adjective",
+          "pronunciation": "in-kuhn-sis-tuhnt",
+          "source": "2027"
+        },
+        {
+          "word": "inculcate",
+          "definition": "To cause or to influence someone to accept an idea or feeling.\nThe teaching staff tried to inculcate their students with curiosity.",
+          "pos": "verb",
+          "pronunciation": "in-kuhl-kayt",
+          "source": "2027"
+        },
+        {
+          "word": "indolent",
+          "definition": "Lazy.\nNobody wants to appear indolent.",
+          "pos": "adjective",
+          "pronunciation": "in-duh-luhnt",
+          "source": "2027"
+        },
+        {
+          "word": "ineffectual",
+          "definition": "Lacking the required skill to achieve something.\nDespite all efforts, the attempts to calm the restless crowd were ineffectual.",
+          "pos": "adjective",
+          "pronunciation": "in-ih-fek-choo-uhl",
+          "source": "2027"
+        }
+      ]
+    },
+    {
+      "group": 7,
+      "words": [
+        {
+          "word": "inhaling",
+          "definition": "To breathe in air, gas, smoke, etc.\nThe family was taken to hospital after inhaling carbon monoxide.",
+          "pos": "verb",
+          "pronunciation": "in-hayl-ing",
+          "source": "2027"
+        },
+        {
+          "word": "inhumane",
+          "definition": "Lacking in kindness or compassion.\nThe group protested the inhumane conditions of the animal shelter.",
+          "pos": "adjective",
+          "pronunciation": "in-hyoo-mayn or in-yoo-mayn",
+          "source": "2027"
+        },
+        {
+          "word": "innovation",
+          "definition": "A new product, idea or method that creates value.\nThe use of reusable rockets was a major innovation in spaceflight technology.",
+          "pos": "noun",
+          "pronunciation": "in-uh-vay-shuhn",
+          "source": "2027"
+        },
+        {
+          "word": "inquiry",
+          "definition": "An official investigation.\nThere was an inquiry into the cause of the fire.",
+          "pos": "noun",
+          "pronunciation": "in-kweye-uhr-ee or in-kwuh-ree",
+          "source": "2027",
+          "alternate": "enquiry"
+        },
+        {
+          "word": "insolently",
+          "definition": "Rudely or disrespectfully.\nA person who speaks insolently models bad manners.",
+          "pos": "adverb",
+          "pronunciation": "in-suh-luhnt-lee",
+          "source": "2027"
+        },
+        {
+          "word": "instability",
+          "definition": "A state of being unpredictable or likely to change or fail.\nMany drivers are concerned about the instability of gas prices these days.",
+          "pos": "noun",
+          "pronunciation": "in-stuh-bihl-ih-tee",
+          "source": "2027"
+        },
+        {
+          "word": "instinct",
+          "definition": "A natural or intuitive way of acting or thinking.\nThe teenager’s instinct warned him to avoid the gang’s invitations.",
+          "pos": "noun",
+          "pronunciation": "in-stingkt",
+          "source": "2027"
+        },
+        {
+          "word": "insurance",
+          "definition": "An agreement in which you pay a company money, in the form of a premium, and they pay your costs in the event of an accident, injury, etc.\nMy father was glad we had good insurance when he had a car accident.",
+          "pos": "noun",
+          "pronunciation": "in-shur-uhns",
+          "source": "2027"
+        },
+        {
+          "word": "intercept",
+          "definition": "To stop or seize someone, preventing them from reaching their destination.\nThe police were able to intercept the suspect before he could leave the country.",
+          "pos": "verb",
+          "pronunciation": "in-ter-sept",
+          "source": "2027"
+        },
+        {
+          "word": "invidious",
+          "definition": "Referring to an action or situation likely to arouse resentment or anger in others.\nSpreading invidious gossip hurts people’s feelings.",
+          "pos": "adjective",
+          "pronunciation": "in-vid-ee-uhs",
+          "source": "2027"
+        },
+        {
+          "word": "invincible",
+          "definition": "Too powerful to be defeated or overcome.\nProud and arrogant after years of winning championship games, the team considered themselves invincible.",
+          "pos": "adjective",
+          "pronunciation": "in-vin-sih-buhl or in-vin-suh-buhl",
+          "source": "2027"
+        },
+        {
+          "word": "Kathak",
+          "definition": "A type of northern Indian classical dance that tells a story.\nThe audience enjoyed the dazzling footwork of the Kathak dances.",
+          "pos": "proper noun",
+          "pronunciation": "kuth-uhk or kuh-tahk or ka-tuhk",
+          "source": "2027"
+        },
+        {
+          "word": "kauri",
+          "definition": "A tall coniferous Australasian tree with broad leathery leaves.\nUnless harvested for lumber, a kauri tree can live for a thousand years.",
+          "pos": "noun",
+          "pronunciation": "kow-ree",
+          "source": "2027",
+          "homophone": "cowrie, cowry"
+        },
+        {
+          "word": "kelvin",
+          "definition": "The basic unit of temperature.\nThe kelvin scale is based on absolute zero.",
+          "pos": "noun",
+          "pronunciation": "kel-vin",
+          "source": "2027"
+        },
+        {
+          "word": "kitsch",
+          "definition": "Art, objects, or design considered to be in poor taste.\nThe street vendors were selling many kitsch souvenirs.",
+          "pos": "noun",
+          "pronunciation": "kihch",
+          "source": "2027"
+        },
+        {
+          "word": "kohl",
+          "definition": "A powder used to darken the eyelids and eyebrows.\nThe make-up artist applied kohl to the actress’s eyes.",
+          "pos": "noun",
+          "pronunciation": "kohl",
+          "source": "2027",
+          "homophone": "coal, cole, koel, Kohl"
+        },
+        {
+          "word": "Koine",
+          "definition": "The common language of the Greeks from the close of the classical period to the Byzantine era.\nThe priest conducted the church services in Koine.",
+          "pos": "noun",
+          "pronunciation": "koy-nay",
+          "source": "2027"
+        },
+        {
+          "word": "kosher",
+          "definition": "In Judaism, referring to food that conforms to religious laws.\nThe restaurant in the hotel provides a special menu with certified kosher meals for guests.",
+          "pos": "adjective",
+          "pronunciation": "koh-sher or kah-sher",
+          "source": "2027",
+          "alternate": "kasher, kashruth"
+        },
+        {
+          "word": "kraal",
+          "definition": "A traditional southern African enclosure for livestock, such as cattle.\nThe kraal is surrounded by a fence or thorn bushes.",
+          "pos": "noun",
+          "pronunciation": "krahl",
+          "source": "2027",
+          "alternate": "craal",
+          "homophone": "crawl"
+        },
+        {
+          "word": "kylin",
+          "definition": "A mythical, hooved animal in Chinese mythology.\nA kylin is often described as the “Chinese unicorn.”",
+          "pos": "noun",
+          "pronunciation": "kee-lin or keye-lin",
+          "source": "2027",
+          "alternate": "qilin"
+        },
+        {
+          "word": "kylix",
+          "definition": "A type of ancient Greek drinking cup.\nThe museum curator carefully placed the kylix in a glass display case.",
+          "pos": "noun",
+          "pronunciation": "keye-lihks or kihl-ihks",
+          "source": "2027"
+        },
+        {
+          "word": "lascar",
+          "definition": "A sailor from the East Indies.\nThe lascar helped manage the rigging as the ship entered the harbour.",
+          "pos": "noun",
+          "pronunciation": "las-ker",
+          "source": "2027"
+        },
+        {
+          "word": "lection",
+          "definition": "A reading from scripture in liturgy.\nThe church member read the lection each Sunday.",
+          "pos": "noun",
+          "pronunciation": "lek-shuhn",
+          "source": "2027"
+        },
+        {
+          "word": "lehr",
+          "definition": "A furnace used for the gradual heating and cooling of glass.\nThey used the lehr to cool the glass slowly.",
+          "pos": "noun",
+          "pronunciation": "leer or lair",
+          "source": "2027",
+          "alternate": "leer",
+          "homophone": "Lear, lair"
+        },
+        {
+          "word": "lenient",
+          "definition": "Characterized by mercy or tolerance.\nThe judge was lenient and only gave the first-time offender a stiff fine.",
+          "pos": "adjective",
+          "pronunciation": "lee-nee-uhnt or leen-yuhnt",
+          "source": "2027"
+        },
+        {
+          "word": "leucoma",
+          "definition": "A dense white scar or spot on the cornea of the eye caused by injury or infection.\nThe deep eye injury healed, but left a permanent leucoma that blurred his vision.",
+          "pos": "noun",
+          "pronunciation": "loo-koh-muh",
+          "source": "2027",
+          "alternate": "leukoma"
+        },
+        {
+          "word": "lexical",
+          "definition": "Relating to the words or vocabulary of a language.\nA dictionary is a lexical reference.",
+          "pos": "adjective",
+          "pronunciation": "lek-sih-kuhl",
+          "source": "2027"
+        },
+        {
+          "word": "liberty",
+          "definition": "Freedom.\nRules and laws exist to keep us safe and ensure everyone’s right to liberty is protected.",
+          "pos": "noun",
+          "pronunciation": "lib-er-tee",
+          "source": "2027",
+          "homophone": "Liberty"
+        },
+        {
+          "word": "licit",
+          "definition": "Not forbidden; lawful.\nMy grandmother has licit permission to park in designated accessible spots.",
+          "pos": "adjective",
+          "pronunciation": "lis-iht",
+          "source": "2027"
+        },
+        {
+          "word": "lignite",
+          "definition": "A soft coal.\nThe lignite is a greater polluter than the hard bituminous coal.",
+          "pos": "noun",
+          "pronunciation": "lig-neyet",
+          "source": "2027"
+        },
+        {
+          "word": "lyre",
+          "definition": "An old stringed instrument like a small U-shaped harp.\nThe musician plucked the strings of the lyre to accompany the ancient song.",
+          "pos": "noun",
+          "pronunciation": "leyer",
+          "source": "2027",
+          "homophone": "liar, lier"
+        },
+        {
+          "word": "mackintosh",
+          "definition": "A full-length waterproof coat made of rubberized cloth.\nThe British author described his detective as wearing a mackintosh.",
+          "pos": "noun",
+          "pronunciation": "mak-in-tosh",
+          "source": "2027",
+          "alternate": "macintosh",
+          "homophone": "Mackintosh"
+        },
+        {
+          "word": "magazine",
+          "definition": "A periodical publication containing articles and illustrations.\nThe landscaper was thrilled to have her articles published in a gardening magazine.",
+          "pos": "noun",
+          "pronunciation": "mag-uh-zeen",
+          "source": "2027"
+        }
+      ]
+    },
+    {
+      "group": 8,
+      "words": [
+        {
+          "word": "magnetometers",
+          "definition": "Instrument for measuring a magnetic field.\nArchaeologists and geological investigators use magnetometers.",
+          "pos": "noun",
+          "pronunciation": "mag-nih-tom-ih-ters",
+          "source": "2027"
+        },
+        {
+          "word": "magnetrons",
+          "definition": "Electron tubes for generating microwaves.\nToday, magnetrons are used in radar and in microwave ovens.",
+          "pos": "noun",
+          "pronunciation": "mag-nih-trons",
+          "source": "2027"
+        },
+        {
+          "word": "maintenance",
+          "definition": "The action of taking care of something.\nThe old car needed a lot of maintenance.",
+          "pos": "noun",
+          "pronunciation": "mayn-tih-nuhns or mayn-tuh-nuhns",
+          "source": "2027"
+        },
+        {
+          "word": "malign",
+          "definition": "To speak about someone in a maliciously critical way.\nThe mean-spirited gossips would not have dared to malign her if her friend had been present.",
+          "pos": "verb",
+          "pronunciation": "muh-leyen",
+          "source": "2027"
+        },
+        {
+          "word": "malnourished",
+          "definition": "Suffering from a lack of proper nutrition.\nMany children in the refugee camp were malnourished.",
+          "pos": "adjective",
+          "pronunciation": "mal-nur-isht",
+          "source": "2027"
+        },
+        {
+          "word": "mammee",
+          "definition": "A tropical tree having edible fruit with sweet yellow flesh.\nThe mammee is native to tropical areas of the Americas.",
+          "pos": "noun",
+          "pronunciation": "mah-may or mah-mee",
+          "source": "2027",
+          "alternate": "mamey",
+          "homophone": "mammy"
+        },
+        {
+          "word": "mania",
+          "definition": "An excessive enthusiasm or excitement.\nThe car collector’s mania for automobiles led him to rent out a warehouse for a garage.",
+          "pos": "noun",
+          "pronunciation": "may-nee-uh or mayn-yuh",
+          "source": "2027"
+        },
+        {
+          "word": "masstige",
+          "definition": "Mass-produced, relatively inexpensive goods marketed as luxurious or prestigious.\nThe masstige skincare line gave the feeling of luxury at a drug store price.",
+          "pos": "adjective",
+          "pronunciation": "ma-steezh or ma-steej",
+          "source": "2027"
+        },
+        {
+          "word": "mechanism",
+          "definition": "The moving or mechanical part of something.\nThe child was fascinated to see the mechanism of the clock.",
+          "pos": "noun",
+          "pronunciation": "mek-uh-nihz-uhm",
+          "source": "2027"
+        },
+        {
+          "word": "merger",
+          "definition": "The combining of two things, especially companies, into one.\nConsumers hoped the merger between the two supermarket chains would not result in higher prices.",
+          "pos": "noun",
+          "pronunciation": "mur-jer",
+          "source": "2027"
+        },
+        {
+          "word": "micropyle",
+          "definition": "In botany, a small opening in the surface of an ovule through which the pollen tube penetrates.\nThe micropyle is often visible as a small pore in the ripe seed.",
+          "pos": "noun",
+          "pronunciation": "meye-kroh-peyel or meye-kruh-peyel",
+          "source": "2027"
+        },
+        {
+          "word": "miticide",
+          "definition": "A substance used to kill mites.\nCarefully read the label on the miticide to make sure it is safe to use in the planned setting.",
+          "pos": "noun",
+          "pronunciation": "meyet-uh-seyed or miht-ih-seyed",
+          "source": "2027"
+        },
+        {
+          "word": "monitory",
+          "definition": "Warning or admonishing.\nThe mother shook a monitory finger at her son to stop him from touching the hot stove,",
+          "pos": "adjective",
+          "pronunciation": "mon-ih-tawr-ee",
+          "source": "2027"
+        },
+        {
+          "word": "monticule",
+          "definition": "A small mountain or hill.\nThe hiking trail took them up the monticule and down the other side.",
+          "pos": "noun",
+          "pronunciation": "mon-tih-kyool",
+          "source": "2027"
+        },
+        {
+          "word": "morphological",
+          "definition": "Relating to the scientific study of the form or structure of plants and animals.\nScientists study the morphological differences between fish fins and bird wings to better understand evolution.",
+          "pos": "adjective",
+          "pronunciation": "mawr-fuh-lahj-ihk-uhl",
+          "source": "2027"
+        },
+        {
+          "word": "munificent",
+          "definition": "Very generous.\nShe received a piano for her birthday from her munificent aunt.",
+          "pos": "adjective",
+          "pronunciation": "myoo-nif-uh-suhnt",
+          "source": "2027"
+        },
+        {
+          "word": "murmuration",
+          "definition": "A large group of starlings.\nThe murmuration flew together in highly coordinated patterns.",
+          "pos": "noun",
+          "pronunciation": "mur-muh-ray-shuhn",
+          "source": "2027"
+        },
+        {
+          "word": "muscular",
+          "definition": "Relating to the muscles.\nThe heart is a muscular organ, divided into left and right sides.",
+          "pos": "adjective",
+          "pronunciation": "muhs-kyuh-ler",
+          "source": "2027"
+        },
+        {
+          "word": "museology",
+          "definition": "The science of organizing and managing museums.\nThe anthropology student took several courses in museology.",
+          "pos": "noun",
+          "pronunciation": "myoo-zee-ol-uh-jee",
+          "source": "2027"
+        },
+        {
+          "word": "myocardial",
+          "definition": "Relating to the muscular tissue of the heart.\nThe doctor said the patient had suffered a myocardial infarction, also known as a heart attack.",
+          "pos": "adjective",
+          "pronunciation": "meye-oh-kahr-dee-uhl",
+          "source": "2027"
+        },
+        {
+          "word": "narcolepsy",
+          "definition": "A sleep disorder.\nHer uncle would fall asleep at any moment due to narcolepsy.",
+          "pos": "noun",
+          "pronunciation": "nahr-kuh-lep-see",
+          "source": "2027"
+        },
+        {
+          "word": "necrosis",
+          "definition": "The death of body cells or tissues of a plant or animal.\nThe plant leaves showed signs of necrosis after being damaged by the frost.",
+          "pos": "noun",
+          "pronunciation": "nuh-kroh-sis or neh-kroh-sis",
+          "source": "2027"
+        },
+        {
+          "word": "negate",
+          "definition": "To make ineffective, nullify.\nShipping charges can negate the money saved by buying something online.",
+          "pos": "verb",
+          "pronunciation": "nih-gayt or neg-ayt",
+          "source": "2027"
+        },
+        {
+          "word": "negotiation",
+          "definition": "Discussion aimed at reaching an agreement.\nThe negotiation was long and tense before a solution was reached.",
+          "pos": "noun",
+          "pronunciation": "nih-goh-shee-ay-shun or nih-goh-see-ay-shuhn",
+          "source": "2027"
+        },
+        {
+          "word": "neurotoxin",
+          "definition": "A poison that attacks the nervous system.\nExamples of a neurotoxin are the venom of a rattlesnake or black widow spider.",
+          "pos": "noun",
+          "pronunciation": "nyoor-oh-tok-sin or noor-oh-tok-sin",
+          "source": "2027"
+        },
+        {
+          "word": "nostrum",
+          "definition": "An unproven, and likely ineffective, medication.\nA quick search on line will find many a nostrum promising to cure cancer and other serious illnesses.",
+          "pos": "noun",
+          "pronunciation": "nos-trum",
+          "source": "2027"
+        },
+        {
+          "word": "noxious",
+          "definition": "Harmful, poisonous, or very unpleasant.\nThe homeowner called the city to report the noxious smell coming from the sewer.",
+          "pos": "adjective",
+          "pronunciation": "nok-shuhs",
+          "source": "2027"
+        },
+        {
+          "word": "nurture",
+          "definition": "To help or encourage someone during a period of training or development.\nThe nursery school promised to nurture young children.",
+          "pos": "verb",
+          "pronunciation": "nur-cher",
+          "source": "2027"
+        },
+        {
+          "word": "nystatin",
+          "definition": "An antibiotic used to treat fungal infections.\nThe doctor prescribed nystatin drops when the toddler developed thrush, an infection of the mouth.",
+          "pos": "noun",
+          "pronunciation": "nis-tuh-tihn or neye-stat-ihn",
+          "source": "2027"
+        },
+        {
+          "word": "ocrea",
+          "definition": "In botany, a dry cover or casing around a stem.\nThe buckwheat plant has an ocrea around the stem.",
+          "pos": "noun",
+          "pronunciation": "ok-ree-uh or oh-kree-uh",
+          "source": "2027",
+          "alternate": "ochrea"
+        },
+        {
+          "word": "octothorp",
+          "definition": "Another term for the hashtag or pound sign.\nThe octothorp was adopted by printers in the 19th century as a ‘number sign’.",
+          "pos": "noun",
+          "pronunciation": "ok-tuh-thawrp",
+          "source": "2027",
+          "alternate": "octothorpe"
+        },
+        {
+          "word": "odometer",
+          "definition": "An instrument for measuring distance travelled by a vehicle.\nWhen buying a used car, it is crucial to check the odometer.",
+          "pos": "noun",
+          "pronunciation": "oh-dom-ih-ter",
+          "source": "2027"
+        },
+        {
+          "word": "odorous",
+          "definition": "Having or giving off a smell or scent.\nWe explored a dark and odorous cave.",
+          "pos": "adjective",
+          "pronunciation": "oh-der-uhs",
+          "source": "2027"
+        }
+      ]
+    },
+    {
+      "group": 9,
+      "words": [
+        {
+          "word": "ogee",
+          "definition": "An S-shaped curve used in building design and art.\nWe were told that the arch above the door of the old church is a fine example of an ogee.",
+          "pos": "noun",
+          "pronunciation": "oh-jee",
+          "source": "2027"
+        },
+        {
+          "word": "oleograph",
+          "definition": "A print textured to resemble an oil painting.\nShe bought a Miro oleograph, which people mistook for an original.",
+          "pos": "noun",
+          "pronunciation": "oh-lee-uh-graf or oh-lee-uh-grahf",
+          "source": "2027"
+        },
+        {
+          "word": "operatic",
+          "definition": "Relating to or characteristic of an opera.\nThe soprano constantly practiced operatic arias.",
+          "pos": "adjective",
+          "pronunciation": "op-uh-rat-ihk",
+          "source": "2027"
+        },
+        {
+          "word": "oribi",
+          "definition": "A small African antelope with short vertical horns.\nThe tiny oribi is about the size of a greyhound dog.",
+          "pos": "noun",
+          "pronunciation": "awr-ih-bee or awr-uh-bee",
+          "source": "2027"
+        },
+        {
+          "word": "otoliths",
+          "definition": "The small bones of the inner ear.\nThe otoliths can sense gravity and movement.",
+          "pos": "noun",
+          "pronunciation": "oht-uhl-iths",
+          "source": "2027"
+        },
+        {
+          "word": "overwrought",
+          "definition": "A state of nervous excitement or anxiety.\nWhen the family’s dog went missing, they were overwrought.",
+          "pos": "adjective",
+          "pronunciation": "oh-ver-rawt",
+          "source": "2027"
+        },
+        {
+          "word": "oxytone",
+          "definition": "A word or name with an acute accent on the last syllable.\nThe Frenchman explained that his name was an oxytone.",
+          "pos": "noun",
+          "pronunciation": "ok-sih-tohn",
+          "source": "2027"
+        },
+        {
+          "word": "Pacific",
+          "definition": "The ocean between the Americas to the east and Asia and Australia to the west.\nThe Pacific is the largest and deepest of all the oceans.",
+          "pos": "proper noun",
+          "pronunciation": "puh-sif-ihk",
+          "source": "2027",
+          "homophone": "pacific"
+        },
+        {
+          "word": "pamphleteer",
+          "definition": "A person who writes short, unbound booklets.\nThe pamphleteer wrote of political, and usually controversial, subjects.",
+          "pos": "noun",
+          "pronunciation": "pam-flih-teer",
+          "source": "2027"
+        },
+        {
+          "word": "paraphrase",
+          "definition": "A retelling of a text or passage giving the meaning in different words, often for clarity.\nI had to paraphrase the quote as I could not remember the exact wording.",
+          "pos": "noun",
+          "pronunciation": "pa-ruh-frayz",
+          "source": "2027"
+        },
+        {
+          "word": "paratrooper",
+          "definition": "A member of a military unit trained to land in combat areas by parachuting from airplanes.\nThe paratrooper prepared to jump from the plane.",
+          "pos": "noun",
+          "pronunciation": "pa-ruh-troo-per",
+          "source": "2027"
+        },
+        {
+          "word": "parclose",
+          "definition": "A screen or railing in a church separating a chapel from the main aisles or public areas of a church.\nA parclose can provide privacy for private prayer.",
+          "pos": "noun",
+          "pronunciation": "pahr-klohz",
+          "source": "2027"
+        },
+        {
+          "word": "parget",
+          "definition": "A type of plaster used to coat exterior walls or line chimney flues.\nFirst used in ancient Rome, parget became famous in the 16th century thanks to Henry VIII.",
+          "pos": "noun",
+          "pronunciation": "pahr-jit",
+          "source": "2027"
+        },
+        {
+          "word": "parsimonious",
+          "definition": "Referring to someone who is frugal or stingy.\nIn ‘A Christmas Carol’, Scrooge is portrayed as being parsimonious.",
+          "pos": "adjective",
+          "pronunciation": "pahr-sih-moh-nee-uhs or pahr-suh-moh-nee-uhs",
+          "source": "2027"
+        },
+        {
+          "word": "pastorale",
+          "definition": "A piece of music or art that makes you think of the country or simple outdoor life.\nThe concert began with a gentle pastorale featuring the sweet sound of a flute.",
+          "pos": "noun",
+          "pronunciation": "pas-tuh-rahl or pas-tuh-ral or pas-tuh-rah-lee or pah-stuh-rahl",
+          "source": "2027"
+        },
+        {
+          "word": "paten",
+          "definition": "A small plate used to hold Eucharistic bread during mass.\nA paten is usually made of silver or gold.",
+          "pos": "noun",
+          "pronunciation": "pat-ihn or pat-uhn",
+          "source": "2027",
+          "alternate": "patin",
+          "homophone": "patten, Patten, Patton"
+        },
+        {
+          "word": "pathogen",
+          "definition": "A bacterium, virus, or other microorganism that can cause disease.\nA pathogen can simply be referred to as a germ.",
+          "pos": "noun",
+          "pronunciation": "path-uh-juhn or path-uh-jehn",
+          "source": "2027"
+        },
+        {
+          "word": "phantasmal",
+          "definition": "Unreal; illusory; spectral.\nThe child woke from nightmares filled with phantasmal creatures.",
+          "pos": "noun",
+          "pronunciation": "fan-taz-muhl",
+          "source": "2027",
+          "alternate": "fantasmal"
+        },
+        {
+          "word": "pharmacy",
+          "definition": "A shop or hospital dispensary where medicinal drugs are prepared or sold.\nMy mother went to the local pharmacy to fill the prescription the doctor gave her.",
+          "pos": "noun",
+          "pronunciation": "fahr-muh-see",
+          "source": "2027"
+        },
+        {
+          "word": "pilcrows",
+          "definition": "Typographical marks used at the beginning of a new paragraph.\nPrinters and editors use pilcrows.",
+          "pos": "noun",
+          "pronunciation": "pil-krohs",
+          "source": "2027"
+        },
+        {
+          "word": "pinetum",
+          "definition": "A plantation of pine trees or other conifers.\nThe pinetum was planted for scientific research purposes.",
+          "pos": "noun",
+          "pronunciation": "peye-nee-tum",
+          "source": "2027"
+        },
+        {
+          "word": "piratical",
+          "definition": "Referring to pirates.\nThe patient looked very piratical with his eye-patch following the surgery.",
+          "pos": "adjective",
+          "pronunciation": "peye-rat-ih-kuhl or puhr-at-uh-kuhl",
+          "source": "2027"
+        },
+        {
+          "word": "postilion",
+          "definition": "A person who rides the leading left-hand side horse of a team drawing a coach or carriage.\nThe carriage came to a stop when the postilion fell off his horse.",
+          "pos": "noun",
+          "pronunciation": "poh-stil-yuhn or pos-til-yuhn",
+          "source": "2027",
+          "alternate": "postillion"
+        },
+        {
+          "word": "pottage",
+          "definition": "A thick soup made of vegetables and sometimes containing meat.\nThe peasants thickened the vegetable pottage with oats.",
+          "pos": "noun",
+          "pronunciation": "pot-ihj",
+          "source": "2027"
+        },
+        {
+          "word": "precedent",
+          "definition": "Any act or decision that serves as a guide or justification of future situations.\nThe principal said he had to give the children a detention for misbehaving in order to set a precedent for other students who might do the same thing.",
+          "pos": "noun",
+          "pronunciation": "pres-ih-duhnt",
+          "source": "2027",
+          "homophone": "president"
+        },
+        {
+          "word": "premature",
+          "definition": "Occurring before the usual time; too early.\nThe premature baby had to be placed in an incubator for some time.",
+          "pos": "adjective",
+          "pronunciation": "pree-muh-choor or prem-uh-choor or pree-much-tyoor",
+          "source": "2027"
+        },
+        {
+          "word": "proctor",
+          "definition": "A person who monitors students at a college or university examination.\nThe proctor watched the examinees closely.",
+          "pos": "noun",
+          "pronunciation": "prok-ter",
+          "source": "2027"
+        },
+        {
+          "word": "prominent",
+          "definition": "Important or famous.\nThe mayoral candidate was a prominent member of the community who had been involved in many organizations and fund-raising events.",
+          "pos": "adjective",
+          "pronunciation": "prom-uh-nuhnt",
+          "source": "2027"
+        },
+        {
+          "word": "prophetic",
+          "definition": "Accurately predicting what will happen in the future.\nThe old movie feels wildly prophetic these days.",
+          "pos": "adjective",
+          "pronunciation": "pruh-fet-ihk",
+          "source": "2027"
+        },
+        {
+          "word": "provenance",
+          "definition": "The documented history of ownership of a piece of art or an antique.\nHe verified the provenance of the painting to establish its authenticity.",
+          "pos": "noun",
+          "pronunciation": "prov-uh-nuhns or prov-uh-nahns",
+          "source": "2027"
+        },
+        {
+          "word": "provost",
+          "definition": "A senior administrative officer in certain universities.\nThe provost is often the second-in-command after the president of the university.",
+          "pos": "noun",
+          "pronunciation": "proh-vohst or prov-uhst or proh-voh",
+          "source": "2027"
+        },
+        {
+          "word": "pulmonary",
+          "definition": "Relating to the lungs.\nThe patient had trouble breathing due to a pulmonary disease.",
+          "pos": "adjective",
+          "pronunciation": "puhl-muh-nair-ee or pool-muh-nair-ee",
+          "source": "2027"
+        },
+        {
+          "word": "quadrate",
+          "definition": "Square or rectangular.\nThe landscaper laid out the garden in a neat, quadrate plan.",
+          "pos": "adjective",
+          "pronunciation": "kwod-rit or kowd-rayt",
+          "source": "2027"
+        }
+      ]
+    },
+    {
+      "group": 10,
+      "words": [
+        {
+          "word": "quaff",
+          "definition": "To drink heartily, especially an alcoholic beverage.\nThe tourists wanted to stop and quaff a local beer after a long day of sightseeing",
+          "pos": "verb",
+          "pronunciation": "kwof or kwaf",
+          "source": "2027",
+          "homophone": "coif"
+        },
+        {
+          "word": "quirkiness",
+          "definition": "The state of being characterized by peculiar or unexpected traits.\nIt was a pleasure to watch a whimsical movie filled with quirkiness.",
+          "pos": "noun",
+          "pronunciation": "kwur-kee-nuhs",
+          "source": "2027"
+        },
+        {
+          "word": "quotation",
+          "definition": "A phrase or passage from a book, poem, play or speech.\nIn her article, the journalist included a quotation from the prime minister.",
+          "pos": "noun",
+          "pronunciation": "kwoh-tay-shuhn",
+          "source": "2027"
+        },
+        {
+          "word": "racism",
+          "definition": "Prejudice or discrimination directed against a person or people on the basis of race or ethnicity.\nThe company mandated that they would not accept racism of any kind.",
+          "pos": "noun",
+          "pronunciation": "ray-sihz-uhm",
+          "source": "2027"
+        },
+        {
+          "word": "radiate",
+          "definition": "To emit energy, such as heat or light, in the form of rays or waves.\nThe sun radiate light and warmth.",
+          "pos": "verb",
+          "pronunciation": "ray-dee-ayt or ray-dee-iht",
+          "source": "2027"
+        },
+        {
+          "word": "rale",
+          "definition": "An abnormal rattling sound caused by disease or congestion in the lungs.\nUsing a stethoscope, the doctor could hear the rale and wheeze in the patient.",
+          "pos": "noun",
+          "pronunciation": "ral or rahl",
+          "source": "2027"
+        },
+        {
+          "word": "ratified",
+          "definition": "To have signed or given formal consent to something in order to make it valid.\nThe union members ratified the new contract.",
+          "pos": "verb",
+          "pronunciation": "rat-ih-feyed or rat-uh-feyed",
+          "source": "2027"
+        },
+        {
+          "word": "ratio",
+          "definition": "A measure of the relative size between two things expressible as a proportion.\nThe ratio of boys to girls at the school is two to one.",
+          "pos": "noun",
+          "pronunciation": "ray-shee-oh or ray-shoh",
+          "source": "2027"
+        },
+        {
+          "word": "reactionary",
+          "definition": "Opposing new ideas or social progress.\nThe politician had reactionary views and voted against every social reform.",
+          "pos": "adjective",
+          "pronunciation": "ree-ak-shuh-nair-ee",
+          "source": "2027"
+        },
+        {
+          "word": "recondite",
+          "definition": "Referring to something that is little known or hard to understand.\nThe author had a knack for explaining recondite ideas.",
+          "pos": "adjective",
+          "pronunciation": "rek-uhn-deyet or rih-kon-deyet",
+          "source": "2027"
+        },
+        {
+          "word": "refugee",
+          "definition": "A person who has fled from some danger.\nThe refugee from the hurricane has been given food and blankets.",
+          "pos": "noun",
+          "pronunciation": "ref-yoo-jee",
+          "source": "2027"
+        },
+        {
+          "word": "regional",
+          "definition": "Referring to a particular part of a district or area.\nThe meteorologist studied regional weather patterns.",
+          "pos": "adjective",
+          "pronunciation": "ree-juh-nuhl",
+          "source": "2027"
+        },
+        {
+          "word": "resistance",
+          "definition": "The refusal to accept or comply with something.\nThe workers showed resistance to the pay cuts by refusing to work.",
+          "pos": "noun",
+          "pronunciation": "rih-zihs-tuhns",
+          "source": "2027",
+          "homophone": "Resistance"
+        },
+        {
+          "word": "resolute",
+          "definition": "Firm in purpose or belief; determined.\nThe adventurer was resolute in his goal to climb Mount Everest.",
+          "pos": "adjective",
+          "pronunciation": "rez-uh-loot",
+          "source": "2027"
+        },
+        {
+          "word": "respectability",
+          "definition": "Of good social standing; character or reputation.\nThe scientist’s theory had finally gained respectability among his peers.",
+          "pos": "noun",
+          "pronunciation": "rih-spek-tuh-bihl-ih-tee",
+          "source": "2027"
+        },
+        {
+          "word": "rivalrous",
+          "definition": "Very competitive.\nThe two spellers were rivalrous, both hoping to be the winner of the bee.",
+          "pos": "adjective",
+          "pronunciation": "reye-vuhl-ruhs",
+          "source": "2027"
+        },
+        {
+          "word": "rubricate",
+          "definition": "To print a book or manuscript with red titles or headings.\nHistorically, a scribe would rubricate the capital letter in red.",
+          "pos": "verb",
+          "pronunciation": "roo-brih-kayt",
+          "source": "2027"
+        },
+        {
+          "word": "ruderal",
+          "definition": "Referring to a plant growing on waste ground or along roadsides.\nThe vacant lot looked bare, but was actually alive with ruderal plants.",
+          "pos": "adjective",
+          "pronunciation": "roo-der-uhl",
+          "source": "2027"
+        },
+        {
+          "word": "saithe",
+          "definition": "A food fish related to cod.\nThere are many ways to cook saithe beyond fish and chips.",
+          "pos": "noun",
+          "pronunciation": "sayth",
+          "source": "2027",
+          "homophone": "saith"
+        },
+        {
+          "word": "saltation",
+          "definition": "The leaping movement of sand or soil particles.\nThe saltation from winds may move or remove soils not anchored by vegetation.",
+          "pos": "noun",
+          "pronunciation": "sal-tay-shuhn",
+          "source": "2027"
+        },
+        {
+          "word": "samosa",
+          "definition": "A triangular savoury pastry, containing spiced vegetables or meat.\nWhenever the family visits an Indian restaurant, they order a samosa platter as a starter.",
+          "pos": "noun",
+          "pronunciation": "suh-moh-suh",
+          "source": "2027"
+        },
+        {
+          "word": "sandarac",
+          "definition": "A gum resin obtained from cypress trees of Spain and North Africa.\nVarnish and incense can be made using sandarac.",
+          "pos": "noun",
+          "pronunciation": "san-duh-rak",
+          "source": "2027",
+          "alternate": "sandarach"
+        },
+        {
+          "word": "sapidity",
+          "definition": "Taste or flavour.\nThe chef added fresh herbs to enhance the soup’s sapidity.",
+          "pos": "noun",
+          "pronunciation": "suh-pid-ih-tee",
+          "source": "2027"
+        },
+        {
+          "word": "satiate",
+          "definition": "To fill beyond desire or capacity.\nThe visitor devoured a large meal to satiate his hunger.",
+          "pos": "verb",
+          "pronunciation": "say-shee-ayt or say-shee-iht",
+          "source": "2027"
+        },
+        {
+          "word": "scabbard",
+          "definition": "The sheath for the blade of a sword or dagger.\nThe ceremonial sword hung at his side in a gilded scabbard.",
+          "pos": "noun",
+          "pronunciation": "skab-erd",
+          "source": "2027"
+        },
+        {
+          "word": "scandal",
+          "definition": "A disgraceful action or event or nasty gossip.\nThe manager’s career ended after a massive financial scandal.",
+          "pos": "noun",
+          "pronunciation": "skan-duhl",
+          "source": "2027"
+        },
+        {
+          "word": "scoria",
+          "definition": "Rough, crusty solidified lava.\nThe volcanic scoria crunched under the hikers’ boots as they approached the edge of the crater.",
+          "pos": "noun",
+          "pronunciation": "skawr-ee-uh",
+          "source": "2027"
+        },
+        {
+          "word": "secede",
+          "definition": "To formally withdraw from membership of a federal union, an alliance, or an organization.\nSome people want a referendum on whether or not to secede from Canada.",
+          "pos": "noun",
+          "pronunciation": "sih-seed",
+          "source": "2027"
+        },
+        {
+          "word": "sedentary",
+          "definition": "Accustomed to sitting or resting a great deal, or taking little exercise.\nHealth problems can arise when people have too sedentary a lifestyle.",
+          "pos": "adjective",
+          "pronunciation": "sed-uhn-tair-ee or sed-uhn-tree",
+          "source": "2027"
+        },
+        {
+          "word": "seminar",
+          "definition": "A meeting for discussion or training.\nThe company held a seminar for new employees to learn systems and procedures.",
+          "pos": "noun",
+          "pronunciation": "sem-ih-nahr or sem-uh-nahr",
+          "source": "2027"
+        },
+        {
+          "word": "Seminoles",
+          "definition": "A Native American people originally from land that is now Georgia and Florida.\nSadly, following the American Revolution, the Seminoles were evicted from Florida and removed to territory in Oklahoma.",
+          "pos": "proper noun",
+          "pronunciation": "seh-muh-nohls",
+          "source": "2027"
+        },
+        {
+          "word": "servitor",
+          "definition": "A glassworker who does the preliminary work of a gaffer, or lead artist.\nThe beautiful glass bowl was made by a famous glassblower, with the help of his servitor.",
+          "pos": "noun",
+          "pronunciation": "sur-vee-ter or sur-vih-ter",
+          "source": "2027"
+        },
+        {
+          "word": "shagreen",
+          "definition": "A rough grainy leather made from the hides of certain animals.\nThe publisher used shagreen for leather binding for special editions of books.",
+          "pos": "noun",
+          "pronunciation": "shuh-green",
+          "source": "2027"
+        }
+      ]
+    },
+    {
+      "group": 11,
+      "words": [
+        {
+          "word": "siltation",
+          "definition": "The process where water fills up with dirt, sand or mud.\nBoth pollution and siltation degrade water habitats.",
+          "pos": "noun",
+          "pronunciation": "sil-tay-shuhn",
+          "source": "2027"
+        },
+        {
+          "word": "sinistral",
+          "definition": "Left-handed.\nThe teacher gave the sinistral student specialized scissors.",
+          "pos": "adjective",
+          "pronunciation": "sin-ih-struhl or sin-uh-struhl",
+          "source": "2027"
+        },
+        {
+          "word": "situla",
+          "definition": "Bucket-shaped vessels from the Iron Age.\nDuring the excavation, the archeologist noted how the situla were elaborately decorated.",
+          "pos": "noun",
+          "pronunciation": "sich-uh-luh or sit-uhl-uh",
+          "source": "2027"
+        },
+        {
+          "word": "skirl",
+          "definition": "To play the bagpipes.\nThe piper began to skirl to lead off the musical procession.",
+          "pos": "verb",
+          "pronunciation": "skurl",
+          "source": "2027"
+        },
+        {
+          "word": "sonorous",
+          "definition": "Referring to a loud, deep, or resonant sound.\nThe alloy was used to make the bell because it has a sonorous sound.",
+          "pos": "adjective",
+          "pronunciation": "suh-nawr-uhs or son-er-uhs",
+          "source": "2027"
+        },
+        {
+          "word": "speculate",
+          "definition": "To form a theory about a subject without having all the facts.\nForest firefighters speculate that manufacturing more water bombers will take a long time.",
+          "pos": "verb",
+          "pronunciation": "spek-yuh-layt",
+          "source": "2027"
+        },
+        {
+          "word": "speculative",
+          "definition": "Theoretical rather than practical.\nThe scientist’s new theory was too speculative for the team to accept.",
+          "pos": "adjective",
+          "pronunciation": "spek-yuh-lay-tihv or spek-yuh-luh-tihv",
+          "source": "2027"
+        },
+        {
+          "word": "spicules",
+          "definition": "Mineral structures making up the skeleton of a marine sponge.\nThe scientist used a microscope to study how spicules support a sponge’s soft body.",
+          "pos": "noun",
+          "pronunciation": "spik-yools",
+          "source": "2027"
+        },
+        {
+          "word": "splenetic",
+          "definition": "Spiteful or irritable.\nIn the historical novel, the writer described the cranky character as splenetic.",
+          "pos": "adjective",
+          "pronunciation": "splih-net-ihk",
+          "source": "2027"
+        },
+        {
+          "word": "statistical",
+          "definition": "Having to o with the collection of facts and data.\nWe use statistical data to track our favourite team’s chance of making the play-offs.",
+          "pos": "adjective",
+          "pronunciation": "stuh-tihs-tih-kuhl",
+          "source": "2027"
+        },
+        {
+          "word": "statutory",
+          "definition": "Required or permitted by law.\nWorkers enjoy overtime pay if they work on statutory holidays.",
+          "pos": "adjective",
+          "pronunciation": "stach-oo-tawr-ee",
+          "source": "2027"
+        },
+        {
+          "word": "stupendous",
+          "definition": "Extremely impressive; astonishing.\nThe crowd cheered at the stupendous performance.",
+          "pos": "adjective",
+          "pronunciation": "styoo-pen-duhs or stoo-pen-duhs",
+          "source": "2027"
+        },
+        {
+          "word": "submission",
+          "definition": "The act of accepting or yielding to authority.\nThe dictator forced the citizens into a state of submission.",
+          "pos": "noun",
+          "pronunciation": "sub-mihsh-uhn",
+          "source": "2027"
+        },
+        {
+          "word": "suborbital",
+          "definition": "Referring to a spacecraft not in full orbit.\nA suborbital flight goes into space but does not fly fast enough to orbit the earth.",
+          "pos": "adjective",
+          "pronunciation": "sub-awr-bih-tuhl",
+          "source": "2027"
+        },
+        {
+          "word": "suborn",
+          "definition": "To bribe someone to commit an unlawful act.\nThe drug cartel attempted to suborn the police into ignoring their trafficking.",
+          "pos": "verb",
+          "pronunciation": "suh-bawrn",
+          "source": "2027"
+        },
+        {
+          "word": "subservient",
+          "definition": "Under the authority or control of another.\nWhen the genie came out of the bottle, she was subservient to her master.",
+          "pos": "adjective",
+          "pronunciation": "sub-sur-vee-uhnt",
+          "source": "2027"
+        },
+        {
+          "word": "subsidize",
+          "definition": "To give financial assistance.\nResearchers often apply to subsidize their studies through grants.",
+          "pos": "verb",
+          "pronunciation": "sub-sih-deyez",
+          "source": "2027",
+          "alternate": "subsidise"
+        },
+        {
+          "word": "substrate",
+          "definition": "A layer of rock just under the surface of the ground.\nWe dug into the substrate to search for fossils.",
+          "pos": "noun",
+          "pronunciation": "sub-strayt",
+          "source": "2027"
+        },
+        {
+          "word": "sulphurous",
+          "definition": "Containing or derived from sulphur.\nSome scientists think there might be life on Venus, floating in its sulphurous clouds.",
+          "pos": "adjective",
+          "pronunciation": "suhl-fer-uhs or suhl-fyoor-uhs",
+          "source": "2027",
+          "alternate": "sulfurous"
+        },
+        {
+          "word": "summary",
+          "definition": "A brief account giving the main points of something.\nThe teacher asked the students to write a summary of the book they had just read.",
+          "pos": "noun",
+          "pronunciation": "sum-uh-ree",
+          "source": "2027",
+          "homophone": "summery"
+        },
+        {
+          "word": "supreme",
+          "definition": "Highest in rank or authority.\nFor millions of years, dinosaurs reigned supreme over all other life forms.",
+          "pos": "adjective",
+          "pronunciation": "suh-preem or soo-preem",
+          "source": "2027"
+        },
+        {
+          "word": "susurrus",
+          "definition": "A whispering or rustling sound.\nWalking in the forest, the only sound was the susurrus of the rustling leaves.",
+          "pos": "noun",
+          "pronunciation": "soo-sur-uhs",
+          "source": "2027"
+        },
+        {
+          "word": "syndicate",
+          "definition": "An association of business enterprises or individuals.\nA syndicate of banks financed the construction project.",
+          "pos": "noun",
+          "pronunciation": "sin-dih-kiht or sin-dih-kayt",
+          "source": "2027"
+        },
+        {
+          "word": "systemic",
+          "definition": "Relating to the entirety of a thing or practice.\nThe investigation found that problems were systemic across the whole company, not just within one division.",
+          "pos": "adjective",
+          "pronunciation": "sih-stem-ihk",
+          "source": "2027"
+        },
+        {
+          "word": "tamarack",
+          "definition": "A slender North American larch tree.\nThe coniferous forest had many species of tree, including spruce, jack pine, and tamarack.",
+          "pos": "noun",
+          "pronunciation": "tam-uh-rak",
+          "source": "2027",
+          "homophone": "Tamarac"
+        },
+        {
+          "word": "tapestry",
+          "definition": "A piece of thick fabric with pictures or designs formed by weaving or embroidery.\nThe magnificent 11th century tapestry in Bayeux, France depicts the events leading up to the French conquest of England in 1066.",
+          "pos": "noun",
+          "pronunciation": "tap-ih-stree or tap-uh-stree",
+          "source": "2027"
+        },
+        {
+          "word": "tautology",
+          "definition": "A phrase or expression in which the same thing is said twice in different words.\nThe phrase “it was adequate enough” is a tautology, as both ‘adequate’ and ‘enough’ have the same meaning.",
+          "pos": "noun",
+          "pronunciation": "taw-tol-uh-jee",
+          "source": "2027"
+        },
+        {
+          "word": "teetotaler",
+          "definition": "A person who abstains totally from intoxicating drink.\nThe teetotaler ordered sparkling water.",
+          "pos": "noun",
+          "pronunciation": "tee-toht-ler",
+          "source": "2027",
+          "alternate": "teetotaller"
+        },
+        {
+          "word": "theca",
+          "definition": "A protective covering enclosing a cell or organ in plants and animals.\nThe theca contains the spinal cord.",
+          "pos": "noun",
+          "pronunciation": "thee-kuh",
+          "source": "2027"
+        },
+        {
+          "word": "thesis",
+          "definition": "A long essay or dissertation involving personal research, written by a candidate for a university degree.\nThe student met with her advisor to plan a topic for her doctoral thesis.",
+          "pos": "noun",
+          "pronunciation": "thee-sihs",
+          "source": "2027"
+        },
+        {
+          "word": "threadbare",
+          "definition": "Referring to clothing or furnishings that have become thin and tattered with age.\nThe antique rug was threadbare.",
+          "pos": "adjective",
+          "pronunciation": "thred-bair",
+          "source": "2027"
+        },
+        {
+          "word": "threnody",
+          "definition": "A song, piece of music, or poem expressing grief or sorrow.\nThe piper played a threnody at the funeral.",
+          "pos": "noun",
+          "pronunciation": "thren-uh-dee",
+          "source": "2027"
+        },
+        {
+          "word": "thunderous",
+          "definition": "Very loud or intense.\nThe performance was greeted with thunderous applause from the audience.",
+          "pos": "adjective",
+          "pronunciation": "thuhn-der-uhs or thuhn-druhs",
+          "source": "2027"
+        }
+      ]
+    },
+    {
+      "group": 12,
+      "words": [
+        {
+          "word": "tirade",
+          "definition": "A long angry speech or accusation.\nUnfortunately, the celebrity turned the acceptance speech into a tirade.",
+          "pos": "noun",
+          "pronunciation": "teye-rayd",
+          "source": "2027"
+        },
+        {
+          "word": "tonsorial",
+          "definition": "Relating to hairdressing or shaving.\nThe customer sat in the barber’s chair to receive his weekly tonsorial trim and shave.",
+          "pos": "adjective",
+          "pronunciation": "ton-sawr-ee-uhl",
+          "source": "2027"
+        },
+        {
+          "word": "torr",
+          "definition": "A measurement of pressure.\nThe gauge showed the pressure drop to just a few torr.",
+          "pos": "noun",
+          "pronunciation": "tawr",
+          "source": "2027",
+          "homophone": "tor, tore"
+        },
+        {
+          "word": "traditions",
+          "definition": "Long-established customs or beliefs that have been passed on from one generation to another.\nMany of the things our family does during the holidays are long-standing traditions.",
+          "pos": "noun",
+          "pronunciation": "truh-dish-uhns",
+          "source": "2027"
+        },
+        {
+          "word": "transduce",
+          "definition": "To convert energy from one form into another.\nSolar panels transduce energy from sunlight to electricity.",
+          "pos": "verb",
+          "pronunciation": "trans-doos or trans-dyoos or tranz-doos or tranz-dyoos",
+          "source": "2027"
+        },
+        {
+          "word": "transponder",
+          "definition": "A radar transceiver that transmits signals.\nThe captain of the cargo ship turned off the transponder when going through an area high in risk of piracy.",
+          "pos": "noun",
+          "pronunciation": "tran-spon-der",
+          "source": "2027",
+          "alternate": "transpondor"
+        },
+        {
+          "word": "unabashed",
+          "definition": "Not embarrassed or ashamed.\nThe worker was unabashed by his unrefined manners.",
+          "pos": "adjective",
+          "pronunciation": "un-uh-basht",
+          "source": "2027"
+        },
+        {
+          "word": "unforeseen",
+          "definition": "Not anticipated or expected.\nThe homeowners purchased house insurance to protect themselves against unforeseen circumstances.",
+          "pos": "adjective",
+          "pronunciation": "un-fawr-seen or un-fuh-seen",
+          "source": "2027"
+        },
+        {
+          "word": "university",
+          "definition": "A higher-level educational institution with the authority to award degrees.\nThe high school student thought about going to a university upon graduation.",
+          "pos": "noun",
+          "pronunciation": "yoo-nih-vur-sih-tee or yoo-nuh-vur-sih-tee",
+          "source": "2027"
+        },
+        {
+          "word": "unpurified",
+          "definition": "Not made pure.\nThe water was unpurified and had to be boiled before drinking.",
+          "pos": "adjective",
+          "pronunciation": "un-pyoor-ih-feyed or un-pyoor-uh-feyed",
+          "source": "2027"
+        },
+        {
+          "word": "upsurge",
+          "definition": "A large or rapid increase.\nThe police department noted that there had been an upsurge in vandalism in the city.",
+          "pos": "noun",
+          "pronunciation": "up-surj",
+          "source": "2027"
+        },
+        {
+          "word": "urbane",
+          "definition": "Reflecting polish and sophistication.\nThe urbane man was charming in all social situations.",
+          "pos": "adjective",
+          "pronunciation": "ur-bayn",
+          "source": "2027"
+        },
+        {
+          "word": "urgency",
+          "definition": "A situation requiring immediate action.\nThe despatcher could hear the urgency in the caller’s voice when she called for an ambulance.",
+          "pos": "noun",
+          "pronunciation": "ur-jun-see",
+          "source": "2027"
+        },
+        {
+          "word": "varicella",
+          "definition": "The technical term for chickenpox.\nThe vaccine for varicella meant that the children did not have to experience the discomfort of the itchy disease.",
+          "pos": "noun",
+          "pronunciation": "va-rih-sel-uh or va-ruh-sel-uh",
+          "source": "2027"
+        },
+        {
+          "word": "vegetate",
+          "definition": "To do nothing; to be passive or unthinking.\nMy father said I could not vegetate in front of the television all weekend.",
+          "pos": "verb",
+          "pronunciation": "vej-ih-tayt",
+          "source": "2027"
+        },
+        {
+          "word": "velar",
+          "definition": "A speech sound pronounced with the back of the tongue near the soft palate.\nA velar sound is made when using the English letters K and G.",
+          "pos": "noun",
+          "pronunciation": "vee-ler",
+          "source": "2027"
+        },
+        {
+          "word": "vermifuge",
+          "definition": "Referring to a substance that expels parasitic worms.\nThe vet administered a vermifuge treatment to the dog.",
+          "pos": "adjective",
+          "pronunciation": "vur-muh-fyooj",
+          "source": "2027"
+        },
+        {
+          "word": "vespine",
+          "definition": "Referring to wasps.\nBeing allergic to them, the girl got worried when she saw any vespine insects.",
+          "pos": "adjective",
+          "pronunciation": "ves-peyen or ves-pihn",
+          "source": "2027"
+        },
+        {
+          "word": "vexation",
+          "definition": "The cause of being annoyed or frustrated; irritation.\nThe commuter let out a sigh of vexation when he missed the bus.",
+          "pos": "noun",
+          "pronunciation": "vek-say-shuhn",
+          "source": "2027"
+        },
+        {
+          "word": "vexillum",
+          "definition": "An ancient Roman term for a military standard or banner.\nThe Roman soldier held the vexillum proudly.",
+          "pos": "noun",
+          "pronunciation": "vek-sihl-uhm",
+          "source": "2027"
+        },
+        {
+          "word": "voltmeter",
+          "definition": "An instrument used for measuring electricity in volts.\nThe electrician used his voltmeter to double check that the power had indeed been disconnected before he began to work.",
+          "pos": "noun",
+          "pronunciation": "vohlt-mee-ter",
+          "source": "2027"
+        },
+        {
+          "word": "voussoir",
+          "definition": "A wedge-shaped stone used to construct an arch.\nThe stone masons working on the medieval cathedral had to cut the voussoir to exact measurements, without the use of modern-day measuring tools.",
+          "pos": "noun",
+          "pronunciation": "voo-swahr",
+          "source": "2027"
+        },
+        {
+          "word": "welkin",
+          "definition": "In literary terms, the sky or heaven.\nThe author fancied herself a wordsmith and liked to use words like welkin to refer to the sky.",
+          "pos": "noun",
+          "pronunciation": "wel-kin",
+          "source": "2027"
+        },
+        {
+          "word": "wherry",
+          "definition": "A light rowing boat.\nThe fisherman rowed his small wherry across the river.",
+          "pos": "noun",
+          "pronunciation": "wair-ee or hwair-ee",
+          "source": "2027",
+          "homophone": "wary"
+        },
+        {
+          "word": "whetstone",
+          "definition": "A fine-grained stone used for sharpening cutting tools.\nThe chef sharpened the carving knife on a whetstone.",
+          "pos": "noun",
+          "pronunciation": "wet-stohn or hwet-stohn",
+          "source": "2027"
+        },
+        {
+          "word": "whilom",
+          "definition": "Former.\nWith a wistful smile, the whilom acrobat watched the circus performance.",
+          "pos": "adjective",
+          "pronunciation": "weye-luhm or hweye-luhm",
+          "source": "2027"
+        },
+        {
+          "word": "whitlow",
+          "definition": "An inflammation at the end of a finger or toe.\nThe nurse carefully cleaned and bandaged the painful whitlow on the patient’s thumb.",
+          "pos": "noun",
+          "pronunciation": "wit-low or whit-low",
+          "source": "2027"
+        },
+        {
+          "word": "whizbang",
+          "definition": "A firecracker whose sound and explosion happen at the same time.\nThe holiday celebration ended with a bright whizbang lighting up the dark sky.",
+          "pos": "noun",
+          "pronunciation": "wiz-bang or hwiz-bang",
+          "source": "2027",
+          "alternate": "whiz-bang"
+        },
+        {
+          "word": "wildebeest",
+          "definition": "An African antelope with a long head, beard, and mane.\nA wildebeest is also called a gnu.",
+          "pos": "noun",
+          "pronunciation": "wil-duh-beest or vil-duh-beest",
+          "source": "2027"
+        },
+        {
+          "word": "wolverine",
+          "definition": "A carnivorous mammal found in the remote northern areas of Western Canada.\nThe heavily built wolverine is a member of the weasel family.",
+          "pos": "noun",
+          "pronunciation": "wuhl-vuh-reen",
+          "source": "2027",
+          "homophone": "Wolverine"
+        },
+        {
+          "word": "wort",
+          "definition": "A term for a plant or herb used medicinally or as food.\nIn medieval days, a healer’s garden would have probably had more than one kind of wort.",
+          "pos": "noun",
+          "pronunciation": "wurt or wawrt",
+          "source": "2027",
+          "homophone": "wart, wert"
+        },
+        {
+          "word": "wraith",
+          "definition": "A ghost or apparition.\nLegend says the wraith of the king walks the halls at night.",
+          "pos": "noun",
+          "pronunciation": "rayth",
+          "source": "2027"
+        },
+        {
+          "word": "wrestler",
+          "definition": "An athlete who takes part in a sport that involves grappling with one’s opponent and trying to throw or force them to the ground.\nThe wrestler is planning to compete in the 2028 Summer Olympics.",
+          "pos": "noun",
+          "pronunciation": "res-ler",
+          "source": "2027"
+        }
+      ]
+    },
+    {
+      "group": 13,
+      "words": [
+        {
+          "word": "wynn",
+          "definition": "A runic letter used in Old and Middle English.\nThe old manuscript used the letter ‘wynn’ instead of the modern ’w’.",
+          "pos": "noun",
+          "pronunciation": "win",
+          "source": "2027",
+          "homophone": "win, whin, Wynn"
+        },
+        {
+          "word": "yapok",
+          "definition": "An aquatic opossum, native to central and South America.\nThe carnivorous yapok has webbed hind feet.",
+          "pos": "noun",
+          "pronunciation": "yuh-pok",
+          "source": "2027"
+        },
+        {
+          "word": "yellowhead",
+          "definition": "A New Zealand songbird.\nThe yellowhead is quite rare and found only on the South Island of New Zealand.",
+          "pos": "noun",
+          "pronunciation": "yel-oh-hed",
+          "source": "2027"
+        },
+        {
+          "word": "zygomatic",
+          "definition": "Referring to the cheek bone.\nThe doctor checked the zygomatic bone for damage after the fall.",
+          "pos": "adjective",
+          "pronunciation": "zeye-go-mat-ihk or zig-uh-mat-ihk",
+          "source": "2027"
+        }
+      ]
+    }
+  ]
+}
