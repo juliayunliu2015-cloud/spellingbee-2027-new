@@ -337,6 +337,18 @@ html.high-contrast .word-example { color: var(--ink); }
     background: var(--honey-soft); color: #5A3E00; font-weight: 700; font-size: 1.125rem;
 }
 
+/* ---------- Capital-letter notice ---------- */
+.notice {
+    padding: 16px 22px; border-radius: 20px; border: 2px solid var(--honey);
+    background: var(--honey-soft); color: #5A3E00; display: flex; flex-direction: column; gap: 10px;
+}
+.notice-title { font-weight: 800; font-size: 1.0625rem; }
+.notice-words { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.notice-words li {
+    padding: 4px 12px; border-radius: 999px; background: var(--surface);
+    font-family: var(--font-display); font-weight: 800; color: var(--ink);
+}
+
 /* ---------- Bottom nav (phones) ---------- */
 .bottom-nav { display: none; }
 

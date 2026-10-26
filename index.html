@@ -106,6 +106,7 @@
             </a>`).join('');
 
         SB.loadWords().then(({ list, words, goal }) => {
+            SB.showCapsNotice(words);
             const p = SB.getProgress();
             const score = SB.todayScore(p);
             const inList = new Set(words.map(w => w.word));

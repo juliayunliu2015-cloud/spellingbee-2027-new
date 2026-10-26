@@ -133,6 +133,7 @@
         SB.loadWords().then(data => {
             WORDS = data.words;
             GOAL = data.goal;
+            SB.showCapsNotice(WORDS);
             for (let g = 1; g <= data.totalGroups; g++) {
                 const list = WORDS.filter(w => w.group === g);
                 if (list.length) GROUPS.push({ n: g, words: list, range: `${list[0].word} to ${list[list.length - 1].word}` });

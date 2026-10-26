@@ -309,6 +309,20 @@ const SB = (() => {
         return a;
     }
 
+    // A notice at the bottom of the visible page listing the words in this list that start with a capital letter.
+    function showCapsNotice(words) {
+        const caps = words.filter(w => /^[A-Z]/.test(w.word)).map(w => w.word);
+        const main = document.querySelector('main:not([hidden])');
+        if (!caps.length || !main || document.getElementById('caps-notice')) return;
+        const notice = document.createElement('section');
+        notice.className = 'notice';
+        notice.id = 'caps-notice';
+        notice.setAttribute('aria-label', 'Words to capitalise');
+        notice.innerHTML = `<p class="notice-title">Pay attention: these ${caps.length} words should be capitalised.</p>
+            <ul class="notice-words">${caps.map(w => `<li>${esc(w)}</li>`).join('')}</ul>`;
+        main.append(notice);
+    }
+
     function initHeader(currentPage) {
         const select = document.getElementById('word-list');
         if (select) {
@@ -336,7 +350,7 @@ const SB = (() => {
 
     return {
         QUESTS, getList, getProgress, saveProgress, todayKey, todayScore, streak,
-        loadWords, getSettings, saveSettings, speak, playWord, esc, shuffle, initHeader,
+        loadWords, getSettings, saveSettings, speak, playWord, esc, shuffle, initHeader, showCapsNotice,
         onlineEnabled: !!SHEET_URL, recordAnswer, getParentPin, setParentPin, fetchOnlineRows, mergeOnlineRows
     };
 })();
