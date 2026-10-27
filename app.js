@@ -284,9 +284,12 @@ const SB = (() => {
         const chosen = getSettings().voiceName;
         const picked = chosen && voices.find(v => v.name === chosen);
         if (picked) return picked;
-        // Default: Microsoft Mark (US English), built into Windows. Other devices fall back to the scoring below.
-        const mark = voices.find(v => /microsoft mark/i.test(v.name) && /^en[-_]us/i.test(v.lang));
-        if (mark) return mark;
+        // Default: Google US English (in Chrome), then Microsoft Mark (built into Windows).
+        // Other devices fall back to the scoring below.
+        const isUS = v => /^en[-_]us/i.test(v.lang);
+        const preferred = voices.find(v => /^google us english/i.test(v.name) && isUS(v))
+            || voices.find(v => /microsoft mark/i.test(v.name) && isUS(v));
+        if (preferred) return preferred;
         let best = null, bestScore = -1;
         voices.forEach(v => {
             const s = voiceScore(v);
