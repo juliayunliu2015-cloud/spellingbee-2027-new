@@ -88,6 +88,10 @@
                         <label class="setting-label" for="voice-speed">Voice speed: <span id="voice-speed-value">0.8×</span></label>
                         <input class="range" id="voice-speed" type="range" min="0.5" max="1.2" step="0.1" value="0.8">
                     </div>
+                    <div>
+                        <label class="setting-label" for="voice-name">Voice</label>
+                        <select class="select" id="voice-name" style="width: 100%"></select>
+                    </div>
                 </section>
                 <section class="tip" aria-label="Tip from Professor Lexi">
                     <p class="tip-title">Lexi’s tip</p>
@@ -487,6 +491,28 @@
                 sync();
             });
             speed.addEventListener('change', () => SB.speak('This is my reading speed.', s.voiceRate));
+
+            // Voices differ by device and browser, and load after the page in Chrome.
+            const voiceSelect = document.getElementById('voice-name');
+            const fillVoices = () => {
+                const voices = SB.englishVoices();
+                if (!voices.length) {
+                    voiceSelect.innerHTML = '<option value="">Device default</option>';
+                    return;
+                }
+                const auto = SB.getSettings().voiceName ? null : SB.bestVoice();
+                voiceSelect.innerHTML = `<option value="">Automatic${auto ? ` (${SB.esc(auto.name)})` : ''}</option>` +
+                    voices.map(v => `<option value="${SB.esc(v.name)}"${v.name === s.voiceName ? ' selected' : ''}>${SB.esc(v.name)} · ${SB.esc(v.lang)}</option>`).join('');
+            };
+            if ('speechSynthesis' in window) {
+                fillVoices();
+                window.speechSynthesis.addEventListener('voiceschanged', fillVoices);
+            }
+            voiceSelect.addEventListener('change', () => {
+                s.voiceName = voiceSelect.value;
+                SB.saveSettings(s);
+                SB.speak('premature', s.voiceRate);
+            });
             sync();
         }
     </script>

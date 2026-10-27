@@ -241,7 +241,8 @@ const SB = (() => {
             easyRead: !!s.easyRead,
             reduceMotion: s.reduceMotion === undefined ? prefersReduced : !!s.reduceMotion,
             highContrast: !!s.highContrast,
-            voiceRate: typeof s.voiceRate === 'number' ? s.voiceRate : 0.8
+            voiceRate: typeof s.voiceRate === 'number' ? s.voiceRate : 0.8,
+            voiceName: s.voiceName || ''
         };
     }
 
@@ -260,6 +261,40 @@ const SB = (() => {
     }
 
     // ---------- audio ----------
+    // Without an explicit voice, many browsers fall back to an old robotic system voice.
+    // Pick the most natural American English voice on this device (Canadian, then other English, only as a fallback).
+    function voiceScore(v) {
+        const lang = v.lang.toLowerCase().replace('_', '-');
+        if (!lang.startsWith('en')) return -1;
+        // American English always wins over other accents; quality only decides among voices of the same accent.
+        let score = lang === 'en-us' ? 1000 : lang === 'en-ca' ? 500 : 0;
+        if (/natural|neural|online|premium|enhanced/i.test(v.name)) score += 100;
+        else if (/google/i.test(v.name)) score += 60;
+        else if (/samantha|aria|jenny|guy|ava|andrew/i.test(v.name)) score += 40;
+        if (v.localService === false) score += 5;
+        return score;
+    }
+
+    function englishVoices() {
+        return window.speechSynthesis.getVoices().filter(v => voiceScore(v) >= 0);
+    }
+
+    function bestVoice() {
+        const voices = window.speechSynthesis.getVoices();
+        const chosen = getSettings().voiceName;
+        const picked = chosen && voices.find(v => v.name === chosen);
+        if (picked) return picked;
+        // Default: Microsoft Mark (US English), built into Windows. Other devices fall back to the scoring below.
+        const mark = voices.find(v => /microsoft mark/i.test(v.name) && /^en[-_]us/i.test(v.lang));
+        if (mark) return mark;
+        let best = null, bestScore = -1;
+        voices.forEach(v => {
+            const s = voiceScore(v);
+            if (s > bestScore) { best = v; bestScore = s; }
+        });
+        return best;
+    }
+
     function speak(text, rate) {
         if (!('speechSynthesis' in window)) {
             alert('Sorry, this browser cannot read words aloud. Try Chrome or Edge.');
@@ -267,10 +302,15 @@ const SB = (() => {
         }
         window.speechSynthesis.cancel();
         const u = new SpeechSynthesisUtterance(text);
-        u.lang = 'en-CA';
+        const voice = bestVoice();
+        if (voice) u.voice = voice;
+        u.lang = voice ? voice.lang : 'en-US';
         u.rate = rate;
         window.speechSynthesis.speak(u);
     }
+
+    // Voices load asynchronously in Chrome; asking once early makes them ready by the first click.
+    if ('speechSynthesis' in window) window.speechSynthesis.getVoices();
 
     let currentAudio = null;
 
@@ -350,7 +390,7 @@ const SB = (() => {
 
     return {
         QUESTS, getList, getProgress, saveProgress, todayKey, todayScore, streak,
-        loadWords, getSettings, saveSettings, speak, playWord, esc, shuffle, initHeader, showCapsNotice,
+        loadWords, getSettings, saveSettings, speak, playWord, englishVoices, bestVoice, esc, shuffle, initHeader, showCapsNotice,
         onlineEnabled: !!SHEET_URL, recordAnswer, getParentPin, setParentPin, fetchOnlineRows, mergeOnlineRows
     };
 })();
